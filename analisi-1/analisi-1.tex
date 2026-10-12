@@ -1,1 +1,502 @@
-teresrt
+\documentclass{article}
+\usepackage[a4paper, margin=3cm]{geometry}
+\usepackage{hyperref}
+
+    \usepackage{enumitem}
+    \newlist{list_1}{enumerate}{1}
+    \setlist[list_1,1]{
+        label=\roman*.
+    }
+    \newlist{list_2}{enumerate}{1}
+    \setlist[list_2,1]{
+        label=\roman*.,
+        leftmargin=2cm
+    }
+    \newlist{list_3}{enumerate}{1}
+    \setlist[list_3,1]{
+        label=\roman*.,
+        leftmargin=3.5cm
+    }
+
+% Package for header and footer
+    \usepackage{fancyhdr}
+    \pagestyle{fancy}
+    \fancyhf{}
+    \fancyhead[L]{Fisica}
+    \fancyhead[C]{\bfseries{Analisi I}}
+    \fancyhead[R]{Olmo Astorino}
+    \fancyfoot[C]{\thepage}
+
+% Package for mathematical symbols
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{amsfonts}
+    \usepackage{amsthm}
+
+    \newtheoremstyle{nodot}
+        {11pt}    % Space above
+        {11pt}    % Space below
+        {\normalfont} % Body font
+        {1cm}       % Indentation
+        {\bfseries} % Heading font
+        { /}       % Punctuation after heading
+        {0.5em}  % Space after heading
+        {}       % Heading specification
+    \theoremstyle{nodot}
+
+    \newtheorem{definition}{Def}[subsection]
+    \newtheorem{axiom}{Ass}[subsection]
+    \newtheorem{proposition}{Pro}[subsection]
+    \newtheorem{theorem}{Teo}[subsection]
+    \newtheorem{lemma}{Lem}[subsection]
+    \newtheorem{corollary}{Cor}[subsection]
+    \newtheorem{property}{P}[subsection]
+    \newtheorem{demonstration}{Dim}[subsection]
+
+    \newtheoremstyle{obs}
+        {11pt}    % Space above
+        {11pt}    % Space below
+        {\normalfont} % Body font
+        {}       % Indentation
+        {\bfseries} % Heading font
+        { /}       % Punctuation after heading
+        {0.5em}  % Space after heading
+        {}       % Heading specification
+    \theoremstyle{obs}
+    \newtheorem{observation}{Oss}[subsection]
+
+    \newtheoremstyle{examplestyle}
+        {16pt}       % Spazio sopra
+        {16pt}       % Spazio sotto
+        {\normalfont}
+        {2cm}       % Indentazione del corpo
+        {\bfseries} % Stile dell'intestazione
+        {:}         % Punteggiatura
+        {0.5em}     % Spazio dopo l'intestazione
+        {}
+
+    \theoremstyle{examplestyle}
+    \newtheorem{example}{Es}[subsection]
+
+\begin{document}
+
+\begin{titlepage}
+    \thispagestyle{empty}
+    \centering
+
+    \vspace*{3cm}
+
+    \huge{Fisica}
+    \par
+
+    \vspace{1.5cm}
+
+    \Huge{\bfseries{Analisi I}}
+    \par
+
+    \vspace{1.5cm}
+
+    \LARGE{Olmo Astorino}
+    \par
+
+    \vfill
+
+    \large{\bfseries{UniMi - a.a. 2026/2027}}
+
+\end{titlepage}
+
+\tableofcontents
+
+\newpage
+
+\section{Insiemi numerici}
+
+\subsection{Numeri naturali}
+
+Definiamo i numeri naturali come segue.
+
+\begin{definition}
+    \textbf{Notazione dei numeri naturali}
+    \center
+
+    L'insieme dei numeri naturali è denotato con $\mathbb{N}$.
+\end{definition}
+
+\begin{definition}
+    \textbf{Numeri naturali}
+    \label{def:naturals}
+    \center
+    
+    $ \mathbb{N}$ è definito tramite le due seguenti proprietà caratteristiche.
+    \begin{list_2}
+        \item $1 \in \mathbb{N}$.
+        \item $\forall n \in \mathbb{N}$, $ n + 1 \in \mathbb{N}$ (proprietà del successore).
+    \end{list_2}
+\end{definition}
+
+\begin{observation}
+    I numeri naturali non contengono lo zero, ma è possibile estendere
+    l'insieme dei numeri naturali per includere lo zero, definendo così l'insieme $\mathbb{N}_0$.
+\end{observation}
+
+\begin{definition}
+    L'estensione di $\mathbb{N}$ per includere lo zero è
+    \[
+        \mathbb{N}_0 := \mathbb{N} \cup \{0\}.
+    \]
+\end{definition}
+    
+
+\vspace{0.7cm}
+\subsubsection{Principio di induzione}
+
+Da \textit{\hyperref[def:naturals]{def~\ref*{def:naturals}}} segue direttamente il principio di induzione.
+
+Il principio di induzione è una tecnica dimostrativa tipica delle proprietà delle successioni,
+che permette di dimostrare la veridicità di ogni proposizione appartenente a una famiglia
+di affermazioni, la quale è in relazione biunivoca con i numeri naturali o un loro sottoinsieme.
+
+\vspace{0.5cm}
+
+\textbf{Principio di induzione:} Sia $\left\{P_n\right\}_{n \geq n_0}$ una famiglia di affermazioni con $n_0, n \in \mathbb{N}$. Per dimostrare la veridictà di ognuna affermazioni è sufficiente dimostrare le seguenti due proposizioni.
+\begin{list_1}
+    \item \textbf{Base dell'induzione:} $P_{n_0}$
+    \item \textbf{Passo induttivo:} $\forall n \geq n_0$, $P_n \rightarrow P_{n+1}$
+\end{list_1}
+
+\begin{example}
+    Si dimostri per induzione 
+    \[
+        \forall n \in \mathbb{N}, \quad \sum_{k=1}^{n} k = \frac{n(n+1)}{2}.
+    \]
+
+    \begin{list_3}
+        \item \textbf{Base dell'induzione:}
+        \[
+            Hp: n_0=1, \qquad Th: \sum_{k=1}^{n} k = \frac{(n)(n+1)}{2}
+        \]
+        \vspace{0.2cm}
+        \[
+            Dim:
+        \]
+        \[
+            \sum_{k=1}^{1} k = 1 = \frac{1(1+1)}{2}. \qed
+        \]
+        \item \textbf{Passo induttivo:}
+            \[
+                Hp: \sum_{k=1}^{n} k = \frac{n(n+1)}{2}, \qquad Th: \sum_{k=1}^{n+1} k = \frac{(n+1)(n+2)}{2}
+            \]
+            \[
+                Dim:
+            \]
+            \[
+                \sum_{k=1}^{n+1} k =
+                \sum_{k=1}^{n} k + (n+1),
+            \]
+            Per $Hp$ si ha che
+            \[
+                \sum_{k=1}^{n} k + (n+1) =
+                \frac{n(n+1)}{2} + (n+1),
+            \]
+            dunque
+            \[
+                \frac{n(n+1) + 2(n+1)}{2} =
+                \frac{(n+1)(n+2)}{2},
+            \]
+            per proprietà transitiva
+            \[
+                \sum_{k=1}^{n+1} k =
+                \frac{(n+1)(n+2)}{2}. \qed
+            \]
+    \end{list_3}
+
+\end{example}
+
+\vspace{0.7cm}
+\subsubsection{Operazioni in $\mathbb{N}$}
+
+All'interno di $\mathbb{N}_0$ si può definire l'operazione di somma "$+$", che gode delle seguenti proprietà.
+
+\begin{property}
+    \textbf{Commutativa}
+    \[\forall a, b \in \mathbb{N}_0, \, \, a + b = b + a.\]
+\end{property}
+\begin{property}
+    \textbf{Associativa}
+    \[\forall a, b, c \in \mathbb{N}_0, \, \,  (a + b) + c = a + (b + c).\]
+\end{property}
+\begin{property}
+    \textbf{Esistenza dell'elemento neutro}
+    \[\forall a \in \mathbb{N}_0, \, \,  a + 0 = 0 + a = a.\]
+\end{property}
+\begin{property}
+    \textbf{Chiusura di $\mathbb{N}_0$ rispetto alla somma} 
+    \[\forall a, b \in \mathbb{N}_0, \; (a + b) \in \mathbb{N}_0.\]
+\end{property}
+
+\begin{observation}
+    All'interno di $\mathbb{N}_0$ non può essere definito l'elemento inverso rispetto alla somma
+\end{observation}
+
+\subsection{Numeri interi}
+
+
+Dall'estensione di $\mathbb{N}_0$ per includere gli elementi inversi rispetto alla somma,
+si ottiene l'insieme dei numeri interi, denotato con $\mathbb{Z}$. Questo insieme gode delle stesse proprietà di $\mathbb{N}_0$ rispetto alla somma, con l'aggiunta della proprietà dell'esistenza dell'elemento inverso.
+
+\begin{property}
+    \textbf{Esistenza dell'elemento inverso}
+    \[\forall a \in \mathbb{Z}, \, \, \exists b \in \mathbb{Z} \mid a + b = b + a = 0.\]
+\end{property}
+
+\subsubsection{Gruppi abeliani}
+
+La struttura algebrica $(\mathbb{Z}, +)$ risulta quindi un gruppo abeliano.
+Una generica struttura algebrica $(\mathbb{G}, \cdot)$, formata da un insieme
+$\mathbb{G} \neq \emptyset$ e un'operazione binaria "$\cdot$", è un gruppo se e solo se
+soddisfa le seguenti proprietà.
+
+\begin{property}
+    \textbf{Chiusura di $\mathbb{G}$ su $\cdot$}
+    \[\forall a, b \in \mathbb{G}, \; (a \cdot b) \in \mathbb{G}.\]
+\end{property}
+\begin{property}
+    \textbf{Associativa}
+    \[\forall a, b, c \in \mathbb{G}, \; (a \cdot b) \cdot c = a \cdot (b \cdot c).\]
+\end{property}
+\begin{property}
+    \textbf{Esistenza dell'elemento neutro}
+    \[\forall a \in \mathbb{G}, \; \exists e \in \mathbb{G} \mid a \cdot e = e \cdot a = a.\]
+\end{property}
+\begin{property}
+    \textbf{Esistenza dell'elemento inverso}
+    \[\forall a \in \mathbb{G}, \; \exists b \in \mathbb{G} \mid a \cdot b = b \cdot a = e.\]
+\end{property}
+
+\begin{observation}
+    Non è necessaria la commutatività dell'operazione binaria per definire un gruppo
+\end{observation}
+
+Un gruppo si dice inoltre commutativo o abeliano se e solo se soddisfa la seguente proprietà.
+\begin{property}
+    \textbf{Commutativa}
+    \[\forall a, b \in \mathbb{G}, \; a \cdot b = b \cdot a.\]
+\end{property}
+
+Affinché una generica struttura algebrica sia un gruppo abeliano,
+è dunque necessario che soddisfi contemporaneamente tutte le proprietà sopra elenecate.
+
+\subsubsection{Operazioni in $\mathbb{Z}$}
+In $\mathbb{Z}$ è possibile definire l'operazione di prodotto "$\cdot$" nel seguente modo
+
+\[
+    \forall a, b \in \mathbb{Z}, \quad a \cdot b := \sum_{k=1}^{b} a.
+\]
+
+Si può dimostrare che l'operazione di prodotto gode delle seguenti proprietà.
+
+\begin{property}
+    \textbf{Commutativa}
+    \[\forall a, b \in \mathbb{Z}, \;a \cdot b = b \cdot a.\]
+\end{property}
+\begin{property}
+    \textbf{Associativa}
+    \[\forall a, b, c \in \mathbb{Z}, \;(a \cdot b) \cdot c = a \cdot (b \cdot c).\]
+\end{property}
+\begin{property}
+    \textbf{Esistenza dell'elemento neutro}
+    \[\forall a \in \mathbb{Z}, \; a \cdot 1 = 1 \cdot a = a.\]
+\end{property}
+\begin{property}
+    \textbf{Chiusura di $\mathbb{Z}$ rispetto al prodotto}
+    \[\forall a, b \in \mathbb{Z}, \; (a \cdot b) \in \mathbb{Z}.\]
+\end{property}
+
+\begin{observation}
+    All'interno di $\mathbb{Z}$ non può essere definito l'elemento inverso rispetto al prodotto.
+\end{observation}
+\begin{observation}
+    L'operazione di prodotto può essere applicata anche all'insieme $\mathbb{N}_0$, nei confronti della quale anche quest'ultimo risulta chiuso.
+\end{observation}
+
+
+
+\subsection{Numeri razionali}
+Dall'estensione di $\mathbb{Z}$ per includere gli elementi inversi rispetto al prodotto,
+si ottiene l'insieme dei numeri razionali, denotato con $\mathbb{Q}$.
+Questo insieme gode delle stesse proprietà di $\mathbb{Z}$ rispetto al prodotto,
+con l'aggiunta della proprietà dell'esistenza dell'elemento inverso.
+
+L'insieme $\mathbb{Q}$ è definito come l'insieme delle classi di equivalenza individuate
+sull'insieme $(\mathbb{Z} \times \mathbb{N})$ dalla seguente relazione.
+Definita quindi la relazione $\sim$ nel seguente modo:
+
+\[
+    \forall (a, b), (c, d) \in \mathbb{Z} \times \mathbb{N}, \quad (a, b) \sim (c, d) \iff ad = bc,
+\]
+l'insieme $\mathbb{Q}$ viene definito come
+
+\begin{definition}
+    \textbf{Insieme dei numeri razionali}
+\[
+    \mathbb{Q} := \{p \in \mathbb{Z}, q \in \mathbb{N} \mid \frac{p}{q}\}_{/\sim}
+\]
+\end{definition}
+
+Ogni elemento di $\mathbb{Q}$ è dunque una classe di equivalenza denotabile come
+\[
+    \left[r\right]_\sim \; \; con \; \; r \in (\mathbb{Z} \times \mathbb{N})
+\]
+per comodità di notazione
+\[
+    r = \left[ \left( p , q \right) \right]_\sim \in \mathbb{Q}
+\]
+viene indicato con 
+\[
+    \frac{p_0}{q_0} \mid \frac{p_0}{q_0} \in \left[ \left( p , q \right) \right]_\sim  \land MCD(p_0, q_0) = 1
+\]
+
+\subsubsection{Operazioni in $\mathbb{Q}$}
+In $\mathbb{Q}$ sono definite le operazioni di somma e prodotto nel seguente modo.
+
+\begin{definition}
+    \textbf{Somma in $\mathbb{Q}$}
+    \[
+        \forall r_1 = \left[\frac{a}{b}\right]_\sim, r_2 = \left[\frac{c}{d}\right]_\sim \in \mathbb{Q}, \;
+        r_1 + r_2 := \left[\frac{ad+bc}{bd}\right]
+    \]
+\end{definition}
+\begin{definition}
+    \textbf{Prodotto in $\mathbb{Q}$}
+    \[
+        \forall r_1 = \left[\frac{a}{b}\right]_\sim, r_2 = \left[\frac{c}{d}\right]_\sim \in \mathbb{Q}, \;
+        r_1 \cdot r_2 := \left[\frac{ac}{bd}\right]
+    \]
+\end{definition}
+
+L'operazione di somma in $\mathbb{Q}$ gode delle seguenti proprietà.
+
+\begin{property}
+    \textbf{Commutativa}
+    \[\forall a, b \in \mathbb{Q}, \, a + b = b + a.\]
+\end{property}
+\begin{property}
+    \textbf{Associativa}
+    \[\forall a, b, c \in \mathbb{Q}, \, (a + b) + c = a + (b + c).\]
+\end{property}
+\begin{property}
+    \textbf{Esistenza dell'elemento neutro}
+    \[\forall a \in \mathbb{Q}, \, a + 0 = 0 + a = a.\]
+\end{property}
+\begin{property}
+    \textbf{Esistenza dell'elemento inverso}
+    \[\forall a \in \mathbb{Q}, \, \exists b = -a \in \mathbb{Q} \mid a + b = 0.\]
+\end{property}
+\begin{property}
+    \textbf{Chiusura di $\mathbb{Q}$ rispetto alla somma}
+    \[\forall a, b \in \mathbb{Q}, \; (a + b) \in \mathbb{Q}.\]
+\end{property}
+La struttura algebrica $(\mathbb{Q}, +)$ è dunque un gruppo abeliano.
+\vspace{0.4cm}
+
+L'operazione di prodotto in $\mathbb{Q}' := \mathbb{Q} \setminus \left\{0\right\}$ gode delle seguenti proprietà.
+
+\begin{property}
+    \textbf{Commutativa}
+    \[\forall a, b \in \mathbb{Q}', \, a \cdot b = b \cdot a.\]
+\end{property}
+\begin{property}
+    \textbf{Associativa}
+    \[\forall a, b, c \in \mathbb{Q}', \, (a \cdot b) \cdot c = a \cdot (b \cdot c).\]
+\end{property}
+\begin{property}
+    \textbf{Esistenza dell'elemento neutro}
+    \[\forall a \in \mathbb{Q}', \, a \cdot 1 = 1 \cdot a = a.\]
+\end{property}
+\begin{property}
+    \label{p:inv-q}
+    \textbf{Esistenza dell'elemento inverso}
+    \[\forall a \in \mathbb{Q}', \, \exists b = a^{-1} \in \mathbb{Q}' \mid a \cdot a^{-1} = 1.\]
+\end{property}
+\begin{property}
+    \textbf{Chiusura di $\mathbb{Q}'$ rispetto al prodotto}
+    \[\forall a, b \in \mathbb{Q}', \; (a \cdot b) \in \mathbb{Q}.\]
+\end{property}
+La struttura algebrica $(\mathbb{Q} \setminus \left\{0\right\}, \cdot)$ è dunque un gruppo abeliano.
+
+\begin{observation}
+    Viene escluso l'elemento 0 poiché altrimenti non sarebbe garantita \hyperref[p:inv-q]{\textbf{p~\ref*{p:inv-q}}}
+\end{observation}
+
+
+\vspace{0.4cm}
+
+In $\mathbb{Q}$ vale inoltre la proprietà distributiva del prodotto sulla somma
+\begin{property}
+    \textbf{Distribtiva di $\cdot$ su +}
+    \[\forall a, b, c \in \mathbb{Q}, \; a \cdot (b + c) = a \cdot b + a \cdot c.\]
+\end{property}
+
+\subsubsection{Relazioni d'ordine totale o lineare}
+
+Una relazione binaria $\sim$ su un insieme $\mathbb{X}$ è detta d'ordine se e solo se valgono le seguenti proprietà.
+
+\begin{property}
+    \textbf{Riflessiva}
+    \[
+        \forall x \in \mathbb{X}, \; x \sim x.
+    \]
+\end{property}
+\begin{property}
+    \textbf{Antisimmetrica}
+    \[
+        x \sim y \land y \sim x \rightarrow x = y.
+    \]
+\end{property}
+\begin{property}
+    \textbf{Transitiva}
+    \[
+        x \sim y \land y \sim z \rightarrow x \sim z.
+    \]
+\end{property}
+
+\begin{observation}
+    Non è richiesto che presi due elementi casuali dell'insieme
+    questi possano sempre essere messi in relazione, ma nel momento in cui possano esserlo
+    devono valere necessariamente tutte le proprietà di cui sopra.
+\end{observation}
+
+\begin{definition}
+    \textbf{Relazione d'ordine totale}
+    \center
+
+    Una relazione d'ordine generica $\sim$ (d'ordine parziale) definita su $\mathbb{X}$ è
+    detta d'ordine totale se e solo se ogni coppia dei elementi dell'insieme può essere
+    messa in relazione; in simboli, se viene soddisfatta la seguente proprietà.
+
+    
+    \begin{property}
+        \textbf{Linearità dell'ordinamento}
+
+        \[ \forall x,y \in \mathbb{X}, \; x \sim y \lor y \sim x \]
+    \end{property}
+\end{definition}
+
+Prendiamo come relazione su $\mathbb{Q}$, $\leq$.
+Si dimostra quindi facilmente che la relazione scelta goda delle proprietà necessarie
+per risultare una relazione d'ordine totale.
+
+\begin{proposition}
+    \label{rel-ord-tot}
+    La relazione $\leq$, definita sugli elementi di $\mathbb{Q}$, è una relazione d'ordine totale.
+\end{proposition}
+
+\begin{corollary}
+    \textit{di \hyperref[rel-ord-tot]{Pro~\ref*{rel-ord-tot}}}
+
+    \center
+
+    \textbf{$(\mathbb{Q}, +, \cdot, \leq)$ è un campo numerico totalmente ordinato}
+\end{corollary}
+
+\end{document}

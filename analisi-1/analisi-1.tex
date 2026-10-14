@@ -35,6 +35,7 @@
     \usepackage{amssymb}
     \usepackage{amsfonts}
     \usepackage{amsthm}
+    \usepackage{mathtools}
 
 
 % Definitions
@@ -444,7 +445,7 @@ L'operazione di prodotto in $\mathbb{Q}' := \mathbb{Q} \setminus \left\{0\right\
 \begin{property}
     \label{p:inv-q}
     \textbf{Esistenza dell'elemento inverso}
-    \[\forall a \in \mathbb{Q}', \, \exists b = a^{-1} \in \mathbb{Q}' \mid a \cdot a^{-1} = 1.\]
+    \[\forall a \in \mathbb{Q}', \, \exists b = a^{-1} = \frac{1}{a} \in \mathbb{Q}' \mid a \cdot a^{-1} = a \cdot \frac{1}{a} = 1.\]
 \end{property}
 \begin{property}
     \textbf{Chiusura di $\mathbb{Q}$ e $\mathbb{Q}'$ rispetto al prodotto}
@@ -692,7 +693,7 @@ caratteristiche.
     \end{cases}
 \]
 
-Posiamo quindi introdurre le seguenti definizioni per studiare gli estremi di $\mathbb{A}$.
+Posiamo quindi introdurre le seguenti definizioni per studiare gli estremi di $\mathbb{E}$.
 
 \begin{definition}
     \textbf{Maggiorante per $\mathbb{E}$}
@@ -1070,17 +1071,480 @@ l'esistenza di un minorante $m$ per un sottoinsieme di $\mathbb{Q}$ implica l'es
 
             \item Mostrato che l'insieme $\mathbb{A}$ così definto è non vuoto e superiromente limitato,
             l'unica condizione rimanente è che definito $\Lambda := \sup\mathbb{A}$, allora
-            \[ \nexists \Lambda=\sup\mathbb{A} \in \mathbb{Q}.\]
+            \[ \nexists \Lambda := \sup\mathbb{A} \in \mathbb{Q}.\]
 
-            \item Basta dunque mostrare $\Lambda^2 = 2$ poiché per \proref{pro:rdq-due-irr}
-            $\nexists x\in\mathbb{Q} \mid x^2 = 2$.
+            \item Supponendo per assurdo che $\Lambda := \sup\mathbb{A} \in\mathbb{Q}$, basta dunque mostrare $\Lambda^2 = 2$,
+            poiché contradirebbe \proref{pro:rdq-due-irr}, secondo cui $\nexists x\in\mathbb{Q} \mid x^2 = 2$.
 
             \item Per fare ciò mostriamo separatamente che $\Lambda^2 \geq 2$ e che $\Lambda^2 \leq 2$; da cui
-            poi dedurremo che $\Lambda^2 = 2$.
+            poi dedurremo che $\Lambda^2 = 2$.\
+
+            \item \label{pas:lam-mag-zer} A tale scopo mostriamo prima che $\Lambda \geq 1$
+            
+            \begin{enumerate}[label=\arabic*.]
+            
+                \item Supponiamo per assurdo che $\Lambda < 1$.
+                \item Essendo che
+                \[
+                    \begin{cases}
+                        \frac{4}{3}\in\mathbb{Q}^+ \\
+                        \left(\frac{4}{3}\right)^2 = \frac{16}{9} < \frac{18}{9} = 2\\
+                        \frac{4}{3} > \frac{3}{3} = 1 > \Lambda
+                    \end{cases}\Rightarrow
+                    \begin{cases}
+                        \frac{4}{3}\in\mathbb{Q}^+ \\
+                        \left(\frac{4}{3}\right)^2 < 2\\
+                        \frac{4}{3} > \Lambda
+                    \end{cases}\Rightarrow
+                    \begin{cases}
+                        \frac{4}{3}\in\mathbb{A}\\
+                        \Lambda < \frac{4}{3}
+                    \end{cases} \Rightarrow
+                \]
+                \[\Rightarrow
+                        \exists x = \frac{4}{3}\in\mathbb{A}, \Lambda < x. \]\[
+                \]
+
+                \item $\Lambda$ non è un maggiorante per $\mathbb{A}$, dunque viene violata la definizione precedente
+                    secondo cui $\Lambda := \sup\mathbb{A}$, che richiederebbe che $\Lambda$ sia un maggiorante per $\mathbb{A}$.
+
+                \item La negazione della tesi porta a una contraddizione.
+                \item La tesi deve essere necessariamente vera.
 
             \end{enumerate}
+            \qed
+
+            \item \label{pas:due-low-bou} Dimostriamo che con $\Lambda\in\mathbb{Q}$, $\Lambda^2 \geq 2$
+
+            \begin{enumerate}[label=\arabic*.]
+                \item Abbiamo quindi
+                \[ \Hp \Lambda\in\mathbb{Q} \quad \Th \Lambda^2 \geq 2.\]
+
+                \item Supponiamo per assurdo che
+                \[ \Lambda^2 < 2.\]
+
+                \item \label{pas:con-eps} Prendendo quindi arbitrariamente $\epsilon\in\mathbb{Q} \mid 0 < \epsilon < 1$, allora
+                \[ \Lambda + \epsilon > \Lambda .\]
+
+                \item Sapendo che 
+                \[ \epsilon > 0 \land  \underbrace{\Lambda > 0}_{\pasref{pas:lam-mag-zer}} \implies \Lambda+\epsilon\geq0.\]
+                \item \label{pas:lam-rel-eps}Allora
+                \[ (\Lambda + \epsilon)^2 > \Lambda^2 \]
+                \[ \Lambda^2 + 2\Lambda\epsilon + \epsilon^2 > \Lambda^2 \]
+
+                \item \label{pas:lam-con-eps} Da $\epsilon < 1 \land  \epsilon > 0$, abbiamo che
+                
+                \[ \epsilon < 1, \]
+                \[ \epsilon ^2 < \epsilon, \]
+                \[(\Lambda^2 + 2\Lambda\epsilon)+\epsilon^2 < (\Lambda^2 + 2\Lambda\epsilon) + \epsilon, \]
+                \[\Lambda^2 + 2\Lambda\epsilon+\epsilon^2 < \Lambda^2 + 2\Lambda\epsilon + \epsilon, \]
+                \[(\Lambda+\epsilon)^2 < \Lambda^2 + \epsilon \left(2\Lambda + 1\right). \]
+
+                \item Prendiamo
+                \[ \epsilon = \frac{2-\Lambda^2}{2\Lambda+1} \]
+
+                e verifichiamo che soddisfi le condizioni di cui al punto \pasref{pas:con-eps} .
+
+                \begin{enumerate}[label=\arabic{enumiii}.\arabic*.]
+                    \item
+                    
+                    \[ \Th \epsilon\in\mathbb{Q}\]
+
+                    Essendo $\mathbb{Q}$ chiuso rispetto a somma e prodotto (\pref{p:raz-chi-som},
+                    \pref{p:raz-chi-pro}) ed essendo inolte sempre garantita l'esistenza dell'elemento inverso
+                    in $\mathbb{Q}' = \mathbb{Q} \setminus \{0\}$ (\pref{p:inv-q}), allora
+
+                    \[ 
+                        \begin{cases}
+                            \Lambda \in \mathbb{Q} \\
+                            \underbrace{\Lambda \geq 0}_{\pasref{pas:lam-mag-zer}} \\
+                        \end{cases}\Rightarrow
+                        \begin{cases}
+                            \Lambda\cdot\Lambda \in \mathbb{Q} \\
+                            2\cdot\Lambda \in \mathbb{Q} \\
+                            2\cdot\Lambda  \geq 0 \\
+                        \end{cases}\Rightarrow
+                        \begin{cases}
+                            \Lambda^2 \in \mathbb{Q} \\
+                            2\Lambda \in \mathbb{Q} \\
+                            2\Lambda  \geq 0 \\
+                        \end{cases}\Rightarrow\]\[\Rightarrow
+                        \begin{cases}
+                            - \Lambda^2 \in \mathbb{Q} \\
+                            2\Lambda + 1 \in \mathbb{Q} \\
+                            2\Lambda + 1  \geq 1 \\
+                        \end{cases}\Rightarrow
+                        \begin{cases}
+                            - \Lambda^2 + 2 \in \mathbb{Q} \\
+                            2\Lambda + 1 \in \mathbb{Q}' \\
+                        \end{cases}\Rightarrow
+                        \begin{cases}
+                            2 - \Lambda^2 \in \mathbb{Q} \\
+                            \frac{1}{2\Lambda + 1} \in \mathbb{Q}' \\
+                        \end{cases}\Rightarrow\]\[\Rightarrow
+                        \begin{cases}
+                            2 - \Lambda^2 \in \mathbb{Q} \\
+                            \frac{1}{2\Lambda + 1} \in \mathbb{Q} \\
+                        \end{cases}\Rightarrow
+                            \left(2 - \Lambda^2\right) \frac{1}{2\Lambda + 1} \in \mathbb{Q} \Rightarrow
+                            \frac{2 - \Lambda^2}{2\Lambda + 1} \in \mathbb{Q} \Rightarrow\]\[\Rightarrow
+                            \epsilon\in\mathbb{Q}
+                    \]
+                    \qed
+
+                    \item
+                    \[ \Th \epsilon > 0 \]
+                    
+                    \[
+                        \begin{cases}
+                            \Lambda^2 < 2 \\
+                            \underbrace{\Lambda \geq 0}_{\pasref{pas:lam-mag-zer}}
+                        \end{cases} \Rightarrow
+                        \begin{cases}
+                            2 - \Lambda^2 > 0 \\
+                            2\cdot\Lambda \geq 0
+                        \end{cases} \Rightarrow
+                        \begin{cases}
+                            2 - \Lambda^2 > 0\\
+                            2\cdot\Lambda + 1 \geq 1
+                        \end{cases}\Rightarrow\]\[\Rightarrow
+                        \begin{cases}
+                            2 - \Lambda^2 > 0\\
+                            2\Lambda + 1 > 0
+                        \end{cases}\Rightarrow
+                        \frac{ 2 - \Lambda^2}{2\Lambda + 1}>0\Rightarrow
+                        \epsilon>0
+                    \]
+                    \qed
+
+                    \item
+                    \[ \Th \epsilon < 1 \]
+
+                    \[
+                        \epsilon<1 \Leftarrow
+                        \epsilon - 1 < 0 \Leftarrow
+                        \frac{2 - \Lambda^2}{2\Lambda + 1} - 1 < 0 \Leftarrow\]\[\Leftarrow
+                        \frac{2 - \Lambda^2}{2\Lambda + 1} - \frac{2\Lambda + 1}{2\Lambda + 1} < 0 \Leftarrow
+                        \frac{2 - \Lambda^2 - \left(2\Lambda + 1\right)}{2\Lambda + 1} < 0 \Leftarrow\]\[\Leftarrow
+                        \frac{2 - \Lambda^2 - 2\Lambda - 1}{2\Lambda + 1} < 0 \Leftarrow
+                        \frac{- \Lambda^2 - 2\Lambda + 1}{2\Lambda + 1} < 0
+                    \]
+
+
+                    Sapendo che $\Lambda \geq 0 \Rightarrow 2\Lambda \geq 0 \Rightarrow
+                    2\Lambda + 1\geq 1 \Rightarrow 2\Lambda + 1> 0$,
+
+                    \[
+                        \frac{- \Lambda^2 - 2\Lambda + 1}{2\Lambda + 1} < 0 \Leftarrow
+                        - \Lambda^2 - 2\Lambda + 1 < 0 \Leftarrow
+                        \Lambda^2 + 2\Lambda - 1 > 0 \Leftarrow\]\[\Leftarrow
+                        \Lambda < -1-\sqrt{2}\; \lor\; \Lambda > -1+\sqrt{2}\Leftarrow
+                        \Lambda > -1+\sqrt{2}\Leftarrow\]\[\Leftarrow
+                        \Lambda \geq 1 \Leftarrow
+                        \pasref{pas:lam-mag-zer}
+                    \]
+                    \qed
+                \end{enumerate}
+
+                \item Verificato che $\frac{2-\Lambda^2}{2\Lambda+1}$ è un valido valore per $\epsilon$,
+                allora riprendendo l'ultimo passaggio di \pasref{pas:lam-con-eps} .
+                
+                \[
+                    \left(\Lambda+\epsilon\right)^2 < \Lambda^2 + \epsilon\left(2\Lambda+1\right),\]\[
+                    \left(\Lambda+\epsilon\right)^2 < \Lambda^2 + \frac{2 - \Lambda^2}{2\Lambda+1}\left(2\Lambda+1\right),\]\[
+                    \left(\Lambda+\epsilon\right)^2 < \Lambda^2 + \left(2 - \Lambda^2\right),\]\[
+                    \left(\Lambda+\epsilon\right)^2 < \Lambda^2 + 2 - \Lambda^2,\]\[
+                    \left(\Lambda+\epsilon\right)^2 < 2. \]\[
+                \]
+
+                \item Abbiamo quindi che
+                \[
+                    \begin{cases}
+                        \Lambda^2 < \left(\Lambda+\epsilon\right)^2 \text{ (vd. pass. \pasref{pas:lam-rel-eps})}\\ 
+                        \left(\Lambda+\epsilon\right)^2 < 2
+                    \end{cases} \]\[
+                    \Lambda^2 < \left(\Lambda+\epsilon\right)^2 < 2 \]\[
+                    \left(\Lambda+\epsilon\right)\in\mathbb{A}\]\[
+                    \exists a=\left(\Lambda+\epsilon\right) \in\mathbb{A} \mid \Lambda < a
+                \]
+
+                \item $\Lambda$ non è un maggiorante per $\mathbb{A}$.
+                \item $\Lambda$ non può essere l'estremo superiore di $\mathbb{A}$, ma $\Lambda:=\sup\mathbb{A}$.
+                \item La negazione della tesi $\Lambda^2 \geq 2$ porta a una contraddizione.
+                \item La tesi deve essere necessariamente vera.
+
+
+            \end{enumerate}
+            \qed
+
+            \item \label{pas:due-upp-bou} Dimostriamo che con $\Lambda\in\mathbb{Q}$, $\Lambda^2 \leq 2$
+
+            \begin{enumerate}[label=\arabic*.]
+                \item Abbiamo quindi
+                \[ \Hp \Lambda\in\mathbb{Q} \quad \Th \Lambda^2 \leq 2.\]
+
+                \item \label{pass:ass-lam-mag} Supponiamo per assurdo che
+                \[ \Lambda^2 > 2.\]
+
+                \item \label{pas:con-eps/2}Prendendo quindi arbitrariamente $\epsilon\in\mathbb{Q} \mid 0 < \epsilon < \Lambda$, allora
+                \[
+                    0 < \Lambda - \epsilon < \Lambda,\]\[
+                    \left(\Lambda - \epsilon\right)^2 < \Lambda^2, \]\[
+                    \Lambda^2 -2\Lambda\epsilon + \epsilon^2 < \Lambda^2, \]\[
+                    \Lambda^2 - 2\Lambda\epsilon  < \Lambda^2 - 2\Lambda\epsilon + \epsilon^2 < \Lambda^2, \]\[
+                    \Lambda^2 - 2\Lambda\epsilon  < \left(\Lambda - \epsilon\right)^2  < \Lambda^2.
+                \]
+
+                \item Prendiamo
+                \[ \epsilon = \frac{\Lambda^2-2}{2\Lambda} \]
+
+                e verifichiamo che soddisfi le condizioni di cui al punto \pasref{pas:con-eps/2} .
+
+                \begin{enumerate}[label=\arabic{enumiii}.\arabic*.]
+                    \item
+                    
+                    \[ \Th \epsilon\in\mathbb{Q}\]
+
+                    Essendo $\mathbb{Q}$ chiuso rispetto a somma e prodotto (\pref{p:raz-chi-som},
+                    \pref{p:raz-chi-pro}) ed essendo inolte sempre garantita l'esistenza dell'elemento inverso
+                    in $\mathbb{Q}' = \mathbb{Q} \setminus \{0\}$ (\pref{p:inv-q}), allora
+
+                    \[ 
+                        \begin{cases}
+                            \Lambda \in \mathbb{Q} \\
+                            \underbrace{\Lambda > 0}_{\pasref{pas:lam-mag-zer}} \\
+                        \end{cases}\Rightarrow
+                        \begin{cases}
+                            \Lambda\cdot\Lambda \in \mathbb{Q} \\
+                            2\cdot\Lambda \in \mathbb{Q} \\
+                            2\cdot\Lambda  > 0 \\
+                        \end{cases}\Rightarrow
+                        \begin{cases}
+                            \Lambda^2 \in \mathbb{Q} \\
+                            2\Lambda \in \mathbb{Q} \\
+                            2\Lambda  > 0 \\
+                        \end{cases}\Rightarrow\]\[\Rightarrow
+                        \begin{cases}
+                            \Lambda^2 - 2 \in \mathbb{Q} \\
+                            2\Lambda \in \mathbb{Q}'
+                        \end{cases}\Rightarrow
+                        \begin{cases}
+                            \Lambda^2 - 2 \in \mathbb{Q} \\
+                            \frac{1}{2\Lambda} \in \mathbb{Q}'
+                        \end{cases}\Rightarrow
+                        \begin{cases}
+                            \Lambda^2 - 2 \in \mathbb{Q} \\
+                            \frac{1}{2\Lambda} \in \mathbb{Q}
+                        \end{cases}\Rightarrow\]\[\Rightarrow
+                        \left(\Lambda^2 - 2 \right) \frac{1}{2\Lambda} \in \mathbb{Q} \Rightarrow
+                        \frac{2 - \Lambda^2}{2\Lambda} \in \mathbb{Q} \Rightarrow
+                        \epsilon\in\mathbb{Q}
+                    \]
+                    \qed
+
+                    \item
+                    \[ \Th \epsilon > 0 \]
+                    
+                    \[
+                        \begin{cases}
+                            \Lambda^2 > 2 \\
+                            \underbrace{\Lambda > 0}_{\pasref{pas:lam-mag-zer}}
+                        \end{cases} \Rightarrow
+                        \begin{cases}
+                            \Lambda^2 - 2> 0 \\
+                            2\Lambda > 0
+                        \end{cases} \Rightarrow
+                        \frac{\Lambda^2 - 2}{2\Lambda}>0\Rightarrow
+                        \epsilon>0
+                    \]
+                    \qed
+
+                    \item
+                    \[ \Th \epsilon < \Lambda \]
+
+                    \[
+                        \epsilon<\Lambda \Leftarrow
+                        \epsilon - \Lambda < 0 \Leftarrow
+                        \frac{\Lambda^2-2}{2\Lambda} - \Lambda < 0 \Leftarrow\]\[\Leftarrow
+                        \frac{\Lambda^2-2}{2\Lambda} - \Lambda\frac{2\Lambda}{2\Lambda} < 0 \Leftarrow
+                        \frac{\Lambda^2-2}{2\Lambda} - \frac{2\Lambda^2}{2\Lambda}< 0 \Leftarrow\]\[\Leftarrow
+                        \frac{\Lambda^2 - 2 - 2\Lambda^2}{2\Lambda} < 0 \Leftarrow
+                        \frac{- \Lambda^2 - 2}{2\Lambda} < 0
+                    \]
+
+
+                    Sapendo che $\Lambda > 0 \Rightarrow 2\Lambda > 0$,
+
+                    \[
+                        \frac{- \Lambda^2 - 2}{2\Lambda} < 0 \Leftarrow
+                        - \Lambda^2 - 2 < 0 \Leftarrow
+                        \Lambda^2 + 2 > 0 \Leftarrow\]\[\Leftarrow
+                        \Lambda^2 > -2 \Leftarrow
+                        \Lambda > 2\Leftarrow
+                        (\pasref{pass:ass-lam-mag})
+                    \]
+                    \qed
+                \end{enumerate}
+
+                \item Verificato che $\frac{\Lambda^2-2}{2\Lambda}$ è un valido valore per $\epsilon$,
+                allora riprendendo l'ultimo passaggio di \pasref{pas:con-eps/2} .
+                
+                \[
+                    \Lambda^2 - 2\Lambda\epsilon  < \left(\Lambda - \epsilon\right)^2,\]\[
+                    \Lambda^2 - 2\Lambda\frac{\Lambda^2-2}{2\Lambda}  < \left(\Lambda - \epsilon\right)^2,\]\[
+                    \Lambda^2 - \left(\Lambda^2-2\right)  < \left(\Lambda - \epsilon\right)^2,\]\[
+                    \Lambda^2 - \Lambda^2 + 2  < \left(\Lambda - \epsilon\right)^2,\]\[
+                    2  < \left(\Lambda - \epsilon\right)^2.
+                \]
+
+                \item Grazie a quest'ultima disequazione mostriamo che $(\Lambda-\epsilon)$
+                    deve essere un maggiorante per $\mathbb{A}$:
+                \[
+                    \forall a\in\mathbb{A}, a^2 \leq 2, \]\[
+                    \forall a\in\mathbb{A}, a^2 \leq 2 < \left(\Lambda-\epsilon\right)^2, \]\[
+                    \forall a\in\mathbb{A}, a^2 < \left(\Lambda-\epsilon\right)^2.
+                \]
+
+                Sapendo che $\epsilon<\Lambda \Rightarrow  0 < \Lambda-\epsilon
+                \Rightarrow \Lambda-\epsilon > 0$, allora
+                \[
+                    \forall a\in\mathbb{A}, a < \left(\Lambda-\epsilon\right), \]\[
+                    \forall a\in\mathbb{A}, \left(\Lambda-\epsilon\right) > a. 
+                \]
+
+                \item $(\Lambda-\epsilon)$ è un maggiorante per $\mathbb{A}$.
+                \item $\Lambda$ non può essere l'estremo superiore di $\mathbb{A}$, ma $\Lambda:=\sup\mathbb{A}$.
+                \begin{enumerate}[label=\arabic{enumiii}.\arabic*.]
+                    \item Se $\Lambda$ fosse l'estremo superiore di $\mathbb{A}$, sarebbe anche necessariamente un
+                    maggiorante per $\mathbb{A}$. Ma essendo anche $(\Lambda-\epsilon)$ un maggiorante per $\mathbb{A}$,
+                    allora $\Lambda$ non sarebbe il minore dei maggioranti, perché $(\Lambda-\epsilon) < \Lambda$.
+                    \qed
+                \end{enumerate}
+                \item La negazione della tesi $\Lambda^2 \leq 2$ porta a una contraddizione.
+                \item La tesi deve essere necessariamente vera.
+
+
+            \end{enumerate}
+            \qed
+
+            \item Abbiamo dunque da \pasref{pas:due-low-bou} e \pasref{pas:due-upp-bou} che,
+            definendo $\Lambda:=\sup\mathbb{A}$,
+            \[
+                \begin{cases}
+                    \Lambda^2 \geq 2 \\
+                    \Lambda^2 \leq 2
+                \end{cases}\implies \Lambda^2 = 2 \implies \nexists \Lambda \in \mathbb{Q}.
+            \]
+
+            \item La contraddizione della tesi $\nexists \Lambda \in \mathbb{Q}$, secondo cui
+                $\exists \Lambda \in \mathbb{Q}$ porta a una contraddizione.
+
+            \item La tesi $\nexists \Lambda \in \mathbb{Q}$ deve essere necessariamente vera.
+            
+            \item Esiste quindi un sottoinsieme di $\mathbb{Q}$ non vuoto e superiormente limitato che però non
+                ammette un estremo superiore in $\mathbb{Q}$.
+
+        \end{enumerate}
+        \qed
     \end{demonstration}
 
+\end{enumerate}
+
+\subsection{Numeri reali}
+
+\begin{axiom}
+    \textbf{Assioma di completezza}
+
+    Esiste un campo totalmente ordinato che gode della proprietà dell'estremo
+    superiore e che contiene $\mathbb{Q}$ come sottocampo, risultando quindi un'estensione di $\mathbb{Q}$.
+\end{axiom}
+
+La "minima" estensione di $\mathbb{Q}$ che gode della proprietà dell'estremo superiore viene detta
+\textbf{campo reale}.
+
+\subsubsection{Modelli di $\mathbb{R}$}
+
+Esistono due principali modelli di $\mathbb{R}$, elencati qui di seguito.
+
+\begin{enumerate}
+    \item \textbf{Tagli di Dedekin}
+    
+    Modelizza $\mathbb{R}$ per completamento partendo da $\mathbb{Q}$. Questo modello va quindi a completare
+    quei difetti/lacune evidenziati precedentemente.
+
+    \item \textbf{Allineamenti decimali}
+    
+    Modelizza $\mathbb{R}$ definendo ogni suo elemento come una serie di elementi più semplici. Queste serie
+    possono risultare finite o infinite.
+    
+    Sono composte da almeno un elemento, quello iniziale, $x_0 \in
+    \mathbb{Z}$ (rappresentante la parte intera) e da eventuali successivi elementi $x_1, x_2, \ldots, x_n$ appartenenti all'insieme
+    $\left\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\right\}$ (rappresentanti ciascuno una cifra decimale).
+
+    \begin{proposition}
+        Si può quindi dire che un numero reale ha periodo $1$ se e solo se nella rappresentazione del numero reale tramite
+        allinementi decimali $x := (x_0, x_1, x_2, \ldots , x_n)$ risulta che
+
+        \[
+            \exists n_0\in\mathbb{N}\mid\forall k\geq n_0, x_k=x_{n_0}.
+        \]
+    \end{proposition}
+
+    \begin{observation}
+        Nella rappresentazioni per allineamenti decimali è perfettamente lecito $\overline{0}$ ($0$ periodico),
+        non è invece ammesso per ragioni dimostrative e definitorie $\overline{9}$ ($9$ periodico).
+        Periodicità esclusa in maniera assolutmente arbitraria.
+    \end{observation}
+
+    \begin{theorem}
+        \textbf{Allineamenti decimali in $\mathbb{Q}$}
+
+        Per ogni $r\in\mathbb{Q}$ corrisponde un unico allinemaento decimale finito oppure un unico allineamento
+        decimale illimitato periodico. Vale anche l'inversa, secondo cui a ogni allineamento decimale finito o
+        decimale illimitato periodco, corrisponde un unico elemento di $\mathbb{Q}$.
+    \end{theorem}
+
+    \begin{definition}
+        \textbf{Numeri reali (attraverso allineamenti decimali)}
+        \[ \mathbb{R} := \{\textit{ tutti i numeri decimali, sia limitati che illimitati, esclusi quelli
+        con periodo  $\overline{9}$}\} \]
+    \end{definition}
+
+
+    \subsubsection{Densità in $\mathbb{R}$}
+
+    \begin{theorem} \label{teo:raz-den-rea}
+        \textbf{Densità di $\mathbb{Q}$ in $\mathbb{R}$}
+
+        $\mathbb{Q}$ è denso in $\mathbb{R}$, ovvero
+
+        \[ \forall a, b \in \mathbb{R}, a < b \Rightarrow \exists r\in\mathbb{Q} \mid a<r<b. \]
+
+        
+    \end{theorem}
+
+    \begin{corollary} \textit{di} \teoref{teo:raz-den-rea}
+
+        Tra due numeri reali esistono infiniti numeri razionali.
+    \end{corollary}
+
+    \begin{theorem} \label{teo:irr-den-rea}
+        \textbf{Densità di $\mathbb{R} \setminus\mathbb{Q}$ in $\mathbb{R}$}
+
+        $\mathbb{R} \setminus\mathbb{Q}$ è denso in $\mathbb{R}$, ovvero
+
+        \[ \forall a, b \in \mathbb{R}, a < b \Rightarrow \exists r\in\mathbb{R} \setminus\mathbb{Q} \mid a<r<b. \]
+    \end{theorem}
+
+    \begin{demonstration} \textit{di} \teoref{teo:raz-den-rea}
+
+        [dimostrazione]
+    \end{demonstration}
+
+    \begin{demonstration} \textit{di} \teoref{teo:irr-den-rea}
+        
+        [dimostrazione]
+    \end{demonstration}
 \end{enumerate}
 
 \end{document}

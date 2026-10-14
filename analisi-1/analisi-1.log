@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.10.12)  14 OCT 2026 01:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.10.12)  14 OCT 2026 23:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -252,47 +252,108 @@ Package: amsthm 2020/05/29 v2.20.6
 \thm@postskip=\skip71
 \thm@headsep=\skip72
 \dth@everypar=\toks31
+) (C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
+Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
+ (C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count315
+\calc@Bcount=\count316
+\calc@Adimen=\dimen164
+\calc@Bdimen=\dimen165
+\calc@Askip=\skip73
+\calc@Bskip=\skip74
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count317
+\calc@Cskip=\skip75
+) (C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
-\c@definition=\count315
-\c@axiom=\count316
-\c@proposition=\count317
-\c@theorem=\count318
-\c@lemma=\count319
-\c@corollary=\count320
-\c@property=\count321
-\c@demonstration=\count322
-\c@observation=\count323
-\c@example=\count324
+\g_MT_multlinerow_int=\count318
+\l_MT_multwidth_dim=\dimen166
+\origjot=\skip76
+\l_MT_shortvdotswithinadjustabove_dim=\dimen167
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen168
+\l_MT_above_intertext_sep=\dimen169
+\l_MT_below_intertext_sep=\dimen170
+\l_MT_above_shortintertext_sep=\dimen171
+\l_MT_below_shortintertext_sep=\dimen172
+\xmathstrut@box=\box56
+\xmathstrut@dim=\dimen173
+)
+\c@definition=\count319
+\c@axiom=\count320
+\c@proposition=\count321
+\c@theorem=\count322
+\c@lemma=\count323
+\c@corollary=\count324
+\c@property=\count325
+\c@demonstration=\count326
+\c@observation=\count327
+\c@example=\count328
  (C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count325
+\l__color_backend_stack_int=\count329
 ) (analisi-1.aux)
 \openout1 = `analisi-1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-Package hyperref Info: Link coloring OFF on input line 105.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+Package hyperref Info: Link coloring OFF on input line 106.
  (analisi-1.out) (analisi-1.out)
 \@outlinefile=\write3
 \openout3 = `analisi-1.out'.
 
- [1
+ (C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+ (C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+ (C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count330
+\scratchdimen=\dimen174
+\scratchbox=\box57
+\nofMPsegments=\count331
+\nofMParguments=\count332
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count333
+\MPscratchDim=\dimen175
+\MPnumerator=\count334
+\makeMPintoPDFobject=\count335
+\everyMPtoPDFconversion=\toks33
+))) (C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+\Gin@req@height=\dimen176
+\Gin@req@width=\dimen177
+) [1
 
 {C:/Users/MrBlue/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (analisi-1.toc
 LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
@@ -310,68 +371,110 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.134 \newpage
+l.135 \newpage
                [1] [2]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 241.
+(hyperref)                removing `math shift' on input line 242.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 241.
+(hyperref)                removing `math shift' on input line 242.
 
 [3]
-Overfull \hbox (0.4614pt too wide) in paragraph at lines 303--304
+Overfull \hbox (0.4614pt too wide) in paragraph at lines 304--305
 []\OT1/cmr/bx/n/10 Oss 1.3 / \OT1/cmr/m/n/10 Non ^^Re nec-es-saria la com-mu-ta-tivit^^Ra dell'operazione bi-na-ria per definire
  []
 
 [4]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 315.
+(hyperref)                removing `math shift' on input line 316.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 315.
+(hyperref)                removing `math shift' on input line 316.
 
 [5]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 386.
+(hyperref)                removing `math shift' on input line 387.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 386.
+(hyperref)                removing `math shift' on input line 387.
 
 [6] [7] [8] [9] [10] [11] [12] [13]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 922.
+(hyperref)                removing `math shift' on input line 923.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 922.
+(hyperref)                removing `math shift' on input line 923.
 
-[14] [15] [16] [17] (analisi-1.aux)
+[14] [15] [16] [17]
+Overfull \hbox (2.4723pt too wide) in paragraph at lines 1153--1156
+[]\OT1/cmr/m/n/10 Essendo $\U/msb/m/n/10 Q$ \OT1/cmr/m/n/10 chiuso rispetto a somma e prodotto ([]\OT1/cmr/m/it/10 p 1.19[][]\OT1/cmr/m/n/10 , []\OT1/cmr/m/it/10 p 1.24[][]\OT1/cmr/m/n/10 )
+ []
+
+[18]
+Overfull \hbox (7.216pt too wide) detected at line 1184
+\OMS/cmsy/m/n/10 ) [] ) [] ) [] )
+ []
+
+
+Overfull \hbox (4.89363pt too wide) detected at line 1190
+\OMS/cmsy/m/n/10 ) [] ) [] [] 2 \U/msb/m/n/10 Q \OMS/cmsy/m/n/10 ) [] 2 \U/msb/m/n/10 Q \OMS/cmsy/m/n/10 )
+ []
+
+[19] [20]
+Overfull \hbox (2.4723pt too wide) in paragraph at lines 1308--1311
+[]\OT1/cmr/m/n/10 Essendo $\U/msb/m/n/10 Q$ \OT1/cmr/m/n/10 chiuso rispetto a somma e prodotto ([]\OT1/cmr/m/it/10 p 1.19[][]\OT1/cmr/m/n/10 , []\OT1/cmr/m/it/10 p 1.24[][]\OT1/cmr/m/n/10 )
+ []
+
+[21] [22]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1465.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1465.
+
+[23]
+Overfull \hbox (53.10875pt too wide) detected at line 1510
+\U/msb/m/n/10 R \OT1/cmr/m/n/10 := \OMS/cmsy/m/n/10 f[]g
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1514.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1514.
+
+[24] (analisi-1.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `analisi-1.out' has not changed.
-(rerunfilecheck)             Checksum: A5705E51C31187795A0A42EF929E81B6;1869.
+(rerunfilecheck)             Checksum: CC91D7D7A0B8315D7E6AEA7935C83B77;2261.
  ) 
 Here is how much of TeX's memory you used:
- 10079 strings out of 467870
- 154719 string characters out of 5417870
- 569802 words of memory out of 5000000
- 38687 multiletter control sequences out of 15000+600000
+ 11612 strings out of 467870
+ 179838 string characters out of 5417870
+ 596246 words of memory out of 5000000
+ 40116 multiletter control sequences out of 15000+600000
  636947 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,79p,571b,859s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on analisi-1.pdf (18 pages, 301616 bytes).
+ 75i,14n,79p,571b,1155s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on analisi-1.pdf (25 pages, 348924 bytes).
 PDF statistics:
- 455 PDF objects out of 1000 (max. 8388607)
- 179 named destinations out of 1000 (max. 500000)
- 97 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 621 PDF objects out of 1000 (max. 8388607)
+ 243 named destinations out of 1000 (max. 500000)
+ 121 words of extra memory for PDF output out of 10000 (max. 10000000)
 

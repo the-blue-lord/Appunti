@@ -1,0 +1,50 @@
+Dall'estensione di $\mathbb{Z}$ per includere gli elementi inversi rispetto al prodotto,
+si ottiene l'insieme dei numeri razionali, denotato con $\mathbb{Q}$.
+Questo insieme gode delle stesse proprietà di $\mathbb{Z}$ rispetto al prodotto,
+con l'aggiunta della proprietà dell'esistenza dell'elemento inverso.
+
+L'insieme $\mathbb{Q}$ è definito come l'insieme delle classi di equivalenza individuate
+sull'insieme $(\mathbb{Z} \times \mathbb{N})$ dalla seguente relazione.
+Definita quindi la relazione $\sim$ nel seguente modo:
+
+\[
+    \forall (a, b), (c, d) \in \mathbb{Z} \times \mathbb{N}, \quad (a, b) \sim (c, d) \iff ad = bc,
+\]
+l'insieme $\mathbb{Q}$ viene definito come
+
+\begin{definition}
+    \textbf{Insieme dei numeri razionali}
+\[
+    \mathbb{Q} := \{p \in \mathbb{Z}, q \in \mathbb{N} \mid \frac{p}{q}\}_{/\sim}
+\]
+\end{definition}
+
+Ogni elemento di $\mathbb{Q}$ è dunque una classe di equivalenza denotabile come
+\[
+    \left[r\right]_\sim \; \; con \; \; r \in (\mathbb{Z} \times \mathbb{N})
+\]
+per comodità di notazione
+\[
+    r = \left[ \left( p , q \right) \right]_\sim \in \mathbb{Q}
+\]
+viene indicato con 
+\[
+    \frac{p_0}{q_0} \mid \frac{p_0}{q_0} \in \left[ \left( p , q \right) \right]_\sim  \land MCD(p_0, q_0) = 1
+\]
+
+\subsubsection{Operazioni in $\mathbb{Q}$}
+
+\input{insiemi-numerici/numeri-razionali/operazioni-in-q/main.tex}
+
+\subsubsection{Relazioni d'ordine totale o lineare}
+
+\input{insiemi-numerici/numeri-razionali/relazioni-d-ordine/main.tex}
+
+\subsubsection{Estremi di un insieme}
+
+\input{insiemi-numerici/numeri-razionali/estremi-di-un-insieme/main.tex}
+
+
+\subsubsection{Difetti di $\mathbb{Q}$}
+
+\input{insiemi-numerici/numeri-razionali/difetti-di-q/main.tex}

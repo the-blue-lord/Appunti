@@ -1,0 +1,82 @@
+In $\mathbb{Q}$ sono definite le operazioni di somma e prodotto nel seguente modo.
+
+\begin{definition}
+    \textbf{Somma in $\mathbb{Q}$}
+    \[
+        \forall r_1 = \left[\frac{a}{b}\right]_\sim, r_2 = \left[\frac{c}{d}\right]_\sim \in \mathbb{Q}, \;
+        r_1 + r_2 := \left[\frac{ad+bc}{bd}\right]
+    \]
+\end{definition}
+\begin{definition}
+    \textbf{Prodotto in $\mathbb{Q}$}
+    \[
+        \forall r_1 = \left[\frac{a}{b}\right]_\sim, r_2 = \left[\frac{c}{d}\right]_\sim \in \mathbb{Q}, \;
+        r_1 \cdot r_2 := \left[\frac{ac}{bd}\right]
+    \]
+\end{definition}
+
+L'operazione di somma in $\mathbb{Q}$ gode delle seguenti proprietà.
+
+\begin{property}
+    \textbf{Commutativa}
+    \[\forall a, b \in \mathbb{Q}, \, a + b = b + a.\]
+\end{property}
+\begin{property}
+    \textbf{Associativa}
+    \[\forall a, b, c \in \mathbb{Q}, \, (a + b) + c = a + (b + c).\]
+\end{property}
+\begin{property}
+    \textbf{Esistenza dell'elemento neutro}
+    \[\forall a \in \mathbb{Q}, \, a + 0 = 0 + a = a.\]
+\end{property}
+\begin{property}
+    \textbf{Esistenza dell'elemento inverso}
+    \[\forall a \in \mathbb{Q}, \, \exists b = -a \in \mathbb{Q} \mid a + b = 0.\]
+\end{property}
+\begin{property}
+    \label{p:raz-chi-som}
+    \textbf{Chiusura di $\mathbb{Q}$ rispetto alla somma}
+    \[\forall a, b \in \mathbb{Q}, \; (a + b) \in \mathbb{Q}.\]
+\end{property}
+La struttura algebrica $(\mathbb{Q}, +)$ è dunque un gruppo abeliano.
+\vspace{0.4cm}
+
+L'operazione di prodotto in $\mathbb{Q}' := \mathbb{Q} \setminus \left\{0\right\}$ gode delle seguenti proprietà.
+
+\begin{property}
+    \textbf{Commutativa}
+    \[\forall a, b \in \mathbb{Q}', \, a \cdot b = b \cdot a.\]
+\end{property}
+\begin{property}
+    \textbf{Associativa}
+    \[\forall a, b, c \in \mathbb{Q}', \, (a \cdot b) \cdot c = a \cdot (b \cdot c).\]
+\end{property}
+\begin{property}
+    \textbf{Esistenza dell'elemento neutro}
+    \[\forall a \in \mathbb{Q}', \, a \cdot 1 = 1 \cdot a = a.\]
+\end{property}
+\begin{property}
+    \label{p:inv-q}
+    \textbf{Esistenza dell'elemento inverso}
+    \[\forall a \in \mathbb{Q}', \, \exists b = a^{-1} = \frac{1}{a} \in \mathbb{Q}' \mid a \cdot a^{-1} = a \cdot \frac{1}{a} = 1.\]
+\end{property}
+\begin{property}
+    \textbf{Chiusura di $\mathbb{Q}$ e $\mathbb{Q}'$ rispetto al prodotto}
+    \label{p:raz-chi-pro}
+    \[\forall a, b \in \mathbb{Q}, \; (a \cdot b) \in \mathbb{Q},\]
+    \[\forall a, b \in \mathbb{Q}', \; (a \cdot b) \in \mathbb{Q}'.\]
+\end{property}
+La struttura algebrica $(\mathbb{Q} \setminus \left\{0\right\}, \cdot)$ è dunque un gruppo abeliano.
+
+\begin{observation}
+    Viene escluso l'elemento 0 poiché altrimenti non sarebbe garantita \hyperref[p:inv-q]{\textbf{p~\ref*{p:inv-q}}}
+\end{observation}
+
+
+\vspace{0.4cm}
+
+In $\mathbb{Q}$ vale inoltre la proprietà distributiva del prodotto sulla somma
+\begin{property}
+    \textbf{Distribtiva di $\cdot$ su +}
+    \[\forall a, b, c \in \mathbb{Q}, \; a \cdot (b + c) = a \cdot b + a \cdot c.\]
+\end{property}

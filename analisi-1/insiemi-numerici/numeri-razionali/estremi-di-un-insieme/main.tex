@@ -1,0 +1,235 @@
+Sia $\mathbb{X}$ un insieme ordinato. Prendiamo un suo sottoinsieme $\mathbb{E}$ con le seguenti
+caratteristiche.
+
+\[
+    \begin{cases}
+        \mathbb{E} \subseteq \mathbb{X} \\
+        \mathbb{E} \neq \emptyset
+    \end{cases}
+\]
+
+Posiamo quindi introdurre le seguenti definizioni per studiare gli estremi di $\mathbb{E}$.
+
+\begin{definition}
+    \textbf{Maggiorante per $\mathbb{E}$}
+
+    Un elemento $M \in \mathbb{X}$ si dice maggiorante per $\mathbb{E}$ se e solo se $M$ è
+    maggiore o al più uguale a ogni singolo elemento di $\mathbb{E}$.
+\end{definition}
+
+
+\begin{definition}
+    \textbf{Minorante per $\mathbb{E}$}
+
+    Un elemento $m \in \mathbb{X}$ si dice minorante per $\mathbb{E}$ se e solo se $m$ è
+    minore o al più uguale a ogni singolo elemento di $\mathbb{E}$.
+\end{definition}
+
+\noindent\textbf{In simboli:}
+\[
+    \begin{aligned}
+        M \text{ è maggiorante per } \mathbb{E} \Leftrightarrow
+        \begin{cases}
+            M \in \mathbb{X} \\
+            \forall x \in \mathbb{E}, M \geq x
+        \end{cases}
+    \\ \\
+        m \text{ è minorante per } \mathbb{E} \Leftrightarrow
+        \begin{cases}
+            m \in \mathbb{X} \\
+            \forall x \in \mathbb{E}, m \leq x
+        \end{cases}
+    \end{aligned}
+\]
+
+
+\noindent\textbf{Conseguenze:}
+
+Avremo quindi un insieme dei maggioranti
+
+\[
+    \magg{\mathbb{E}} := \left\{M\in\mathbb{X}\mid\forall x\in\mathbb{E}, M \geq x\right\},
+\]
+e un insieme dei minoranti
+\[
+    \mino{\mathbb{E}} := \left\{m\in\mathbb{X}\mid\forall x\in\mathbb{E}, m \leq x\right\}.
+\]
+
+\begin{observation}
+    Gli insiemi $\magg{\mathbb{E}}$ e $\mino{\mathbb{E}}$
+    possono anche risultare vuoti (non per forza contemporaneamente),
+    nel momento in cui l'insieme $\mathbb{E}$ non ammetta maggioranti o non ammetta minoranti.
+\end{observation}
+
+
+\begin{definition}
+    \textbf{Insieme superiormente limitato}
+    
+    L'insieme $\mathbb{E}$ si dice superiormente limitato se ammette almeno un maggiorante, ovvero se
+    \[
+        \magg{\mathbb{E}} \neq\emptyset.
+    \]
+\end{definition}
+
+\begin{definition}
+    \textbf{Insieme inferiormente limitato}
+    
+    L'insieme $\mathbb{E}$ si dice superiormente limitato se ammette almeno un minorante, ovvero se
+    \[
+        \mino{\mathbb{E}} \neq\emptyset.
+    \]
+\end{definition}
+
+\begin{definition}
+    \textbf{Estremo superiore}
+    
+    Dato un insieme superiormente limitato $\mathbb{E}$, si dice estremo superiore di $\mathbb{E}$ e
+    si indica con $\sup \mathbb{E}$, il minimo, se esiste, dei maggioranti.
+    \[
+        \Lambda := \sup\mathbb{E}.
+    \]
+\end{definition}
+
+\begin{definition}
+    \textbf{Estremo inferiore}
+    
+    Dato un insieme inferiormente limitato $\mathbb{E}$, si dice estremo inferiore di $\mathbb{E}$ e
+    si indica con $\inf \mathbb{E}$, il massimo, se esiste, dei minoranti.
+    \[
+        \lambda := \inf\mathbb{E}.
+    \]
+\end{definition}
+
+\begin{definition}
+    \textbf{Massimo di un insieme}
+    
+    Dato un insieme superiormente limitato $\mathbb{E}$ con estremo superiore $\Lambda := \sup\mathbb{E}$,
+    si dice che $\Lambda$ è anche il massimo dell'insieme e si indica con $\Lambda = \max \mathbb{E}$ se
+    $\Lambda \in \mathbb{E}$
+    \[
+        \lambda := \inf\mathbb{E}.
+    \]
+\end{definition}
+
+\begin{definition}
+    \textbf{Minimo di un insieme}
+    
+    Dato un insieme inferiormente limitato $\mathbb{E}$, si dice estremo inferiore di $\mathbb{E}$ e
+    si indica con $\inf \mathbb{E}$, il massimo, se esiste, dei minoranti.
+    \[
+        \lambda := \inf\mathbb{E}.
+    \]
+\end{definition}
+
+\begin{corollary}
+    \label{cor:inf-mag}
+    $M$ maggiorante per $\mathbb{A}$ $\implies$ $\forall M' > M$, $M'$ maggiorante per $\mathbb{A}$.
+\end{corollary}
+\begin{corollary}
+    \label{cor:inf-min}
+    $m$ minorante per $\mathbb{A}$ $\implies$ $\forall m' < m$, $m'$ minorante per $\mathbb{A}$.
+\end{corollary}
+
+Essendo che dato un elemento di $\mathbb{Q}$ ne esistono infiniti maggiori e infiniti minori, allora
+per i corollari (\corref{cor:inf-mag} e \corref{cor:inf-min}) l'esistenza di un maggiorante $M$ per un sottoinsieme
+di $\mathbb{Q}$ implica l'esistenza di infiniti maggioranti (maggiori di $M$) per quel sottoinsieme. Analogamente
+l'esistenza di un minorante $m$ per un sottoinsieme di $\mathbb{Q}$ implica l'esistenza di infiniti minoranti
+(minori di $m$) per quel sottoinsieme.
+
+
+
+\begin{corollary}
+    \label{cor:mag-inf-lim}
+    $\magg{\mathbb{E}} \neq\emptyset \implies \magg{\mathbb{E}}$ inferiormente limitato.
+\end{corollary}
+\begin{demonstration}
+    \textit{di} \corref{cor:mag-inf-lim}
+
+    \[\Hp \magg{\mathbb{E}} \neq\emptyset \qquad \Th \magg{\mathbb{E}} \text{ è inferiormente limitato}\]
+
+    \begin{list_2}
+        \item Se $\magg{\mathbb{E}} \neq\emptyset$, segue locgicamente che
+            \[ \mathbb{E}\subset \mino{\magg{\mathbb{E}}} \]
+        \item Ed essendo necessario per l'esistenza di $\magg{\mathbb{E}}$ che $\mathbb{E} \neq\emptyset$, allora
+            \[ \mino{\magg{\mathbb{E}}} \neq\emptyset\]
+        \item Dunque $\magg{\mathbb{E}}$ è inferiormente limitato.
+    \end{list_2}
+    \qed
+\end{demonstration}
+
+
+\begin{corollary}
+    \label{cor:min-sup-lim}
+    $\mino{\mathbb{E}} \neq\emptyset \implies \mino{\mathbb{E}}$ superiormente limitato.
+\end{corollary}
+\begin{demonstration}
+    \textit{di} \corref{cor:min-sup-lim}
+
+    \[\Hp \mino{\mathbb{E}} \neq\emptyset \qquad \Th \mino{\mathbb{E}} \text{ è superiormente limitato}\]
+
+    \begin{list_2}
+        \item Se $\mino{\mathbb{E}} \neq\emptyset$, segue locgicamente che
+            \[ \mathbb{E}\subset \magg{\mino{\mathbb{E}}} \]
+        \item Ed essendo necessario per l'esistenza di $\mino{\mathbb{E}}$ che $\mathbb{E} \neq\emptyset$, allora
+            \[ \magg{\mino{\mathbb{E}}} \neq\emptyset\]
+        \item Dunque $\mino{\mathbb{E}}$ è superiormente limitato.
+    \end{list_2}
+    \qed
+\end{demonstration}
+
+\begin{example} \leavevmode
+
+    \begin{list_3}
+        \item Prendiamo come sottoinsieme di $\mathbb{Q}$
+        \[ \mathbb{A} = \left\{ x \in \mathbb{Q} \mid 1 < x \leq 2 \right\} \]
+        \item Essendo che $\forall x \in \mathbb{A}, 2 \geq x$, allora $2$ è un maggiorante per $\mathbb{A}$.
+        \begin{enumerate}[label=\arabic*.]
+            \item Dimostriamo che non esiste un maggiorante minore di 2
+            \[ \Th \nexists M \in \mathbb{Q} \mid M < 2 \;\;\land\;\; \forall x \in \mathbb{A}, M \geq x .\]
+            \item \label{pas:esi-mag/1} Supponiamo per assurdo che
+            \[ \exists M \in \mathbb{Q} \mid M < 2 \;\;\land\;\;  \forall x \in \mathbb{A}, M \geq x .\]
+            \item Allora, prendendo $r = 2$, si dimostra facilmente che
+            \[ \exists r \in \mathbb{A} \mid M < 2,\]
+            \[ \exists r \in \mathbb{A} \mid M < r.\]
+            \item Viene contradetto il passaggio \pasref{pas:esi-mag/1}, l'$M$ così definito non può
+            quindi essere un maggiorante per $\mathbb{A}$.
+            \item Non esiste un maggiorante per $\mathbb{A}$ minore di $2$.
+            \item $2$ è il minore dei maggioranti per $\mathbb{A}$.
+            \qed
+        \end{enumerate}
+        \item Essendo $2$ il minore dei maggioranti per $\mathbb{A}$, allora
+        \[ \sup\mathbb{A} = 2 \].
+        \item Inolte $2 = \sup\mathbb{A} \in \mathbb{A}$, dunque
+        \[ \max\mathbb{A} = \sup\mathbb{A} = 2 \].
+
+        \item Essendo che $\forall x\in\mathbb{A}, 1 \leq x$, allora $1$ è un minorante per $\mathbb{A}$.
+        \begin{enumerate}[label=\arabic*.]
+            \item Dimostriamo che non esiste un minorante maggiore di 1
+            \[ \Th \nexists m \in \mathbb{Q} \mid  m > 1 \;\;\land\;\; \forall x \in \mathbb{A}, m \leq 1 \]
+            \item \label{pas:esi-min/1} Supponiamo per assurdo che
+            \[ \exists m \in \mathbb{Q} \mid m > 1 \;\;\land\;\; \forall x \in \mathbb{A}, m \leq x .\]
+            \item Allora, prendendo $r = 1$, si dimostra facilmente che
+            \[ \exists r \in \mathbb{A} \mid m > 1,\]
+            \[ \exists r \in \mathbb{A} \mid m > r.\]
+            \item Viene contradetto il passaggio \pasref{pas:esi-min/1}, l'$m$ così definito non può
+            quindi essere un minorante per $\mathbb{A}$.
+            \item Non esiste un minorante per $\mathbb{A}$ maggiore di $1$.
+            \item $1$ è il maggiore dei minoranti per $\mathbb{A}$.
+            \qed
+        \end{enumerate}
+        \item Essendo $1$ il maggiore dei minoranti per $\mathbb{A}$, allora
+        \[ \inf\mathbb{A} = 1 \].
+        \item Inolte $1 = \inf\mathbb{A} \notin \mathbb{A}$, dunque
+        \[ \nexists\min\mathbb{A}\].
+
+        \item Rissumendo quindi i risultati abbiamo che
+        \[
+        \mathbb{A} = \left\{ x \in \mathbb{Q} \mid 1 < x \leq 2 \right\} \implies
+        \begin{cases}
+            \max\mathbb{A} = \sup\mathbb{A} = 2 \\
+            \inf\mathbb{A} = 1 \\
+            \nexists\min\mathbb{A}
+        \end{cases}.
+        \]
+    \end{list_3}
+\end{example}

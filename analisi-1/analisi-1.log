@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.10.12)  14 OCT 2026 23:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.10.12)  15 OCT 2026 22:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -372,90 +372,91 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 <to be read again> 
                    \relax 
 l.135 \newpage
-               [1] [2]
+               [1] (insiemi-numerici/main.tex (insiemi-numerici/numeri-naturali/main.tex (insiemi-numerici/numeri-naturali/principio-di-induzione/main.tex [2])
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 242.
+(hyperref)                removing `math shift' on input line 40.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 242.
+(hyperref)                removing `math shift' on input line 40.
 
-[3]
-Overfull \hbox (0.4614pt too wide) in paragraph at lines 304--305
+(insiemi-numerici/numeri-naturali/operazioni-in-n/main.tex [3])) (insiemi-numerici/numeri-interi/main.tex (insiemi-numerici/numeri-interi/gruppi-abeliani/main.tex
+Overfull \hbox (0.4614pt too wide) in paragraph at lines 24--25
 []\OT1/cmr/bx/n/10 Oss 1.3 / \OT1/cmr/m/n/10 Non ^^Re nec-es-saria la com-mu-ta-tivit^^Ra dell'operazione bi-na-ria per definire
  []
 
-[4]
+[4])
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 316.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 316.
-
-[5]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 387.
+(hyperref)                removing `math shift' on input line 14.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 387.
+(hyperref)                removing `math shift' on input line 14.
 
-[6] [7] [8] [9] [10] [11] [12] [13]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 923.
-
+(insiemi-numerici/numeri-interi/operazioni-in-z/mian.tex)) (insiemi-numerici/numeri-razionali/main.tex [5]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 923.
+(hyperref)                removing `math shift' on input line 35.
 
-[14] [15] [16] [17]
-Overfull \hbox (2.4723pt too wide) in paragraph at lines 1153--1156
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 35.
+
+(insiemi-numerici/numeri-razionali/operazioni-in-q/main.tex [6]) (insiemi-numerici/numeri-razionali/relazioni-d-ordine/main.tex [7] [8] [9]) (insiemi-numerici/numeri-razionali/estremi-di-un-insieme/main.tex [10] [11] [12] [13])
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 48.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 48.
+
+(insiemi-numerici/numeri-razionali/difetti-di-q/main.tex [14] [15] [16] [17]
+Overfull \hbox (2.4723pt too wide) in paragraph at lines 229--232
 []\OT1/cmr/m/n/10 Essendo $\U/msb/m/n/10 Q$ \OT1/cmr/m/n/10 chiuso rispetto a somma e prodotto ([]\OT1/cmr/m/it/10 p 1.19[][]\OT1/cmr/m/n/10 , []\OT1/cmr/m/it/10 p 1.24[][]\OT1/cmr/m/n/10 )
  []
 
 [18]
-Overfull \hbox (7.216pt too wide) detected at line 1184
+Overfull \hbox (7.216pt too wide) detected at line 260
 \OMS/cmsy/m/n/10 ) [] ) [] ) [] )
  []
 
 
-Overfull \hbox (4.89363pt too wide) detected at line 1190
+Overfull \hbox (4.89363pt too wide) detected at line 266
 \OMS/cmsy/m/n/10 ) [] ) [] [] 2 \U/msb/m/n/10 Q \OMS/cmsy/m/n/10 ) [] 2 \U/msb/m/n/10 Q \OMS/cmsy/m/n/10 )
  []
 
 [19] [20]
-Overfull \hbox (2.4723pt too wide) in paragraph at lines 1308--1311
+Overfull \hbox (2.4723pt too wide) in paragraph at lines 384--387
 []\OT1/cmr/m/n/10 Essendo $\U/msb/m/n/10 Q$ \OT1/cmr/m/n/10 chiuso rispetto a somma e prodotto ([]\OT1/cmr/m/it/10 p 1.19[][]\OT1/cmr/m/n/10 , []\OT1/cmr/m/it/10 p 1.24[][]\OT1/cmr/m/n/10 )
  []
 
-[21] [22]
+[21] [22])) (insiemi-numerici/numeri-reali/main.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1465.
+(hyperref)                removing `math shift' on input line 11.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1465.
+(hyperref)                removing `math shift' on input line 11.
 
-[23]
-Overfull \hbox (53.10875pt too wide) detected at line 1510
+(insiemi-numerici/numeri-reali/modelli-di-r/main.tex [23]
+Overfull \hbox (53.10875pt too wide) detected at line 44
 \U/msb/m/n/10 R \OT1/cmr/m/n/10 := \OMS/cmsy/m/n/10 f[]g
  []
 
+)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1514.
+(hyperref)                removing `math shift' on input line 15.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1514.
+(hyperref)                removing `math shift' on input line 15.
 
-[24] (analisi-1.aux)
+(insiemi-numerici/numeri-reali/densita-in-r/main.tex))) [24] (analisi-1.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
@@ -464,15 +465,15 @@ Package rerunfilecheck Info: File `analisi-1.out' has not changed.
 (rerunfilecheck)             Checksum: CC91D7D7A0B8315D7E6AEA7935C83B77;2261.
  ) 
 Here is how much of TeX's memory you used:
- 11612 strings out of 467870
- 179838 string characters out of 5417870
+ 11719 strings out of 467870
+ 186023 string characters out of 5417870
  596246 words of memory out of 5000000
- 40116 multiletter control sequences out of 15000+600000
+ 40161 multiletter control sequences out of 15000+600000
  636947 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,14n,79p,571b,1155s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,14n,79p,571b,1157s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on analisi-1.pdf (25 pages, 348924 bytes).
+Output written on analisi-1.pdf (25 pages, 348951 bytes).
 PDF statistics:
  621 PDF objects out of 1000 (max. 8388607)
  243 named destinations out of 1000 (max. 500000)

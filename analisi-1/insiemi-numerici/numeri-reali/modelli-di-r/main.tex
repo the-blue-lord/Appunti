@@ -1,0 +1,47 @@
+Esistono due principali modelli di $\mathbb{R}$, elencati qui di seguito.
+
+\begin{enumerate}
+    \item \textbf{Tagli di Dedekin}
+    
+    Modelizza $\mathbb{R}$ per completamento partendo da $\mathbb{Q}$. Questo modello va quindi a completare
+    quei difetti/lacune evidenziati precedentemente.
+
+    \item \textbf{Allineamenti decimali}
+    
+    Modelizza $\mathbb{R}$ definendo ogni suo elemento come una serie di elementi più semplici. Queste serie
+    possono risultare finite o infinite.
+    
+    Sono composte da almeno un elemento, quello iniziale, $x_0 \in
+    \mathbb{Z}$ (rappresentante la parte intera) e da eventuali successivi elementi $x_1, x_2, \ldots, x_n$ appartenenti all'insieme
+    $\left\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\right\}$ (rappresentanti ciascuno una cifra decimale).
+
+    \begin{proposition}
+        Si può quindi dire che un numero reale ha periodo $1$ se e solo se nella rappresentazione del numero reale tramite
+        allinementi decimali $x := (x_0, x_1, x_2, \ldots , x_n)$ risulta che
+
+        \[
+            \exists n_0\in\mathbb{N}\mid\forall k\geq n_0, x_k=x_{n_0}.
+        \]
+    \end{proposition}
+
+    \begin{observation}
+        Nella rappresentazioni per allineamenti decimali è perfettamente lecito $\overline{0}$ ($0$ periodico),
+        non è invece ammesso per ragioni dimostrative e definitorie $\overline{9}$ ($9$ periodico).
+        Periodicità esclusa in maniera assolutmente arbitraria.
+    \end{observation}
+
+    \begin{theorem}
+        \textbf{Allineamenti decimali in $\mathbb{Q}$}
+
+        Per ogni $r\in\mathbb{Q}$ corrisponde un unico allinemaento decimale finito oppure un unico allineamento
+        decimale illimitato periodico. Vale anche l'inversa, secondo cui a ogni allineamento decimale finito o
+        decimale illimitato periodco, corrisponde un unico elemento di $\mathbb{Q}$.
+    \end{theorem}
+
+    \begin{definition}
+        \textbf{Numeri reali (attraverso allineamenti decimali)}
+        \[ \mathbb{R} := \{\textit{ tutti i numeri decimali, sia limitati che illimitati, esclusi quelli
+        con periodo  $\overline{9}$}\} \]
+    \end{definition}
+
+\end{enumerate}

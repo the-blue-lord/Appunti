@@ -1,0 +1,66 @@
+Da \textit{\hyperref[def:naturals]{def~\ref*{def:naturals}}} segue direttamente il principio di induzione.
+
+Il principio di induzione è una tecnica dimostrativa tipica delle proprietà delle successioni,
+che permette di dimostrare la veridicità di ogni proposizione appartenente a una famiglia
+di affermazioni, la quale è in relazione biunivoca con i numeri naturali o un loro sottoinsieme.
+
+\vspace{0.5cm}
+
+\textbf{Principio di induzione:} Sia $\left\{P_n\right\}_{n \geq n_0}$ una famiglia di affermazioni con
+$n_0, n \in \mathbb{N}$. Per dimostrare la veridictà di ognuna affermazioni è sufficiente dimostrare le
+seguenti due proposizioni.
+
+\begin{list_1}
+    \item \textbf{Base dell'induzione:} $P_{n_0}$
+    \item \textbf{Passo induttivo:} $\forall n \geq n_0$, $P_n \rightarrow P_{n+1}$
+\end{list_1}
+
+\begin{example}
+    Si dimostri per induzione 
+    \[
+        \forall n \in \mathbb{N}, \quad \sum_{k=1}^{n} k = \frac{n(n+1)}{2}.
+    \]
+
+    \begin{list_3}
+        \item \textbf{Base dell'induzione:}
+        \[
+            \Hp \;\; n_0=1, \qquad \Th \;\; \sum_{k=1}^{n} k = \frac{(n)(n+1)}{2}
+        \]
+        \vspace{0.2cm}
+        \[
+            Dim:
+        \]
+        \[
+            \sum_{k=1}^{1} k = 1 = \frac{1(1+1)}{2}. \qed
+        \]
+        \item \textbf{Passo induttivo:}
+            \[
+                \Hp \;\; \sum_{k=1}^{n} k = \frac{n(n+1)}{2}, \qquad \Th \;\; \sum_{k=1}^{n+1} k = \frac{(n+1)(n+2)}{2}
+            \]
+            \[
+                Dim:
+            \]
+            \[
+                \sum_{k=1}^{n+1} k =
+                \sum_{k=1}^{n} k + (n+1),
+            \]
+            Per $Hp$ si ha che
+            \[
+                \sum_{k=1}^{n} k + (n+1) =
+                \frac{n(n+1)}{2} + (n+1),
+            \]
+            dunque
+            \[
+                \frac{n(n+1) + 2(n+1)}{2} =
+                \frac{(n+1)(n+2)}{2},
+            \]
+            per proprietà transitiva
+            \[
+                \sum_{k=1}^{n+1} k =
+                \frac{(n+1)(n+2)}{2}. \qed
+            \]
+    \end{list_3}
+
+\end{example}
+
+\vspace{0.7cm}

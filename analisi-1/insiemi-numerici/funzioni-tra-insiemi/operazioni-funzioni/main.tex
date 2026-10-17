@@ -1,0 +1,55 @@
+\begin{definition}
+    \textbf{Restrizione del dominio}
+
+    Data una funzione $f:\mathbb{X}\rightarrow\mathbb{Y}$ e un sottoinsieme $\mathbb{D}
+    \subset\mathbb{X}$,
+    si dice restrizione di $f$ a $\mathbb{D}$ la funzione $f\big|_{\mathbb{D}}$ così definita:
+
+    \[
+        f\big|_{\mathbb{D}}:
+            \mathbb{D}\rightarrow\mathbb{Y}, \qquad
+            z\mapsto f\left(z\right)
+    \]
+\end{definition}
+
+\begin{definition}
+    \textbf{Funzione composta}
+
+    Date due funzione $f:\mathbb{X}\rightarrow\mathbb{Y}$ e $g:\mathbb{Y}\rightarrow\mathbb{W}$,
+    si dice funzione composta la funzione $h$ definita come
+    \[ h: \mathbb{X} \rightarrow \mathbb{W}, \qquad x\mapsto f\left(g\left(x\right)\right)\]
+    e si indica con $h: f\circ g$, da cui
+    $h\left(x\right)=\left(f\circ g\right)\left(x\right)=f\left(g\left(x\right)\right)$.
+\end{definition}
+
+\begin{definition}
+    \textbf{Successione}
+
+    Si dice successione una funzione che ha come dominio i numeri naturali, in simboli
+
+    \[ f: \mathbb{N} \rightarrow \mathbb{X}, \qquad n \mapsto x_n := f\left(n\right) \]
+\end{definition}
+
+\begin{example}
+    Sapendo che $\forall n \in\mathbb{N} \land n \geq 1, \exists \sqrt{n+1}$, definiamo la successione
+    \[
+        \{x_n\}_{n\in\mathbb{N}}
+        = \{\sqrt{n+1}\}_{n\in\mathbb{N}}
+    \]
+    per cui
+    \[
+        \forall n\in\mathbb{N}, x_n := \sqrt{n+1}.
+    \]
+\end{example}
+
+\begin{example}
+    Sapendo che $\forall n \in\mathbb{N} \land n \geq 4, \exists \frac{1}{\sqrt{n-3}}$, definiamo la successione
+    \[
+        \{x_n\}_{n\in\{4, 5, 6, \dots\}}
+        = \left\{\frac{1}{\sqrt{n-3}}\right\}_{n\in\{4, 5, 6, \dots\}}
+    \]
+    per cui
+    \[
+        \forall n\in\{4, 5, 6, \dots\}, x_n := \frac{1}{\sqrt{n-3}}.
+    \]
+\end{example}

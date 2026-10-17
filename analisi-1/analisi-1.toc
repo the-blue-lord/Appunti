@@ -14,3 +14,7 @@
 \contentsline {subsubsection}{\numberline {1.4.1}Modelli di $\mathbb {R}$}{23}{subsubsection.1.4.1}%
 \contentsline {subsubsection}{\numberline {1.4.2}Densità in $\mathbb {R}$}{24}{subsubsection.1.4.2}%
 \contentsline {subsubsection}{\numberline {1.4.3}Estremi dei sottoinsiemi di $\mathbb {R}$}{27}{subsubsection.1.4.3}%
+\contentsline {subsection}{\numberline {1.5}Funzioni tra insiemi}{29}{subsection.1.5}%
+\contentsline {subsubsection}{\numberline {1.5.1}Definizione di funzione}{29}{subsubsection.1.5.1}%
+\contentsline {subsubsection}{\numberline {1.5.2}Proprietà delle funzioni}{30}{subsubsection.1.5.2}%
+\contentsline {subsubsection}{\numberline {1.5.3}Operazioni sulle funzioni}{31}{subsubsection.1.5.3}%

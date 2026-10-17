@@ -60,6 +60,8 @@ INPUT C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\rer
 INPUT C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\tex\latex\rerunfilecheck\rerunfilecheck.sty
 INPUT C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
 INPUT C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\tex\generic\uniquecounter\uniquecounter.sty
+INPUT C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\tex\latex\jknappen\mathrsfs.sty
+INPUT C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\tex\latex\jknappen\mathrsfs.sty
 INPUT C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\tex\latex\footmisc\footmisc.sty
 INPUT C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\tex\latex\footmisc\footmisc.sty
 INPUT C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\tex\latex\enumitem\enumitem.sty
@@ -137,6 +139,12 @@ INPUT analisi-1.toc
 INPUT C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
 INPUT C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\tex\latex\jknappen\ursfs.fd
+INPUT C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\tex\latex\jknappen\ursfs.fd
+INPUT C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\tex\latex\jknappen\ursfs.fd
+INPUT C:\Users\MrBlue\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
+INPUT C:\Users\MrBlue\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs7.tfm
+INPUT C:\Users\MrBlue\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs5.tfm
 INPUT C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsa.fd
 INPUT C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsa.fd
 INPUT C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\umsa.fd
@@ -189,6 +197,8 @@ INPUT C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy8.tf
 INPUT C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
 INPUT C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
 INPUT C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\MrBlue\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
+INPUT C:\Users\MrBlue\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs5.tfm
 INPUT C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
 INPUT C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
@@ -226,6 +236,18 @@ INPUT insiemi-numerici\numeri-reali\estremi-sottoinsiemi-r\main.tex
 INPUT .\insiemi-numerici\numeri-reali\estremi-sottoinsiemi-r\dim_nat-non-sup.tex
 INPUT .\insiemi-numerici\numeri-reali\estremi-sottoinsiemi-r\dim_nat-non-sup.tex
 INPUT insiemi-numerici\numeri-reali\estremi-sottoinsiemi-r\dim_nat-non-sup.tex
+INPUT .\insiemi-numerici\funzioni-tra-insiemi\main.tex
+INPUT .\insiemi-numerici\funzioni-tra-insiemi\main.tex
+INPUT insiemi-numerici\funzioni-tra-insiemi\main.tex
+INPUT .\insiemi-numerici\funzioni-tra-insiemi\definizioni-funzioni\main.tex
+INPUT .\insiemi-numerici\funzioni-tra-insiemi\definizioni-funzioni\main.tex
+INPUT insiemi-numerici\funzioni-tra-insiemi\definizioni-funzioni\main.tex
+INPUT .\insiemi-numerici\funzioni-tra-insiemi\proprieta-funzioni\main.tex
+INPUT .\insiemi-numerici\funzioni-tra-insiemi\proprieta-funzioni\main.tex
+INPUT insiemi-numerici\funzioni-tra-insiemi\proprieta-funzioni\main.tex
+INPUT .\insiemi-numerici\funzioni-tra-insiemi\operazioni-funzioni\main.tex
+INPUT .\insiemi-numerici\funzioni-tra-insiemi\operazioni-funzioni\main.tex
+INPUT insiemi-numerici\funzioni-tra-insiemi\operazioni-funzioni\main.tex
 INPUT analisi-1.aux
 INPUT .\analisi-1.out
 INPUT .\analisi-1.out
@@ -269,3 +291,7 @@ INPUT C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\
 INPUT C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti8.pfb
 INPUT C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
 INPUT C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm10.pfb
+INPUT C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm7.pfb
+INPUT C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msbm7.pfb
+INPUT C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\fonts\type1\public\rsfs\rsfs10.pfb
+INPUT C:\Users\MrBlue\AppData\Local\Programs\MiKTeX\fonts\type1\public\rsfs\rsfs10.pfb

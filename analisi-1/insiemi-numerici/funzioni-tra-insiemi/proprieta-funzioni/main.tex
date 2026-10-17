@@ -1,0 +1,43 @@
+\begin{definition}
+    \textbf{Funzione iniettiva}
+
+    Una funzione $f:\mathbb{X}\rightarrow\mathbb{Y}$ si dice iniettiva se e solo se
+    \[ \forall x_1, x_2 \in\mathbb{X}, x_1\neq x_2 \rightarrow f\left(x_1\right)\neq f\left(x_2\right)\]
+    o, equivalentemente, se e solo se
+    \[ \forall x_1, x_2 \in\mathbb{X}, f\left(x_1\right) = f\left(x_2\right) \rightarrow x_1= x_2.\]
+
+    Graficamente vale dunque la condizione secondo cui nel piano cartesiano ogni retta
+    orizzontale deve intersecare il grafico della funzione in al massimo un punto.
+\end{definition}
+
+\begin{definition}
+    \textbf{Funzione suriettiva}
+
+    Una funzione $f:\mathbb{X}\rightarrow\mathbb{Y}$ si dice suriettiva se e solo se
+    \[ \forall y \in\mathbb{Y}, \exists x\in\mathbb{X} \mid y=f\left(x\right).\]
+
+    Graficamente vale dunque la condizione secondo cui nel piano cartesiano ogni retta
+    orizzontale deve intersecare il grafico della funzione in al meno un punto.
+\end{definition}
+
+\begin{observation}
+    Una funzione può sempre essere facilmente resa suriettiva ridefinendo la stessa relazione
+    della funzione, ma dal dominio della funzione al suo insieme immagine, in simboli
+
+    \[ \forall f: \mathbb{X}\rightarrow\mathbb{Y},
+    \exists g:\begin{cases}
+        \mathbb{X}\rightarrow\Imm{f} \\
+        x\mapsto f\left(x\right)
+    \end{cases}\mid \forall y\in\Imm{f},
+    \exists x\in\mathbb{X}\mid g\left(x\right)=y\]
+\end{observation}
+
+\begin{definition}
+    \textbf{Funzione biettiva}
+
+    Una funzione $f:\mathbb{X}\rightarrow\mathbb{Y}$ si dice biettiva, biunivica o bigettiva
+    se e solo se la funzione è sia iniettiva che suriettiva.
+
+    Graficamente vale dunque la condizione secondo cui nel piano cartesiano ogni retta
+    orizzontale deve intersecare il grafico della funzione in esattamente un punto.
+\end{definition}

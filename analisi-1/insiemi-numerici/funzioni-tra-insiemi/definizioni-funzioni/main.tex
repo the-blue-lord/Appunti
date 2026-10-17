@@ -1,0 +1,82 @@
+Siano $\mathbb{X}$ e $\mathbb{Y}$ due insiemi, possiamo quindi introdurre le seguenti definizioni.
+
+\begin{definition}
+    \textbf{Funzione}
+
+    Una funzione da $\mathbb{X}$ a $\mathbb{Y}$, in simboli
+    \[ f:\mathbb{X}\rightarrow\mathbb{Y}, \]
+    è una legge univoca che ad ogni $x\in\mathbb{X}$ fa corrispondere uno e un solo elemento $y\in\mathbb{Y}$, in simboli
+    \[ x \mapsto f\left(x\right), \quad y = f\left(x\right). \]
+\end{definition}
+
+\begin{definition}
+    \textbf{Dominio di una funzione}
+
+    Data una funzione $f:\mathbb{X}\rightarrow\mathbb{Y}$,
+    si dice dominio di $f$ l'insieme $\mathbb{X}$ e si indica con $\mathscr{D}_f$ o con
+    $\operatorname{dom}f$.
+\end{definition}
+
+\begin{definition}
+    \textbf{Codominio di una funzione}
+
+    Data una funzione $f:\mathbb{X}\rightarrow\mathbb{Y}$,
+    si dice codominio di $f$ l'insieme $\mathbb{Y}$.
+\end{definition}
+
+\begin{definition}
+    \textbf{Immagini}
+
+    Data una funzione $f:\mathbb{X}\rightarrow\mathbb{Y}$ e un sottoinsieme
+    $\mathbb{A} \subseteq \mathbb{X}$, si definisce l'insieme delle immagini di $\mathbb{A}$ della funzione $f$ come
+    \[ f\left(\mathbb{A}\right) := \left\{ y\in\mathbb{Y} \mid \exists x\in\mathbb{A} : y=f\left(x\right)\right\}. \]
+
+    Con $\mathbb{A} = \mathbb{X}$, $f\left(\mathbb{A}\right)$ viene chiamato semplicemente
+    insieme immagine di $f$ e si indica con $\Imm{f}$, in simboli
+    \[ \Imm{f} := f\left(\mathbb{X}\right). \]
+\end{definition}
+
+\begin{definition}
+    \textbf{Cotroimmagini}
+
+    Data una funzione $f:\mathbb{X}\rightarrow\mathbb{Y}$ e un sottoinsieme
+    $\mathbb{B} \subseteq \mathbb{Y}$, si definisce l'insieme delle controimmagini di
+    $\mathbb{B}$ della funzione $f$ come
+    \[
+        f^{-1}\left(\mathbb{B}\right) := \left\{
+            x\in\mathbb{X} \mid f\left(x\right)\in\mathbb{B}
+        \right\}.
+    \]
+\end{definition}
+
+\begin{definition}
+    \textbf{Prodotto cartesiano}
+
+    Il prodotto cartesiano tra due insiemi è un terzo insieme  che ha come elmenti l'insieme
+    di tutte le coppie ordinate che si possono formare tra i due insiemi di partenza,
+    in simboli
+    \[ \mathbb{X} \times \mathbb{Y} := \left\{ \left(x, y\right) \mid x\in\mathbb{X} \land y\in\mathbb{Y} \right\}. \]
+\end{definition}
+
+\begin{observation}
+    In un prodotto cartesiano, essendo coppie ordinate, invertendo l'ordine degli elementi
+    della coppia si ottiene un secondo elemento diverso dal primo che può o non appartenere
+    al prodotto cartesiano iniziale.
+
+    \textbf{Es:} In $\mathbb{R}^2=\mathbb{R}\times\mathbb{R}$ abbiamo che $\left(1,2\right)
+    \neq\left(2,1\right)$.
+\end{observation}
+
+\begin{definition}
+    \textbf{Grafico di una funzione}
+
+    Sia $f:\mathbb{X}\rightarrow\mathbb{Y}$ una funzione qualsiasi, si indica il grafico
+    della funzione con $\operatorname{graf}f$ e di definisce come il luogo dei punti del piano
+    $\left(x,y\right)$ tali che $y=f\left(x\right)$, in simboli
+    \[
+        \Gamma=\operatorname{graf}f:=\left\{
+            \left(x,y\right)\in\mathbb{X}\times\mathbb{Y}\mid
+            y=f\left(x\right)
+        \right\}.
+    \]
+\end{definition}

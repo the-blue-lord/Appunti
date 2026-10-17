@@ -1,0 +1,28 @@
+\[ \Hp a,b \in\mathbb{R} \;\land\;  a < b \qquad \Th \exists r\in\mathbb{R}\setminus\mathbb{Q} \mid a<r<b \]
+
+\begin{enumerate}[label=(\roman*)]
+    \item Prendiamo $q \in\mathbb{R}\setminus\mathbb{Q},$
+        \[ a < b ,\]\[ a - q < b - q .\]
+    \item Essndo $\mathbb{R}$ chiuso rispetto alla somma, allora $a-q, b-q \in\mathbb{R}$
+    \item Dunque, per \teoref{teo:raz-den-rea},
+        \[ \exists t\in\mathbb{Q} \mid a-q<r<b-q, \]
+        \[ \exists t\in\mathbb{Q} \mid a <r + q< b. \]
+    \item Ma
+        \[
+            \begin{cases}
+                t \in\mathbb{Q}\\
+                q \in\mathbf{R}\setminus\mathbb{Q}
+            \end{cases} \Rightarrow
+            t+q\in\mathbb{R}\setminus\mathbb{Q}.
+        \]
+    \item Dunque
+        \[
+            \forall q \in\mathbb{R}\setminus\mathbb{Q}, \exists t\in\mathbb{Q}\mid
+            \exists r = t-q \in\mathbb{R}\setminus\mathbb{Q} \mid a < r< b,  
+        \]
+        \[
+            \forall q \in\mathbb{R}\setminus\mathbb{Q},
+            \exists r \in\mathbb{R}\setminus\mathbb{Q} \mid a < r< b .
+        \]
+\end{enumerate}
+\qed

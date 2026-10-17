@@ -1,0 +1,29 @@
+\[ \Th \nexists \Lambda\in\mathbb{R} \mid \Lambda=\sup\mathbb{N} \]
+
+\begin{enumerate}[label=(\roman*)]
+    \item Supponiamo per assurdo che 
+        \[
+            \exists \Lambda\in\mathbb{R} \mid \Lambda=\sup\mathbb{N}
+        \]
+    \item Essendo $\Lambda$ il minimo dei maggioranti (poiché estremo superiore),
+    allora $\Lambda - 1$ non può essere un maggiorante per $\mathbb{N}$, ovvero
+        \[
+            \exists n\in\mathbb{N}\mid\Lambda-1<n,
+            \exists n\in\mathbb{N}\mid\Lambda<n+1.
+        \]
+
+    \item Ma sapendo per \defref{def:naturals} che $n\in\mathbb{N}\Rightarrow n+1\in\mathbb{N}$,
+    allora
+        \[
+            \exists n\in\mathbb{N}\mid\Lambda<n
+        \]
+    \item Dunque $\Lambda=\sup\mathbb{N}$ non può essere un maggiorante per $\mathbb{N}$, non può quindi
+    nemmeno essere l'estremo superiore.
+
+    \item La negazione della tesi porta a una contraddizione.
+    \item La tesi $\nexists \Lambda\in\mathbb{R} \mid \Lambda=\sup\mathbb{N}$ deve essere
+    necessariamente vera.
+    \item Quindi $\mathbb{N}$ non è superiormente limitato.
+    \item Dunque $\sup\mathbb{N} = +\infty$.
+\end{enumerate}
+\qed

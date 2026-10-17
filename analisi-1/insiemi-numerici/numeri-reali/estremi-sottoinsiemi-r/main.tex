@@ -1,0 +1,121 @@
+Defininiamo gli infiniti in $\mathbb{R}$ nel seguente modo.
+
+\begin{definition}
+    \textbf{Infinito positivo}
+
+    Sia $\mathbb{A}$ un qualsiasi sottoinsieme di $\mathbb{R}$ non superiormente limitato, allora
+    \[ +\infty := \sup\mathbb{A}. \]
+\end{definition}
+
+\begin{definition}
+    \textbf{Infinito positivo}
+
+    Sia $\mathbb{A}$ un qualsiasi sottoinsieme di $\mathbb{R}$ non inferiormente limitato, allora
+    \[ -\infty := \inf\mathbb{A}. \]
+\end{definition}
+
+\begin{observation}
+    Sia $\mathbb{S}$ un sottoinsieme di $\mathbb{R}$ non superiormente limitato, allora
+    l'insieme dei maggioranti di $\mathbb{S}$, $\magg{\mathbb{S}} = \emptyset$.
+
+    Ed essndo $\mathbb{S}\subset \mino{\magg{\mathbb{S}}}$, si può quindi ragionevolmente
+    supporre che \[+\infty = \min\emptyset. \]
+\end{observation}
+
+\begin{observation}
+    Sia $\mathbb{S}$ un sottoinsieme di $\mathbb{R}$ non inferiormente limitato, allora
+    l'insieme dei minoranti di $\mathbb{S}$, $\magg{\mathbb{S}} = \emptyset$.
+
+    Ed essndo $\mathbb{S}\subset \magg{\mino{\mathbb{S}}}$, si può quindi ragionevolmente
+    supporre che \[-\infty = \max\emptyset.\]
+\end{observation}
+
+\begin{proposition}
+    $\sup\mathbb{N} = +\infty$ ($\mathbb{N}$ non è superiormente limitato)
+\end{proposition}
+
+\begin{demonstration}
+    \input{insiemi-numerici/numeri-reali/estremi-sottoinsiemi-r/dim_nat-non-sup.tex}
+\end{demonstration}
+
+Definiamo ora le proprietà caratteristiche degli estremi di un qualsiasi
+sottoinsieme $\mathbb{S}$ di $\mathbb{R}$.
+
+Sia dunque $\mathbb{S} \subset \mathbb{R}$, allora possiamo introdurre le seguenti definizioni.
+
+\begin{definition}\label{def:sup-lim-rea}
+    \textbf{Insieme superiormente limitato}
+
+    Un sottoinsieme $\mathbb{S}$ di $\mathbb{R}$ si dice superiormente limitato con
+    $\Lambda=\sup\mathbb{S}$ se e solo se
+    \[
+        \begin{cases}
+            \forall x\in\mathbb{S}, \Lambda \geq x\\
+            \forall \epsilon > 0, \exists x\in\mathbb{S} \mid \Lambda-\epsilon<x\leq\Lambda
+        \end{cases}
+    \]
+\end{definition}
+
+\begin{definition}
+    \textbf{Insieme inferiormente limitato}
+
+    Un sottoinsieme $\mathbb{S}$ di $\mathbb{R}$ si dice inferiormente limitato con
+    $\lambda=\inf\mathbb{S}$ se e solo se
+    \[
+        \begin{cases}
+            \forall x\in\mathbb{S}, \lambda \leq x\\
+            \forall \epsilon > 0, \exists x\in\mathbb{S} \mid \lambda\leq x<\lambda+\epsilon
+        \end{cases}
+    \]
+\end{definition}
+
+\begin{example}\leavevmode
+
+    Prendiamo $\mathbb{S} = \left\{ n\in\mathbb{N} \mid 1 - \frac{1}{n} \right\}$
+
+    Considerando un generico $n\in\mathbb{N}$, avremo che
+    \[ n > 0, \]
+    \[ \frac{1}{n}>0, \]
+    \[ -\frac{1}{n} < 0, \]
+    \[ 1-\frac{1}{n} < 1, \]
+    \[ 1-\frac{1}{n} \leq 1. \]
+
+    Dunque
+    \[ \forall n\in\mathbb{N}, 1-\frac{1}{n} \leq 1. \]
+
+    Introducendo anche un gnenerico
+    $\epsilon > 0$ e prendendo arbitrariamente $n_\epsilon > \frac{1}{\epsilon}$,
+    avremo inoltre che
+    \[ n_\epsilon > \frac{1}{\epsilon}, \]
+    \[ n_\epsilon \epsilon > 1, \]
+    \[ 1 < n_\epsilon \epsilon, \]
+    \[ \frac{1}{n_\epsilon} < \epsilon, \]
+    \[ 0 \leq \frac{1}{n_\epsilon} < \epsilon, \]
+    \[-\epsilon < -\frac{1}{n_\epsilon} \leq 0,\]
+    \[1-\epsilon < 1-\frac{1}{n_\epsilon} \leq 1.\]
+
+    Dunque
+    \[\forall \epsilon>0 \exists n\in\mathbb{N} \mid 1-\epsilon < 1-\frac{1}{n_\epsilon} \leq 1.\]
+
+    Abbiamo quindi complessivamente che
+
+    \[
+        \begin{cases}
+            \forall n\in\mathbb{N}, 1 - \frac{1}{n} \leq 1 \\
+            \forall \epsilon > 0, \exists n\in\mathbb{N} \mid 1-\epsilon < 1 - \frac{1}{n} \leq 1
+        \end{cases}.
+    \]
+
+    Ma sapendo che $\forall n\in\mathbb{N}, \exists x=1-\frac{1}{n} | x\in\mathbb{S}$
+    e prendendo $\Lambda = 1$, allora
+
+    \[
+        \begin{cases}
+            \forall x\in\mathbb{S}, x \leq \Lambda \\
+            \forall \epsilon > 0, \exists x\in\mathbb{S} \mid 1-\epsilon < x \leq \Lambda
+        \end{cases}.
+    \]
+
+    Di conseguenza per \defref{def:sup-lim-rea} possiamo dire che
+    \[ \sup\mathbb{S} = 1. \] 
+\end{example}

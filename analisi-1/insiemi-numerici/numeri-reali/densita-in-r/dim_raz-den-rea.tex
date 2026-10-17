@@ -1,0 +1,55 @@
+\[ \Hp a,b \in\mathbb{R} \;\land\;  a < b \qquad \Th \exists r\in\mathbb{Q} \mid a<r<b \]
+
+\begin{enumerate}[label=(\roman*)]
+    \item \[ a < b, \]\[ a - b < 0,\]\[ b-a>0. \]
+    \item Prendiamo $m \in\mathbb{N} \mid n > \frac{2}{b-a}$
+        \[ n >\frac{2}{b-a}, \]
+        \[ b-a>0 \rightarrow n(b-a) > 2, \]
+        \[ nb-na > 2, \]
+        \[ nb > 2 + na, \]
+        \[ \lfloor nb \rfloor > \lfloor 2 + na \rfloor, \]
+        \[ \lfloor nb \rfloor > 2 + \lfloor na \rfloor. \]
+    \item
+        \[ \lfloor nb \rfloor > 2 + \lfloor na \rfloor, \]
+        \[ \lfloor nb \rfloor -2> \lfloor na \rfloor, \]
+        \[ \lfloor nb \rfloor+\lfloor nb \rfloor -2> \lfloor na \rfloor+\lfloor nb \rfloor, \]
+        \[ 2\lfloor nb \rfloor -2> \lfloor na \rfloor+\lfloor nb \rfloor, \]
+        \[ \lfloor nb \rfloor -1> \frac{\lfloor na \rfloor+\lfloor nb \rfloor}{2}, \]
+        \[ \frac{\lfloor na \rfloor+\lfloor nb \rfloor}{2} <\lfloor nb \rfloor -1, \]
+        \[ \frac{\lfloor na \rfloor+\lfloor nb \rfloor}{2} +1 <\lfloor nb \rfloor \leq nb, \]
+        \[ \frac{\lfloor na \rfloor+\lfloor nb \rfloor}{2} <\lfloor nb \rfloor - 1 < nb, \]
+        \[ \frac{\lfloor na \rfloor+\lfloor nb \rfloor}{2} < n. \]
+    \item
+        \[ \lfloor nb \rfloor > 2 + \lfloor na \rfloor, \]
+        \[ 2 < \lfloor nb \rfloor - \lfloor na \rfloor, \]
+        \[ 2 + 2\lfloor na \rfloor < \lfloor nb \rfloor - \lfloor na \rfloor + 2\lfloor na \rfloor, \]
+        \[ 2\lfloor na \rfloor + 2 < \lfloor nb \rfloor + \lfloor na \rfloor, \]
+        \[ \lfloor na \rfloor + 1 < \frac{\lfloor nb \rfloor + \lfloor na \rfloor}{2}, \]
+        \[ \lfloor na \rfloor \leq na < \lfloor na \rfloor + 1 < \frac{\lfloor nb \rfloor + \lfloor na \rfloor}{2} ,\]
+        \[ na < \frac{\lfloor na \rfloor + \lfloor nb \rfloor}{2}. \]
+    \item
+        \[
+            \begin{cases}
+                \frac{\lfloor na \rfloor+\lfloor nb \rfloor}{2} < nb\\
+                na < \frac{\lfloor na \rfloor + \lfloor nb \rfloor}{2}
+            \end{cases} \Rightarrow 
+            na < \frac{\lfloor na \rfloor + \lfloor nb \rfloor}{2} < nb,
+        \]\[
+            n\in\mathbb{N} \rightarrow a < \frac{\lfloor na \rfloor + \lfloor nb \rfloor}{2n} < b.
+        \]
+    \item
+        \[
+            \begin{cases}
+                \lfloor na \rfloor \in\mathbb{Q}\\
+                \lfloor nb \rfloor \in\mathbb{Q}\\
+                2n \in\mathbb{Q}
+            \end{cases} \Rightarrow
+            \frac{\lfloor na \rfloor + \lfloor nb \rfloor}{2n} \in\mathbb{Q}.
+        \]
+    
+    \item
+        \[
+            \exists r = \frac{\lfloor na \rfloor + \lfloor nb \rfloor}{2n} \in\mathbb{Q} \mid a < r < b.
+        \]
+\end{enumerate}
+\qed

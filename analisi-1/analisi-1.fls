@@ -248,6 +248,12 @@ INPUT insiemi-numerici\funzioni-tra-insiemi\proprieta-funzioni\main.tex
 INPUT .\insiemi-numerici\funzioni-tra-insiemi\operazioni-funzioni\main.tex
 INPUT .\insiemi-numerici\funzioni-tra-insiemi\operazioni-funzioni\main.tex
 INPUT insiemi-numerici\funzioni-tra-insiemi\operazioni-funzioni\main.tex
+INPUT .\insiemi-numerici\cardinalita-insiemi\main.tex
+INPUT .\insiemi-numerici\cardinalita-insiemi\main.tex
+INPUT insiemi-numerici\cardinalita-insiemi\main.tex
+INPUT .\insiemi-numerici\cardinalita-insiemi\dim_sot-inf-num.tex
+INPUT .\insiemi-numerici\cardinalita-insiemi\dim_sot-inf-num.tex
+INPUT insiemi-numerici\cardinalita-insiemi\dim_sot-inf-num.tex
 INPUT analisi-1.aux
 INPUT .\analisi-1.out
 INPUT .\analisi-1.out

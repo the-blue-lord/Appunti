@@ -18,3 +18,4 @@
 \contentsline {subsubsection}{\numberline {1.5.1}Definizione di funzione}{29}{subsubsection.1.5.1}%
 \contentsline {subsubsection}{\numberline {1.5.2}Proprietà delle funzioni}{30}{subsubsection.1.5.2}%
 \contentsline {subsubsection}{\numberline {1.5.3}Operazioni sulle funzioni}{31}{subsubsection.1.5.3}%
+\contentsline {subsection}{\numberline {1.6}Cardinalità degli insiemi}{32}{subsection.1.6}%

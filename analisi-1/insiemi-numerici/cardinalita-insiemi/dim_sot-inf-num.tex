@@ -1,0 +1,175 @@
+\begin{demonstration}
+    \textit{di} \proref{pro:sot-inf-num}
+
+    \[ \Hp \mathbb{N}\eqpt\mathbb{X} \;\;\land\;\; \mathbb{A} \subset \mathbb{X} \;\;\land\;\; \forall n\in\mathbb{N}, \mathbb{A}\neqpt \left\{m\in\mathbb{N}\mid m\leq n\right\}\]
+    \[ \Th \mathbb{A}\eqpt\mathbb{N} \]
+
+    \begin{enumerate}[label=(\roman*)]
+        \item
+            \[ \mathbb{N}\eqpt\mathbb{X}, \]
+            \[ \exists f:\mathbb{N}\rightarrow\mathbb{X} \mid f \text{ è biettiva}, \]
+            \[ \exists f^{-1}:\mathbb{X}\rightarrow\mathbb{N} \mid f^{-1} \text{ è biettiva}. \]
+
+        \item Definiamo la seguente funzione
+        \[ g:\mathbb{N} \rightarrow \mathbb{A}, \]
+        \[ g\left(1\right) := f\left(\min \left\{p\in\mathbb{N}\mid f\left(p\right)\in\mathbb{A}\right\}\right), \]
+
+        \[ \forall m > 1, \;\;g\left(m\right) := f\left( \min \left\{p\in\mathbb{N}\mid f\left(p\right)\in\mathbb{X} \land p > f^{-1}\left(g\left(m-1\right)\right)\right\}\right). \]
+
+        \item Mostriamo che $g$ è iniettiva
+        \begin{enumerate}[label=\arabic*.]
+            \item Ragioniamo $\forall m \in\mathbb{N}\setminus\left\{1\right\}$.
+            \item Essendo sia $f$ che $f^{-1}$ biettive, allora
+                \[ g\left(m\right) = f\left( \min \left\{p\in\mathbb{N}\mid f\left(p\right)\in\mathbb{X} \land p > f^{-1}\left(g\left(m-1\right)\right)\right\}\right), \]
+                \[ f^{-1}\left(g\left(m\right)\right) = f^{-1}\left(f\left( \min \left\{p\in\mathbb{N}\mid f\left(p\right)\in\mathbb{X} \land p > f^{-1}\left(g\left(m-1\right)\right)\right\}\right)\right), \]
+                \[ f^{-1}\left(g\left(m\right)\right) = \min \left\{p\in\mathbb{N}\mid f\left(p\right)\in\mathbb{X} \land p > f^{-1}\left(g\left(m-1\right)\right)\right\}.\]
+
+            \item Prendendo $h:f^{-1}\circ g$,
+                \[ h\left(m\right) = \min \left\{p\in\mathbb{N}\mid f\left(p\right)\in\mathbb{X} \land p > h\left(m-1\right)\right\},\]
+                \[ h\left(m\right) \in \left\{p\in\mathbb{N}\mid f\left(p\right)\in\mathbb{X} \land p > h\left(m-1\right)\right\},\]
+                \[ h\left(m\right) \in\mathbb{N} \land f\left(h\left(m\right)\right)\in\mathbb{X} \land h\left(m\right) > h\left(m-1\right) .\]
+
+            \item Abbiamo dunque che
+                \[ h\left(m\right) > h\left(m-1\right), \]
+                \[ h\left(m\right) > h\left(m-1\right) > h\left(m-2\right) > \ldots > h\left(2\right). \]
+            \item Sapendo che per $m=2$, allora $h\left(2\right)>h\left(1\right)$\label{pas:ord}
+                \[ h\left(m\right) > h\left(m-1\right) > h\left(m-2\right) > \ldots > h\left(1\right), \]
+                \[ \forall m_1, m_2\in\mathbb{N}, \;\;m_1>m_2 \rightarrow h\left(m_1\right) > h\left(m_2\right). \]
+
+            \item Dunque, ragionando $\forall m_1, m_2\in\mathbb{N}$,
+                \[
+                    m_1 \neq m_2,\]\[
+                    m_1 > m_2 \lor m_1<m_2 ,\]\[
+                    h\left(m_1\right) > h\left(m_2\right)\lor h\left(m_1\right) < h\left(m_2\right) ,\]\[
+                    h\left(m_1\right) \neq h\left(m_2\right)\lor h\left(m_1\right) \neq h\left(m_2\right) ,\]\[
+                    h\left(m_1\right) \neq h\left(m_2\right), \]\[
+                    f^{-1}\left(g\left(m_1\right)\right) \neq f^{-1}\left(g\left(m_2\right)\right), \]\[
+                    f\left(f^{-1}\left(g\left(m_1\right)\right)\right) \neq f\left(f^{-1}\left(g\left(m_1\right)\right)\right), \]\[
+                    g\left(m_1\right) \neq g\left(m_1\right).
+                \]
+
+            \item In sintesi  
+                \[
+                    \forall m_1, m_2\in\mathbb{N}, \;\; m_1 \neq m_2 \implies g\left(m_1\right) \neq g\left(m_1\right).
+                \]
+
+            
+
+        \end{enumerate}
+        \qed
+
+        \item Mostriamo che $g$ è suriettiva
+        \begin{enumerate}[label=\arabic*.]
+            \item Affinche la funzione sia suriettiva deve valere che
+                \[ \forall a\in\mathbb{A}, \exists m\in\mathbb{N}\mid g\left(m\right)=a, \]
+                \[ \forall a\in\mathbb{A}, \exists m\in\mathbb{N}\mid f^{1}\left(g\left(m\right)\right)=f^{-1}\left(a\right). \]
+                \item Con $h: f^{-1} \circ g$,
+                \[ \forall a\in\mathbb{A}, \exists m\in\mathbb{N}\mid h\left(m\right) = f^{-1}\left(a\right). \]
+            \item Supponiamo per assurdo che
+                \[ \forall a\in\mathbb{A}, \forall m\in\mathbb{N}, h\left(m\right) \neq f^{-1}\left(a\right), \]
+                \[ a\in\mathbb{A} \land m\in\mathbb{N} \Rightarrow h\left(m\right) \neq f^{-1}\left(a\right), \]
+                \[ a\in\mathbb{A} \land m\in\mathbb{N} \Rightarrow h\left(m\right) \neq f^{-1}\left(a\right). \]
+                \[ a\in\mathbb{A} \Rightarrow h\left(1\right) \neq f^{-1}\left(a\right) \land h\left(2\right) \neq f^{-1}\left(a\right) \land \dotsm \land h\left(m\right) \neq f^{-1}\left(a\right) \land \dotsm . \]
+            \item Ma sapendo (per \pasref{pas:ord}) che $m_1 > m_2 \implies h\left(m_1\right) > h\left(m_1\right)$
+                \[ a\in\mathbb{A} \Rightarrow f^{-1}\left(a\right) < h\left(1\right) \lor h\left(1\right) < f^{-1}\left(a\right) < h\left(2\right) \lor \]
+                \[\lor \dotsm \lor h\left(m\right) < f^{-1}\left(a\right) < h\left(m+1\right) \lor \dotsm, \]
+                \[ a\in\mathbb{A} \land m\in\mathbb{N} \Rightarrow f^{-1}\left(a\right) < h\left(1\right) \lor h\left(m\right) < f^{-1}\left(a\right) < h\left(m+1\right), \]
+                \[ a\in\mathbb{A} \land m\in\mathbb{N} \Rightarrow 0<f^{-1}\left(a\right) < h\left(1\right) \lor h\left(m\right) < f^{-1}\left(a\right) < h\left(m+1\right), \]
+
+            \item Mostriamo che $0<f^{-1}\left(a\right) < h\left(1\right)$ non può essere vero
+            \begin{enumerate}[label=\arabic{enumii}.\arabic*.]
+                \item Supponiamo per assurdo che $0<f^{-1}\left(a\right) < h\left(1\right)$.
+                \item Allora
+                    \[ h\left(1\right)=f^{-1}\left(g\left(1\right)\right)= \]
+                    \[ =f^{-1}\left(f\left(\min \left\{p\in\mathbb{N}\mid f\left(p\right)\in\mathbb{A}\right\}\right)\right)= \]
+                    \[ =\min \left\{p\in\mathbb{N}\mid f\left(p\right)\in\mathbb{A}\right\}. \]
+                \item Dunque
+                    \[ h\left(1\right) = \min \left\{p\in\mathbb{N}\mid f\left(p\right)\in\mathbb{A}\right\}, \]
+                    \[ \forall t \in \left\{p\in\mathbb{N}\mid f\left(p\right)\in\mathbb{A}\right\}, h\left(1\right)\leq t.\]
+                \item Ma
+                    \[
+                        \begin{cases}
+                            f^{-1}\left(a\right)\in\mathbb{N} \\
+                            f\left(f^{-1}\left(a\right)\right)=a\in\mathbb{A}
+                        \end{cases} \Rightarrow f^{-1}\left(a\right)\in\left\{p\in\mathbb{N}\mid f\left(p\right)\in\mathbb{A}\right\}\Rightarrow
+                    \]\[\Rightarrow h\left(1\right) \leq f^{-1}\left(a\right)\Rightarrow f^{-1}\left(a\right) < h \left(1\right) \leq f^{-1}\left(a\right) \Rightarrow
+                    \]\[
+                        \Rightarrow f^{-1}\left(a\right) < f^{-1}\left(a\right).
+                    \]
+
+                \item La negaizone della tesi porta a una contraddizione.
+                \item La tesi secondo cui $0<f^{-1}\left(a\right) < h\left(1\right)$ non può essere vero è necessariamente vera.
+                
+            \end{enumerate}
+            \qed
+
+            \item Essendo $0<f^{-1}\left(a\right) < h\left(1\right)$ sempre falso, allora $\forall a\in\mathbb{A}, m\in\mathbb{N}$
+                \[ 0<f^{-1}\left(a\right) < h\left(1\right) \lor h\left(m\right) < f^{-1}\left(a\right) < h\left(m+1\right), \]
+                \[ h\left(m\right) < f^{-1}\left(a\right) < h\left(m+1\right), \]
+                \[
+                    \begin{cases}
+                        h\left(m\right) < f^{-1}\left(a\right) \\
+                        f^{-1}\left(a\right) < h\left(m+1\right)
+                    \end{cases},
+                \]
+                \[
+                    \begin{cases}
+                        h\left(m\right) < f^{-1}\left(a\right) \\
+                        f^{-1}\left(a\right) < f^{-1}\left(f\left( \min \left\{p\in\mathbb{N}\mid f\left(p\right)\in\mathbb{X} \land p > f^{-1}\left(g\left(m\right)\right)\right\}\right)\right)
+                    \end{cases},
+                \]
+                \[
+                    \begin{cases}
+                        h\left(m\right) < f^{-1}\left(a\right) \\
+                        f^{-1}\left(a\right) < \min \left\{p\in\mathbb{N}\mid f\left(p\right)\in\mathbb{X} \land p > h\left(m\right)\right\}
+                    \end{cases},
+                \]
+            \item Prendendo $n:=f^{-1}\left(a\right)$
+                \[
+                    \begin{cases}
+                        h\left(m\right) < n \\
+                        n < \min \left\{p\in\mathbb{N}\mid f\left(p\right)\in\mathbb{X} \land p > h\left(m\right)\right\}
+                    \end{cases},
+                \]
+                \[
+                    \begin{cases}
+                        n\in\mathbb{N} \land f\left(n\right)\in\mathbb{X} \land n > h\left(m\right) \\
+                        n < \min \left\{p\in\mathbb{N}\mid f\left(p\right)\in\mathbb{X} \land p > h\left(m\right)\right\}
+                    \end{cases},
+                \]
+                \[
+                    \begin{cases}
+                        n\in\left\{p\in\mathbb{N}\mid f\left(p\right)\in\mathbb{X} \land p > h\left(m\right)\right\} \\
+                        n < \min \left\{p\in\mathbb{N}\mid f\left(p\right)\in\mathbb{X} \land p > h\left(m\right)\right\}
+                    \end{cases}.
+                \]
+
+            \item Prendendo $k\left(m\right) := \min \left\{p\in\mathbb{N}\mid f\left(p\right)\in\mathbb{X} \land p > h\left(m\right)\right\}$, allora
+                \[
+                    \begin{cases}
+                        n\in\left\{p\in\mathbb{N}\mid f\left(p\right)\in\mathbb{X} \land p > h\left(m\right)\right\} \\
+                        n < k\left(m\right)\\
+                        \forall b\in \left\{p\in\mathbb{N}\mid f\left(p\right)\in\mathbb{X} \land p > h\left(m\right)\right\}, k\left(m\right) \leq b
+                    \end{cases},
+                \]
+                \[
+                    \begin{cases}
+                        k\left(m\right) \leq n\\
+                        n < k\left(m\right)\\
+                    \end{cases},
+                \]
+                \[ n < k\left(m\right) \leq n, \]
+                \[ n < n ,\]
+                \[ n \neq n .\]
+            \item La negazione della tesi porta a una contraddizione.
+            \item La tesi secondo cui $g$ è suriettiva è necessariamente vera.
+        \end{enumerate}
+        \qed
+
+        \item La funzione così $g$ definita è quindi sia iniettiva che suriettiva.
+        \item La funzione $g$ è biettiva.
+        \item \[ \exists g:\mathbb{N}\rightarrow\mathbb{A} \mid g \text{ è biettiva}, \]
+            \[ \mathbb{N}\eqpt\mathbb{A}. \]
+    \end{enumerate}
+    \qed
+\end{demonstration}

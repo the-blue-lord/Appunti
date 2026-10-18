@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.10.12)  17 OCT 2026 19:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.10.12)  18 OCT 2026 22:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -300,25 +300,25 @@ File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 ) (analisi-1.aux)
 \openout1 = `analisi-1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-Package hyperref Info: Link coloring OFF on input line 109.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 115.
+LaTeX Font Info:    ... okay on input line 115.
+Package hyperref Info: Link coloring OFF on input line 115.
  (analisi-1.out) (analisi-1.out)
 \@outlinefile=\write3
 \openout3 = `analisi-1.out'.
@@ -378,7 +378,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.138 \newpage
+l.144 \newpage
                [1] (insiemi-numerici/main.tex (insiemi-numerici/numeri-naturali/main.tex (insiemi-numerici/numeri-naturali/principio-di-induzione/main.tex [2])
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -472,26 +472,36 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 19.
 
-(insiemi-numerici/numeri-reali/estremi-sottoinsiemi-r/main.tex [26] (insiemi-numerici/numeri-reali/estremi-sottoinsiemi-r/dim_nat-non-sup.tex) [27] [28])) (insiemi-numerici/funzioni-tra-insiemi/main.tex (insiemi-numerici/funzioni-tra-insiemi/definizioni-funzioni/main.tex [29]) (insiemi-numerici/funzioni-tra-insiemi/proprieta-funzioni/main.tex [30]) (insiemi-numerici/funzioni-tra-insiemi/operazioni-funzioni/main.tex [31]))) [32] (analisi-1.aux)
+(insiemi-numerici/numeri-reali/estremi-sottoinsiemi-r/main.tex [26] (insiemi-numerici/numeri-reali/estremi-sottoinsiemi-r/dim_nat-non-sup.tex) [27] [28])) (insiemi-numerici/funzioni-tra-insiemi/main.tex (insiemi-numerici/funzioni-tra-insiemi/definizioni-funzioni/main.tex [29]) (insiemi-numerici/funzioni-tra-insiemi/proprieta-funzioni/main.tex [30]) (insiemi-numerici/funzioni-tra-insiemi/operazioni-funzioni/main.tex [31])) (insiemi-numerici/cardinalita-insiemi/main.tex
+Overfull \hbox (0.74092pt too wide) detected at line 17
+[] \OT1/cmr/m/n/10 = [] \OMS/cmsy/m/n/10 , 9\OML/cmm/m/it/10 f \OT1/cmr/m/n/10 : \U/msb/m/n/10 X \OMS/cmsy/m/n/10 ! \U/msb/m/n/10 Y [] [] \OML/cmm/m/it/10 :
+ []
+
+[32] [33] (insiemi-numerici/cardinalita-insiemi/dim_sot-inf-num.tex [34]
+Overfull \hbox (12.5355pt too wide) detected at line 24
+\OML/cmm/m/it/10 f[] [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 f[] [] ;
+ []
+
+[35] [36] [37]))) [38] (analisi-1.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `analisi-1.out' has not changed.
-(rerunfilecheck)             Checksum: 96D4537ED28A6BDF08213CA63719A891;3235.
+(rerunfilecheck)             Checksum: E46D5F1A3F7832D026BFE5B121FB848E;3427.
  ) 
 Here is how much of TeX's memory you used:
- 11883 strings out of 467870
- 191502 string characters out of 5417870
- 596446 words of memory out of 5000000
- 40225 multiletter control sequences out of 15000+600000
+ 11953 strings out of 467870
+ 192787 string characters out of 5417870
+ 597583 words of memory out of 5000000
+ 40238 multiletter control sequences out of 15000+600000
  638390 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,14n,79p,571b,1157s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti7.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm7.pfb><C:/Users/MrBlue/AppData/Local/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on analisi-1.pdf (33 pages, 391083 bytes).
+Output written on analisi-1.pdf (39 pages, 414530 bytes).
 PDF statistics:
- 750 PDF objects out of 1000 (max. 8388607)
- 302 named destinations out of 1000 (max. 500000)
- 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 839 PDF objects out of 1000 (max. 8388607)
+ 352 named destinations out of 1000 (max. 500000)
+ 169 words of extra memory for PDF output out of 10000 (max. 10000000)
 

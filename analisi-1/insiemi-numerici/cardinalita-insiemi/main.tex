@@ -1,0 +1,144 @@
+\begin{definition}
+    \textbf{Equipotenza}
+
+    Due insiemi $\mathbb{X}$ e $\mathbb{Y}$ si dicono equipotenti se esiste una funzione
+    biunivoca dal primo al secondo o, equivalentemente (in quanto biunivoca),
+    dal secondo al primo. Affermazione equivalente ad affermare l'uguaglianza delle
+    cardinalità dei due insiemi.
+    
+    In simboli:
+    \[
+        \left|\mathbb{X}\right| = \left|\mathbb{Y}\right| \Leftrightarrow
+        \exists f:\mathbb{X}\rightarrow\mathbb{Y}\,\big|
+        \begin{cases}
+            \forall x_1, x_2 \in\mathbb{X}, x_1\neq x_2 \rightarrow f\left(x_1\right)\neq f\left(x_2\right) \quad \text{($f$ inj.)}\\
+            \forall y \in\mathbb{Y}, \exists x\in\mathbb{X} \mid y=f\left(x\right) \quad \text{($f$ sur.)}
+        \end{cases}.
+    \]
+\end{definition}
+
+Si può dunque facilmente dimostrare, grazie alla condizione
+$\left|\mathbb{X}\right| = \left|\mathbb{Y}\right|$, che la relazione di equipotenza, indicata
+d'ora in avanti con $\eqpt$ sia una relazione d'equivalenza.
+
+\begin{proposition}
+    La relazione di equipotenza $\eqpt$ è una relazione d'equivalenza.
+\end{proposition}
+
+\begin{definition}
+    \textbf{Insieme finito}
+
+    Sia $\mathbb{X}$ un qualsiasi insieme, si dice che $\mathbb{X}$ è un insieme finito
+    se e solo se
+    \[
+        \exists n \in\mathbb{N} \mid X\eqpt\left\{1,2,3,\ldots, n\right\}.
+    \]
+\end{definition}
+
+\begin{definition}
+    \textbf{Insieme infinito}
+
+    Sia $\mathbb{X}$ un qualsiasi insieme, si dice che $\mathbb{X}$ è un insieme infinito
+    se e solo se non è finito.
+\end{definition}
+
+\begin{definition}
+    \textbf{Insieme numerabile}
+
+    Dato un insieme $\mathbb{X}$ infinito, si dice che $\mathbb{X}$ è numerabile
+    se e solo se $\mathbb{X}$ è equipotente a $\mathbb{N}$, o, equivalentemente,
+    se $\mathbb{N}$ è equipotente a $\mathbb{X}$.
+    
+    In simboli:
+
+    \[ \mathbb{N} \eqpt \mathbb{X}. \]
+
+    \leavevmode
+
+    Deve dunque esistere una funzione biunivoca definita come $f:\mathbb{N}\rightarrow\mathbb{X}$;
+    questa funzione $f$, avendo come dominio $\mathbb{N}$, per \defref{def:successione}
+    risulta quindi una serie. Di conseguenza possiamo dedurre che se un qualsiasi insieme
+    infinito $\mathbb{X}$ è numerabile allora possiamo rappresentarlo come una serie
+    $\mathbb{X}=\left\{x_n\right\}_{n\in\mathbb{N}}$.
+\end{definition}
+
+\begin{proposition}\label{pro:neqpt-fin}
+    Siano $\mathbb{X}_1$ e $\mathbb{X}_2$ due insiemi tali che $\mathbb{X}_1 \subsetneq \mathbb{X}_2$,
+    possiamo affermare che $\mathbb{X}_1 \neqpt \mathbb{X}_2$ se e solo se almeno uno dei due insiemi
+    è finito.
+\end{proposition}
+
+\begin{example}
+    (\textit{di} \proref{pro:neqpt-fin})
+
+    Prendiamo la sequente legge per $n\in\mathbb{N}_0$
+    \[ n\mapsto n+1.\]
+    La legge sopra definita implica l'esistenza di una funzione $f$ definita come segue
+    \[ f:\mathbb{N}_0 \rightarrow \mathbb{N}, \qquad n\mapsto n+1, \]
+    questa funzione $f$ è biunivoca, dunque implica che
+    \[ \mathbb{N} \eqpt \mathbb{N}_0, \]
+    nonostante
+    \[ \mathbb{N} \subsetneq \mathbb{N}_0. \]
+
+    Un insieme infinito può quindi essere equipotente a un suo sottoinsieme infinito.
+\end{example}
+
+\begin{example}
+    (\textit{di} \proref{pro:neqpt-fin})
+
+    Prendiamo la sequente legge per $n\in\mathbb{N}$
+    \[ n\mapsto 2n\]
+    e introduciamo la seguente notazione
+    \[2\mathbb{N}:=\left\{2n\mid n\in\mathbb{N}\right\}.\]
+    La legge sopra definita implica l'esistenza di una funzione $f$ definita come segue
+    \[ f:\mathbb{N} \rightarrow 2\mathbb{N}, \qquad n\mapsto 2n, \]
+    questa funzione $f$ è biunivoca, dunque implica che
+    \[ 2\mathbb{N} \eqpt \mathbb{N}, \]
+    nonostante
+    \[ 2\mathbb{N} \subsetneq \mathbb{N}. \]
+
+    Un insieme infinito può quindi essere equipotente a un suo sottoinsieme infinito.
+\end{example}
+
+\begin{theorem}
+    \textbf{Unione tra numerabile e finito}
+
+    Dato un insieme $\mathbb{X}$ equipotente a $\mathbb{N}$ e un insieme $\mathbb{A}$ finito,
+    allora anche l'unione tra $\mathbb{X}$ e $\mathbb{A}$ sarà equipotente a $\mathbb{N}$
+
+    In simboli:
+    
+    \[
+        \exists n \in\mathbb{N} \mid
+            \mathbb{X} \eqpt \mathbb{N} \land
+            \mathbb{A}\eqpt\left\{0,1,2,\ldots, n\right\}
+        \implies \mathbb{X} \cup\mathbb{A}\eqpt\mathbb{N}.
+    \]
+\end{theorem}
+
+\begin{proposition}
+    Il numerabile è la "più piccola" cardinalità degli infiniti.
+\end{proposition}
+
+\begin{proposition}
+    Per ogni insieme infinito esiste un suo sottoinsieme numerabile.
+    Sia $\mathbb{X}$ un qualsiasi insieme infinto, allora in simboli abbiamo che
+    \[\forall \mathbb{X}, \exists \mathbb{A}\subset\mathbb{X} \mid \mathbb{A}\eqpt\mathbb{N}.\]
+\end{proposition}
+
+\begin{proposition}\label{pro:sot-inf-num}
+    Un sottoinsieme infinito di un insieme numerabile è a sua volta numerabile.
+
+    In simboli:
+    
+    
+    \[
+        \nexists n \in\mathbb{N} \mid
+            \mathbb{X} \eqpt \mathbb{N} \land
+            \mathbb{A} \subseteq \mathbb{X} \land
+            \mathbb{A}\eqpt\left\{0,1,2,\ldots, n\right\}
+        \implies \mathbb{A}\eqpt\mathbb{N}.
+    \]
+\end{proposition}
+
+\input{insiemi-numerici/cardinalita-insiemi/dim_sot-inf-num.tex}

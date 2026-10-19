@@ -19,3 +19,8 @@
 \contentsline {subsubsection}{\numberline {1.5.2}Proprietà delle funzioni}{30}{subsubsection.1.5.2}%
 \contentsline {subsubsection}{\numberline {1.5.3}Operazioni sulle funzioni}{31}{subsubsection.1.5.3}%
 \contentsline {subsection}{\numberline {1.6}Cardinalità degli insiemi}{32}{subsection.1.6}%
+\contentsline {section}{\numberline {2}Spazi vettoriali}{38}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Definizione}{38}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Operazioni di base su spazi vettoriali}{39}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Vettori base canonica}{40}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Gli spazi vettoriali $\mathbb {R}^n$}{40}{subsection.2.4}%

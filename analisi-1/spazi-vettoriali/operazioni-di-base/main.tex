@@ -1,0 +1,110 @@
+\begin{definition}
+    \textbf{Prodotto scalare}
+
+    Sia $\mathbb{X}$ uno spazio vettoriale su $\mathbb{R}$, allora una qualsisasi operazione
+    \[\langle \cdot, \cdot \rangle: \mathbb{X}\times\mathbb{X}\rightarrow\mathbb{R}\]
+    viene detta prodotto scalare o interno se gode delle seguenti proprietà.
+    \begin{property}
+        \textbf{Positività}
+        \[
+            \begin{cases}
+                \forall\overline{x}\in\mathbb{X},\;
+                \langle\overline{x},\overline{x}\rangle \geq 0\\
+                \forall\overline{x}\in\mathbb{X},\;
+                \langle\overline{x},\overline{x}\rangle = 0 \Leftrightarrow
+                \overline{x}=\overline{0}
+            \end{cases}.
+        \]
+    \end{property}
+    \begin{property}
+        \textbf{Simmetria}
+        \[
+            \forall\overline{x},\overline{y}\in\mathbb{X},\;
+            \langle\overline{x},\overline{y}\rangle=\langle\overline{y},\overline{x}\rangle.
+        \]
+    \end{property}
+    \begin{property}
+        \textbf{Additività}
+        \[
+            \forall\overline{x},\overline{y},\overline{z}\in\mathbb{X},\;
+            \langle\overline{x}+\overline{y},\overline{z}\rangle=
+            \langle\overline{x},\overline{z}\rangle +
+            \langle\overline{y},\overline{z}\rangle.
+        \]
+    \end{property}
+    \begin{property}
+        \textbf{Omogeneità}
+        \[
+            \forall\overline{x},\overline{y}\in\mathbb{X},\, \alpha\in\mathbb{R},\;
+            \alpha\langle\overline{x},\overline{y}\rangle = \langle\alpha\overline{x},\overline{y}
+            \rangle = \langle\overline{x},\alpha\overline{y}\rangle.
+        \]
+    \end{property}
+    \begin{example}
+        \[
+            \text{\underline{Spazio vettoriale:}} \quad \mathbb{X }= \left\{f:\left[a, b\right]\rightarrow\mathbb{R} \mid f \text{ è integrabile e continua}\right\}
+        \]\[
+            \text{\underline{Prodotto scalare:}} \quad \langle f,g\rangle = \int_{a}^{b}f\cdot g \;dx,
+        \]
+    \end{example}
+\end{definition}
+
+\begin{definition}
+    \textbf{Norma}
+
+    Sia $\mathbb{X}$ uno spazio vettoriale su $\mathbb{R}$, allora una qualsisasi funzione
+    \[\| \cdot \|: \mathbb{X}\rightarrow\mathbb{R}\] su
+    viene detta norma se gode delle seguenti proprietà.
+    \begin{property}
+        \textbf{Positività}
+        \[
+            \begin{cases}
+                \forall\overline{x}\in\mathbb{X},\;
+                \|\overline{x}\| \geq 0\\
+                \forall\overline{x}\in\mathbb{X},\;
+                \|\overline{x}\| = 0 \Leftrightarrow
+                \overline{x}=\overline{0}
+            \end{cases}.
+        \]
+    \end{property}
+    \begin{property}
+        \textbf{Omogeneità assoluta}
+        \[
+            \forall\overline{x}\in\mathbb{X},\, \alpha\in\mathbb{R},\;
+            \left|\alpha\right|\cdot\|\overline{x}\| = \|\alpha \overline{x}\|.
+        \]
+    \end{property}
+    \begin{property}
+        \textbf{Disuguaglianza triangolare}
+        \[
+            \forall\overline{x},\overline{y}\in\mathbb{X},\;
+            \|\overline{x}+\overline{y}\| \leq
+            \|\overline{x}\| + \|\overline{y}\|.
+        \]
+    \end{property}
+\end{definition}
+
+\begin{proposition}\label{pro:induzione-norma}
+    La definizione di un prodotto scalare in uno spazio
+    vettoriale induce una norma deinfita come segue.
+    \[
+        \| \overline{x} \| := \sqrt{\langle \overline{x}, \overline{x} \rangle}.
+    \]
+\end{proposition}
+Per dimostrare quest'ulitma proposizione occorre per comodità dimostrare prima la seguente.
+
+\begin{theorem}\label{pro:cauchy-schwarz}
+    \textbf{Disuguaglianza di Cauchy-Schwarz}
+
+    Sia $\mathbb{X}$ un qualsiasi spazio vettoriale su $\mathbb{R}$, sul quale è definito il prodotto
+    vettoriale $\langle \cdot, \cdot \rangle$, allora
+    \[
+        \forall \overline{x}, \overline{y}\in\mathbb{X},
+        \left|\langle \overline{x}, \overline{y} \rangle\right| \leq
+        \|\overline{x}\|\cdot\|\overline{y}\|.
+    \]
+\end{theorem}
+
+\input{spazi-vettoriali/operazioni-di-base/dim_cauchy_schwarz.tex}
+
+\input{spazi-vettoriali/operazioni-di-base/dim_pro-ind-nor.tex}

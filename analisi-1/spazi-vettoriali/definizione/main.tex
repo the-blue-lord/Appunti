@@ -1,14 +1,25 @@
-\begin{definition}
+\begin{definition}\label{def:spazio-vettoriale}
     \textbf{Spazio vettoriale}
 
-    Un qualsiasi insieme $\mathbb{X}$  è detto spazio vettoriale su $\mathbb{R}$
-    se è chiuso rispetto ad un operazione di somma e ad una operazione di
-    porodotto per uno scalare $\alpha\in\mathbb{R}$ che godono delle seguenti proprietà.
+    Un qualsiasi insieme $\mathbb{X}\neq\emptyset$  è detto spazio vettoriale su $\mathbb{R}$
+    se è dotato di un'operazione binaria di somma 
+    \[ +:\mathbb{X}\times\mathbb{X} \rightarrow \mathbb{X} \]
+    e di un'operazione di prodotto per uno scalare $\alpha\in\mathbb{R}$ 
+    \[ \cdot :\mathbb{R}\times\mathbb{X} \rightarrow \mathbb{X} \]
+    che godono delle seguenti proprietà caratteristiche,
+    ovvero gli assiomi di uno spazio vettoriale.
 
+    \begin{property}
+        \textbf{Chiusura di $\mathbb{X}$ rispetto a somma e prodotto per scalare}
+        \[ \forall\overline{x},\overline{y}\in\mathbb{X},
+        \overline{x}+\overline{y}\in\mathbb{X}, \]
+        \[ \forall\overline{x}\in\mathbb{X},\alpha\in\mathbb{R},
+        \alpha\overline{x}\in\mathbb{X}, \]
+    \end{property}
     \begin{property}
         \textbf{Commutatività della somma}
         \[ \forall\overline{x},\overline{y}\in\mathbb{X},
-        \overline{x}+\overline{y}=\overline{x}+\overline{y}. \]
+        \overline{x}+\overline{y}=\overline{y}+\overline{x}. \]
     \end{property}
     \begin{property}
         \textbf{Associatività della somma}
@@ -18,31 +29,31 @@
     \end{property}
     \begin{property}
         \textbf{Esistenza dell'elemento neutro per la somma}
-        \[ \forall \overline{x}\in\mathbb{X},  \exists\overline{p}=\left(0, 0,
-        \ldots, 0\right)=\overline{0}\in\mathbb{X} \mid \overline{x}+\overline{p}
-        =\overline{p}+\overline{x}=\overline{x}.\]
+        \[ \exists\overline{0}\in\mathbb{X} \mid
+        \forall \overline{x}\in\mathbb{X},  \overline{x}+\overline{0}
+        =\overline{0}+\overline{x}=\overline{x}.\]
     \end{property}
     \begin{property}
-        \textbf{Esistenza dell'elemento inverso per la somma}
-        \[ \forall \overline{x}\in\mathbb{X},  \exists\overline{y}=\left(-x_1, -x_2,
-        \ldots, -x_n\right)=-\overline{x}\in\mathbb{X} \mid \overline{x}+\overline{y}
-        =\overline{y}+\overline{x}=\overline{0}=\overline{p}.\]
+        \textbf{Esistenza dell'inverso additivo}
+        \[ \forall \overline{x}\in\mathbb{X},  \exists\overline{y}\in\mathbb{X} \mid
+        \overline{x}+\overline{y}=\overline{y}+\overline{x}=\overline{0}.\]
     \end{property}
 
-    \begin{property}
-        \textbf{Commutatività del prodotto per uno scalare}
-        \[ \forall\overline{x}\in\mathbb{X}, \,\alpha\in\mathbb{R},\;
-        \alpha \overline{x} = \overline{x} \alpha \]
-    \end{property}
     \begin{property}
         \textbf{Associatività del prodotto per uno scalare}
         \[ \forall\overline{x}\in\mathbb{X},\, \alpha,\beta\in\mathbb{R},\;
         \alpha\left(\beta \overline{x}\right) = \left(\alpha\beta\right)\overline{x}. \]
     \end{property}
     \begin{property}
+        \textbf{Esistenza dell'elemento neutro per il prodotto per uno scalare}
+        \[ \forall \overline{x}\in\mathbb{X}, 1\overline{x}=\overline{x}.\]
+    \end{property}
+    \begin{property}
         \textbf{Distributività del prodotto per uno scalare sulla somma}
         \[ \forall\overline{x},\overline{y}\in\mathbb{X},\, \alpha\in\mathbb{R},\;
         \alpha\left(\overline{x}+\overline{y}\right) = \alpha\overline{x}+\alpha\overline{y}. \]
+        
+        \[ \forall\overline{x}\in\mathbb{X},\, \alpha,\beta\in\mathbb{R},\;
+        \left(\alpha+\beta\right)\overline{x} = \alpha\overline{x}+\beta\overline{x}. \]
     \end{property}
-
 \end{definition}

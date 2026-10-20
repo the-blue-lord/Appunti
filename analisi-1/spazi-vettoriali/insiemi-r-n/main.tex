@@ -1,0 +1,55 @@
+Sia $n\in\mathbb{N}$, definiamo $\mathbb{R}^n$ come \[\mathbb{R} := \underbrace{\mathbb{R}\times
+\mathbb{R}\times \dots \times\mathbb{R}}_{n \text{ volte}} = \left\{\overline{x}:=\left(x_1,
+x_2, \ldots , x_n\right)\mid \forall j\in\mathbb{N},\;x_j\in\mathbb{R}\right\}.\]
+
+Definiamo inoltre le seguenti operazioni in $\mathbb{R}^n$.
+
+\begin{definition}
+    \textbf{Somma in $\mathbb{R}^n$}
+    
+    \[
+        \overline{x} + \overline{y} := \left(x_1+y_1, x_2+y_2, \ldots, x_n+y_n\right).
+    \]
+\end{definition}
+\begin{definition}
+    \textbf{Prodotto per uno scalare}
+    
+    \[
+        \forall \alpha\in\mathbb{R},\; \alpha\cdot\overline{x} :=\left(\alpha x_1,
+        \alpha x_2, \ldots, \alpha x_n\right).
+    \]
+\end{definition}
+
+Si può facilmente dimostrare che le due operazioni di somma e prodotto per scalare così
+definite in $\mathbb{R}^n$ godono degli assiomi/proprietà caratteristiche di uno spazio
+vettoriale (elencate in \defref{def:spazio-vettoriale}).
+Possiamo dunque dire che $\mathbb{R}^n$ con le operaizoni deinfinite sopra è uno spazio vettoriale.
+
+Nello spazio vettoriale così identificato possiamo introdurre un operazione, definita
+come segue.
+
+\begin{definition}
+    \textbf{Prodotto scalare euclideo}
+    
+    \[
+        \langle \overline{x}, \overline{y}\rangle := x_1 y_1 + x_2 y_2 + \ldots + x_n+y_n
+         = \sum_{i = 1}^{n} x_i y_i.
+    \]
+\end{definition}
+
+Si può facilmente mostrare che tale operazione rispetta tutte gli assiomi / proprietà
+caratteristiche necessarie per un prodotto vettoriale.
+Tale prodotto vettoriale prende il nome di prodotto vettoriale euclideo.
+
+Dato dunque un prodotto vettoriale in uno spazio vettoriale, viene automaticamente indotta
+la norma seguente, chiamata norma euclidea poiché indotta dal prodotto euclideo.
+
+
+
+\begin{definition}
+    \textbf{Norma euclidea}
+    \[
+        \| \overline{x} \| := \sqrt{\langle \overline{x}, \overline{x} \rangle}.
+    \]
+\end{definition}
+

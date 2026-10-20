@@ -1,0 +1,57 @@
+\begin{definition}
+    \textbf{Serie divergente a $+\infty$}
+
+    Si dice che una successione $\left\{x_n\right\}_{n\in\mathbb{N}}$ diverge a $+\infty$
+    se e solo se
+    \[
+        \forall M > 0 \exists n_0 \mid \forall n \geq n_0, x_n > M.
+    \]
+\end{definition}
+
+\begin{definition}
+    \textbf{Serie divergente a $-\infty$}
+
+    Si dice che una successione $\left\{x_n\right\}_{n\in\mathbb{N}}$ diverge a $-\infty$
+    se e solo se
+    \[
+        \forall m < 0 \exists n_0 \mid \forall n \geq n_0, x_n < m.
+    \]
+\end{definition}
+
+\begin{definition}
+    \textbf{Limite infinito di una successione}
+
+    Si dice che il limite di una successione (il valore a cui tende per $n\rightarrow
+    +\infty$) è infinito se e solo se la successione è divergente a $+\infty$ o $-\infty$.
+
+    Se il limite di una successione è infinito, avremo che il limite di quella successione
+    coinciderà con il valore di divergenza e scriveremo rispettivamente per una serie
+    divergente a $+\infty$ e per una divergente a $-\infty$ che
+    \[
+        \underset{n\rightarrow+\infty}{\lim} x_n = +\infty
+    \]
+    e che
+    \[
+        \underset{n\rightarrow+\infty}{\lim} x_n = -\infty.
+    \]
+
+\end{definition}
+
+\begin{example}\leavevmode
+
+    \begin{enumerate}[label=(\roman*)]
+        \item \[
+            n \rightarrow +\infty \left(\underset{n\rightarrow+\infty}{\lim}n=+\infty\right)
+        \]
+        \item \[
+            n^2 \rightarrow +\infty\left(\underset{n\rightarrow+\infty}{\lim}n^2=+\infty\right)
+        \]
+        \item \[
+            -n^2 \rightarrow -\infty\left(\underset{n\rightarrow+\infty}{\lim}-n^2=-\infty\right)
+        \]
+        \item \[
+            \frac{n^2}{n+1} \rightarrow +\infty
+            \left(\underset{n\rightarrow+\infty}{\lim}\left[\frac{n^2}{n+1}\right]=+\infty\right)
+        \]
+    \end{enumerate}
+\end{example}

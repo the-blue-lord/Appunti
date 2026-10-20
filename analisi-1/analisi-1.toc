@@ -22,5 +22,13 @@
 \contentsline {section}{\numberline {2}Spazi vettoriali}{38}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Definizione}{38}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Operazioni di base su spazi vettoriali}{39}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Vettori base canonica}{40}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Gli spazi vettoriali $\mathbb {R}^n$}{40}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.3}Gli spazi vettoriali $\mathbb {R}^n$}{40}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Vettori base canonica}{41}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Spazi metrici}{41}{section.3}%
+\contentsline {section}{\numberline {4}Successioni}{41}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Successioni di Cauchy}{42}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Spazi metrici completi}{44}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Spazi metrici particolari}{44}{subsubsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.3}Limiti delle successioni}{44}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Limiti finiti}{45}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Limiti infiniti}{46}{subsubsection.4.3.2}%

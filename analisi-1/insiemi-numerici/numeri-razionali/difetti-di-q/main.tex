@@ -199,32 +199,32 @@
                 \item Supponiamo per assurdo che
                 \[ \Lambda^2 < 2.\]
 
-                \item \label{pas:con-eps} Prendendo quindi arbitrariamente $\epsilon\in\mathbb{Q} \mid 0 < \epsilon < 1$, allora
-                \[ \Lambda + \epsilon > \Lambda .\]
+                \item \label{pas:con-eps} Prendendo quindi arbitrariamente $\varepsilon\in\mathbb{Q} \mid 0 < \varepsilon < 1$, allora
+                \[ \Lambda + \varepsilon > \Lambda .\]
 
                 \item Sapendo che 
-                \[ \epsilon > 0 \land  \underbrace{\Lambda > 0}_{\pasref{pas:lam-mag-zer}} \implies \Lambda+\epsilon\geq0.\]
+                \[ \varepsilon > 0 \land  \underbrace{\Lambda > 0}_{\pasref{pas:lam-mag-zer}} \implies \Lambda+\varepsilon\geq0.\]
                 \item \label{pas:lam-rel-eps}Allora
-                \[ (\Lambda + \epsilon)^2 > \Lambda^2 \]
-                \[ \Lambda^2 + 2\Lambda\epsilon + \epsilon^2 > \Lambda^2 \]
+                \[ (\Lambda + \varepsilon)^2 > \Lambda^2 \]
+                \[ \Lambda^2 + 2\Lambda\varepsilon + \varepsilon^2 > \Lambda^2 \]
 
-                \item \label{pas:lam-con-eps} Da $\epsilon < 1 \land  \epsilon > 0$, abbiamo che
+                \item \label{pas:lam-con-eps} Da $\varepsilon < 1 \land  \varepsilon > 0$, abbiamo che
                 
-                \[ \epsilon < 1, \]
-                \[ \epsilon ^2 < \epsilon, \]
-                \[(\Lambda^2 + 2\Lambda\epsilon)+\epsilon^2 < (\Lambda^2 + 2\Lambda\epsilon) + \epsilon, \]
-                \[\Lambda^2 + 2\Lambda\epsilon+\epsilon^2 < \Lambda^2 + 2\Lambda\epsilon + \epsilon, \]
-                \[(\Lambda+\epsilon)^2 < \Lambda^2 + \epsilon \left(2\Lambda + 1\right). \]
+                \[ \varepsilon < 1, \]
+                \[ \varepsilon ^2 < \varepsilon, \]
+                \[(\Lambda^2 + 2\Lambda\varepsilon)+\varepsilon^2 < (\Lambda^2 + 2\Lambda\varepsilon) + \varepsilon, \]
+                \[\Lambda^2 + 2\Lambda\varepsilon+\varepsilon^2 < \Lambda^2 + 2\Lambda\varepsilon + \varepsilon, \]
+                \[(\Lambda+\varepsilon)^2 < \Lambda^2 + \varepsilon \left(2\Lambda + 1\right). \]
 
                 \item Prendiamo
-                \[ \epsilon = \frac{2-\Lambda^2}{2\Lambda+1} \]
+                \[ \varepsilon = \frac{2-\Lambda^2}{2\Lambda+1} \]
 
                 e verifichiamo che soddisfi le condizioni di cui al punto \pasref{pas:con-eps} .
 
                 \begin{enumerate}[label=\arabic{enumiii}.\arabic*.]
                     \item
                     
-                    \[ \Th \epsilon\in\mathbb{Q}\]
+                    \[ \Th \varepsilon\in\mathbb{Q}\]
 
                     Essendo $\mathbb{Q}$ chiuso rispetto a somma e prodotto (\pref{p:raz-chi-som},
                     \pref{p:raz-chi-pro}) ed essendo inolte sempre garantita l'esistenza dell'elemento inverso
@@ -264,12 +264,12 @@
                         \end{cases}\Rightarrow
                             \left(2 - \Lambda^2\right) \frac{1}{2\Lambda + 1} \in \mathbb{Q} \Rightarrow
                             \frac{2 - \Lambda^2}{2\Lambda + 1} \in \mathbb{Q} \Rightarrow\]\[\Rightarrow
-                            \epsilon\in\mathbb{Q}
+                            \varepsilon\in\mathbb{Q}
                     \]
                     \qed
 
                     \item
-                    \[ \Th \epsilon > 0 \]
+                    \[ \Th \varepsilon > 0 \]
                     
                     \[
                         \begin{cases}
@@ -289,16 +289,16 @@
                             2\Lambda + 1 > 0
                         \end{cases}\Rightarrow
                         \frac{ 2 - \Lambda^2}{2\Lambda + 1}>0\Rightarrow
-                        \epsilon>0
+                        \varepsilon>0
                     \]
                     \qed
 
                     \item
-                    \[ \Th \epsilon < 1 \]
+                    \[ \Th \varepsilon < 1 \]
 
                     \[
-                        \epsilon<1 \Leftarrow
-                        \epsilon - 1 < 0 \Leftarrow
+                        \varepsilon<1 \Leftarrow
+                        \varepsilon - 1 < 0 \Leftarrow
                         \frac{2 - \Lambda^2}{2\Lambda + 1} - 1 < 0 \Leftarrow\]\[\Leftarrow
                         \frac{2 - \Lambda^2}{2\Lambda + 1} - \frac{2\Lambda + 1}{2\Lambda + 1} < 0 \Leftarrow
                         \frac{2 - \Lambda^2 - \left(2\Lambda + 1\right)}{2\Lambda + 1} < 0 \Leftarrow\]\[\Leftarrow
@@ -322,26 +322,26 @@
                     \qed
                 \end{enumerate}
 
-                \item Verificato che $\frac{2-\Lambda^2}{2\Lambda+1}$ è un valido valore per $\epsilon$,
+                \item Verificato che $\frac{2-\Lambda^2}{2\Lambda+1}$ è un valido valore per $\varepsilon$,
                 allora riprendendo l'ultimo passaggio di \pasref{pas:lam-con-eps} .
                 
                 \[
-                    \left(\Lambda+\epsilon\right)^2 < \Lambda^2 + \epsilon\left(2\Lambda+1\right),\]\[
-                    \left(\Lambda+\epsilon\right)^2 < \Lambda^2 + \frac{2 - \Lambda^2}{2\Lambda+1}\left(2\Lambda+1\right),\]\[
-                    \left(\Lambda+\epsilon\right)^2 < \Lambda^2 + \left(2 - \Lambda^2\right),\]\[
-                    \left(\Lambda+\epsilon\right)^2 < \Lambda^2 + 2 - \Lambda^2,\]\[
-                    \left(\Lambda+\epsilon\right)^2 < 2. \]\[
+                    \left(\Lambda+\varepsilon\right)^2 < \Lambda^2 + \varepsilon\left(2\Lambda+1\right),\]\[
+                    \left(\Lambda+\varepsilon\right)^2 < \Lambda^2 + \frac{2 - \Lambda^2}{2\Lambda+1}\left(2\Lambda+1\right),\]\[
+                    \left(\Lambda+\varepsilon\right)^2 < \Lambda^2 + \left(2 - \Lambda^2\right),\]\[
+                    \left(\Lambda+\varepsilon\right)^2 < \Lambda^2 + 2 - \Lambda^2,\]\[
+                    \left(\Lambda+\varepsilon\right)^2 < 2. \]\[
                 \]
 
                 \item Abbiamo quindi che
                 \[
                     \begin{cases}
-                        \Lambda^2 < \left(\Lambda+\epsilon\right)^2 \text{ (vd. pass. \pasref{pas:lam-rel-eps})}\\ 
-                        \left(\Lambda+\epsilon\right)^2 < 2
+                        \Lambda^2 < \left(\Lambda+\varepsilon\right)^2 \text{ (vd. pass. \pasref{pas:lam-rel-eps})}\\ 
+                        \left(\Lambda+\varepsilon\right)^2 < 2
                     \end{cases} \]\[
-                    \Lambda^2 < \left(\Lambda+\epsilon\right)^2 < 2 \]\[
-                    \left(\Lambda+\epsilon\right)\in\mathbb{A}\]\[
-                    \exists a=\left(\Lambda+\epsilon\right) \in\mathbb{A} \mid \Lambda < a
+                    \Lambda^2 < \left(\Lambda+\varepsilon\right)^2 < 2 \]\[
+                    \left(\Lambda+\varepsilon\right)\in\mathbb{A}\]\[
+                    \exists a=\left(\Lambda+\varepsilon\right) \in\mathbb{A} \mid \Lambda < a
                 \]
 
                 \item $\Lambda$ non è un maggiorante per $\mathbb{A}$.
@@ -362,24 +362,24 @@
                 \item \label{pass:ass-lam-mag} Supponiamo per assurdo che
                 \[ \Lambda^2 > 2.\]
 
-                \item \label{pas:con-eps/2}Prendendo quindi arbitrariamente $\epsilon\in\mathbb{Q} \mid 0 < \epsilon < \Lambda$, allora
+                \item \label{pas:con-eps/2}Prendendo quindi arbitrariamente $\varepsilon\in\mathbb{Q} \mid 0 < \varepsilon < \Lambda$, allora
                 \[
-                    0 < \Lambda - \epsilon < \Lambda,\]\[
-                    \left(\Lambda - \epsilon\right)^2 < \Lambda^2, \]\[
-                    \Lambda^2 -2\Lambda\epsilon + \epsilon^2 < \Lambda^2, \]\[
-                    \Lambda^2 - 2\Lambda\epsilon  < \Lambda^2 - 2\Lambda\epsilon + \epsilon^2 < \Lambda^2, \]\[
-                    \Lambda^2 - 2\Lambda\epsilon  < \left(\Lambda - \epsilon\right)^2  < \Lambda^2.
+                    0 < \Lambda - \varepsilon < \Lambda,\]\[
+                    \left(\Lambda - \varepsilon\right)^2 < \Lambda^2, \]\[
+                    \Lambda^2 -2\Lambda\varepsilon + \varepsilon^2 < \Lambda^2, \]\[
+                    \Lambda^2 - 2\Lambda\varepsilon  < \Lambda^2 - 2\Lambda\varepsilon + \varepsilon^2 < \Lambda^2, \]\[
+                    \Lambda^2 - 2\Lambda\varepsilon  < \left(\Lambda - \varepsilon\right)^2  < \Lambda^2.
                 \]
 
                 \item Prendiamo
-                \[ \epsilon = \frac{\Lambda^2-2}{2\Lambda} \]
+                \[ \varepsilon = \frac{\Lambda^2-2}{2\Lambda} \]
 
                 e verifichiamo che soddisfi le condizioni di cui al punto \pasref{pas:con-eps/2} .
 
                 \begin{enumerate}[label=\arabic{enumiii}.\arabic*.]
                     \item
                     
-                    \[ \Th \epsilon\in\mathbb{Q}\]
+                    \[ \Th \varepsilon\in\mathbb{Q}\]
 
                     Essendo $\mathbb{Q}$ chiuso rispetto a somma e prodotto (\pref{p:raz-chi-som},
                     \pref{p:raz-chi-pro}) ed essendo inolte sempre garantita l'esistenza dell'elemento inverso
@@ -414,12 +414,12 @@
                         \end{cases}\Rightarrow\]\[\Rightarrow
                         \left(\Lambda^2 - 2 \right) \frac{1}{2\Lambda} \in \mathbb{Q} \Rightarrow
                         \frac{2 - \Lambda^2}{2\Lambda} \in \mathbb{Q} \Rightarrow
-                        \epsilon\in\mathbb{Q}
+                        \varepsilon\in\mathbb{Q}
                     \]
                     \qed
 
                     \item
-                    \[ \Th \epsilon > 0 \]
+                    \[ \Th \varepsilon > 0 \]
                     
                     \[
                         \begin{cases}
@@ -431,16 +431,16 @@
                             2\Lambda > 0
                         \end{cases} \Rightarrow
                         \frac{\Lambda^2 - 2}{2\Lambda}>0\Rightarrow
-                        \epsilon>0
+                        \varepsilon>0
                     \]
                     \qed
 
                     \item
-                    \[ \Th \epsilon < \Lambda \]
+                    \[ \Th \varepsilon < \Lambda \]
 
                     \[
-                        \epsilon<\Lambda \Leftarrow
-                        \epsilon - \Lambda < 0 \Leftarrow
+                        \varepsilon<\Lambda \Leftarrow
+                        \varepsilon - \Lambda < 0 \Leftarrow
                         \frac{\Lambda^2-2}{2\Lambda} - \Lambda < 0 \Leftarrow\]\[\Leftarrow
                         \frac{\Lambda^2-2}{2\Lambda} - \Lambda\frac{2\Lambda}{2\Lambda} < 0 \Leftarrow
                         \frac{\Lambda^2-2}{2\Lambda} - \frac{2\Lambda^2}{2\Lambda}< 0 \Leftarrow\]\[\Leftarrow
@@ -462,38 +462,38 @@
                     \qed
                 \end{enumerate}
 
-                \item Verificato che $\frac{\Lambda^2-2}{2\Lambda}$ è un valido valore per $\epsilon$,
+                \item Verificato che $\frac{\Lambda^2-2}{2\Lambda}$ è un valido valore per $\varepsilon$,
                 allora riprendendo l'ultimo passaggio di \pasref{pas:con-eps/2} .
                 
                 \[
-                    \Lambda^2 - 2\Lambda\epsilon  < \left(\Lambda - \epsilon\right)^2,\]\[
-                    \Lambda^2 - 2\Lambda\frac{\Lambda^2-2}{2\Lambda}  < \left(\Lambda - \epsilon\right)^2,\]\[
-                    \Lambda^2 - \left(\Lambda^2-2\right)  < \left(\Lambda - \epsilon\right)^2,\]\[
-                    \Lambda^2 - \Lambda^2 + 2  < \left(\Lambda - \epsilon\right)^2,\]\[
-                    2  < \left(\Lambda - \epsilon\right)^2.
+                    \Lambda^2 - 2\Lambda\varepsilon  < \left(\Lambda - \varepsilon\right)^2,\]\[
+                    \Lambda^2 - 2\Lambda\frac{\Lambda^2-2}{2\Lambda}  < \left(\Lambda - \varepsilon\right)^2,\]\[
+                    \Lambda^2 - \left(\Lambda^2-2\right)  < \left(\Lambda - \varepsilon\right)^2,\]\[
+                    \Lambda^2 - \Lambda^2 + 2  < \left(\Lambda - \varepsilon\right)^2,\]\[
+                    2  < \left(\Lambda - \varepsilon\right)^2.
                 \]
 
-                \item Grazie a quest'ultima disequazione mostriamo che $(\Lambda-\epsilon)$
+                \item Grazie a quest'ultima disequazione mostriamo che $(\Lambda-\varepsilon)$
                     deve essere un maggiorante per $\mathbb{A}$:
                 \[
                     \forall a\in\mathbb{A}, a^2 \leq 2, \]\[
-                    \forall a\in\mathbb{A}, a^2 \leq 2 < \left(\Lambda-\epsilon\right)^2, \]\[
-                    \forall a\in\mathbb{A}, a^2 < \left(\Lambda-\epsilon\right)^2.
+                    \forall a\in\mathbb{A}, a^2 \leq 2 < \left(\Lambda-\varepsilon\right)^2, \]\[
+                    \forall a\in\mathbb{A}, a^2 < \left(\Lambda-\varepsilon\right)^2.
                 \]
 
-                Sapendo che $\epsilon<\Lambda \Rightarrow  0 < \Lambda-\epsilon
-                \Rightarrow \Lambda-\epsilon > 0$, allora
+                Sapendo che $\varepsilon<\Lambda \Rightarrow  0 < \Lambda-\varepsilon
+                \Rightarrow \Lambda-\varepsilon > 0$, allora
                 \[
-                    \forall a\in\mathbb{A}, a < \left(\Lambda-\epsilon\right), \]\[
-                    \forall a\in\mathbb{A}, \left(\Lambda-\epsilon\right) > a. 
+                    \forall a\in\mathbb{A}, a < \left(\Lambda-\varepsilon\right), \]\[
+                    \forall a\in\mathbb{A}, \left(\Lambda-\varepsilon\right) > a. 
                 \]
 
-                \item $(\Lambda-\epsilon)$ è un maggiorante per $\mathbb{A}$.
+                \item $(\Lambda-\varepsilon)$ è un maggiorante per $\mathbb{A}$.
                 \item $\Lambda$ non può essere l'estremo superiore di $\mathbb{A}$, ma $\Lambda:=\sup\mathbb{A}$.
                 \begin{enumerate}[label=\arabic{enumiii}.\arabic*.]
                     \item Se $\Lambda$ fosse l'estremo superiore di $\mathbb{A}$, sarebbe anche necessariamente un
-                    maggiorante per $\mathbb{A}$. Ma essendo anche $(\Lambda-\epsilon)$ un maggiorante per $\mathbb{A}$,
-                    allora $\Lambda$ non sarebbe il minore dei maggioranti, perché $(\Lambda-\epsilon) < \Lambda$.
+                    maggiorante per $\mathbb{A}$. Ma essendo anche $(\Lambda-\varepsilon)$ un maggiorante per $\mathbb{A}$,
+                    allora $\Lambda$ non sarebbe il minore dei maggioranti, perché $(\Lambda-\varepsilon) < \Lambda$.
                     \qed
                 \end{enumerate}
                 \item La negazione della tesi $\Lambda^2 \leq 2$ porta a una contraddizione.

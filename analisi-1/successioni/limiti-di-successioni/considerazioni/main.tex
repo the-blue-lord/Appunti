@@ -1,0 +1,45 @@
+\begin{definition}
+    \textbf{Successione regolare}
+
+    Una successione $\left\{x_n\right\}_{n\in\mathbb{N}}$ in uno spazio
+    $\left(\mathbb{R}, \left|\cdot\right|\right)$ si dice regolare se è convergente
+    oppure divergente.
+\end{definition}
+
+\begin{proposition}
+    Sia $\left\{x_n\right\}_{n\in\mathbb{N}}$ una successione regolare,
+    allora il limite è unico ed e anche limite di ogni sua
+    sottosuccessione. In simboli,
+    \[
+        \underset{n\rightarrow+\infty}{\lim} x_n = l\in\left[-\infty,+\infty\right]
+        \Rightarrow \begin{cases}
+            l \text{ è unico}\\
+            \forall \left\{x_{n_k}\right\}_k \Rightarrow \underset{k\rightarrow+\infty}{\lim}x_{n_k} = l
+        \end{cases}
+    \]
+\end{proposition}
+
+\begin{observation}
+    Una successione divergente non è di Cacuchy, poiché non è convergente.
+\end{observation}
+
+\begin{observation}
+    La successione $\left\{x_n\right\}_{n\in\mathbb{N}}, x_n := \left(-1\right)^n n$ NON è
+    divergente. Difatti due ha due diverse sottosuccessioni che tnedono a valori diversi,
+    se effettivamente fosse divergente il valore del limite non potrebbe risualtare unico
+    se deve essere anche limite di tutte le sottosuccessioni.
+
+    Difatti
+    \[
+        n_k = 2k  \implies x_{n_k} = \left(-1\right)^{2k} 2k = \left(\left(-1\right)^2\right)^k 2k =
+        \left(1\right) ^ k 2k = 1 \cdot 2k = 2k \implies\]\[
+        \implies \underset{k\rightarrow+\infty}{\lim} x_{n_k} = +\infty,
+    \]\[
+        n_k = 2k+1  \implies x_{n_k} = \left(-1\right)^{2k+1} \left(2k+1\right) =
+        \left(-1\right)^{2k} \left(-1\right)^{1} \left(2k+1\right) = \]\[
+        = \left(\left(-1\right)^2\right)^k \left(-1\right) \left(2k+1\right) =
+        - \left(1\right) ^ k \left(2k+1\right) =
+        - \left(1\right) \left(2k+1\right) = \]\[
+        = -\left(2k+1\right) \implies \underset{k\rightarrow+\infty}{\lim} x_{n_k} = -\infty.
+    \]
+\end{observation}

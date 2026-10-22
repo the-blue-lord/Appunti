@@ -1,0 +1,191 @@
+Sia $\left\{x_n\right\}_{n\in\mathbb{N}}$ una serie in $\left(\mathbb{R},\left|\cdot\right|\right)$
+allora possiamo definire le seguenti caratterisitche.
+
+
+\begin{definition}
+    \textbf{Monotonia crescente}
+
+    Una serie si dice monotona crescente (o strettamente crescente o crescente in senso stretto)
+    se e solo se
+    \[
+        \exists n_0 \mid \forall n \geq n_0, x_n<x_{n+1}.
+    \]
+
+    Più in generale si dice che una serie è monotona crescente in senso lato se e solo se
+    \[
+        \exists n_0 \mid \forall n \geq n_0, x_n\leq x_{n+1}.
+    \]
+
+    Una serie crescente in senso lato implica dunque, logicamente, che sia crescente
+    anche in senso stretto.
+\end{definition}
+
+\begin{definition}
+    \textbf{Monotonia decrescente}
+
+    Una serie si dice monotona decrescente (o strettamente decrescente o decrescente in senso stretto)
+    se e solo se
+    \[
+        \exists n_0 \mid \forall n \geq n_0, x_n>x_{n+1}.
+    \]
+
+    Più in generale si dice che una serie è monotona decrescente in senso lato se e solo se
+    \[
+        \exists n_0 \mid \forall n \geq n_0, x_n\geq x_{n+1}.
+    \]
+
+    Una serie decrescente in senso lato implica dunque, logicamente, che sia decrescente
+    anche in senso stretto.
+\end{definition}
+
+\begin{theorem}\label{teo:mon-e-reg}
+    \textbf{Monotonia e regolarità}
+
+    Se la serie $x_n$ è definitivamente monotona (anche in senso lato), allora la serie è anche regolare.
+
+    In particolare avremo che per tutti gli indici $n$ per cui la serie è
+    monotona crescente (se è definitivamente crescente), allora
+    \[
+        \exists n_0 \mid n \geq n_0 \Rightarrow
+        \underset{n\rightarrow+\infty}{\lim}x_n=\sup\left\{x_n\mid n \geq n_0\right\}.
+    \]
+    Analogamente avremo che per tutti gli indici $n$ per cui la serie è
+    monotona decrescente (se è definitivamente decrescente), allora
+    \[
+        \exists n_0 \mid n \geq n_0 \Rightarrow
+        \underset{n\rightarrow+\infty}{\lim}x_n=\inf\left\{x_n\mid n \geq n_0\right\}.
+    \]
+\end{theorem}
+
+\begin{demonstration}
+    \textit{di} \teoref{teo:mon-e-reg}
+
+    \[
+        \Hp x_n \text{ è definitivamente monotona crescente (risp. decrescente)}\]\[
+        \Th \underset{n\rightarrow+\infty}{\lim}x_n=\sup\left\{x_n\mid n \geq n_0\right\} \text{ (risp. $\inf$)}
+    \]
+
+    \begin{enumerate}[label=(\roman*)]
+        \item Se $x_n$ è definitivamente crescente (risp. decrescente), allora
+        \[
+            \exists n_0\mid\forall n\geq n_0, x_n \leq x_{n+1} \text{ (risp. $\geq$)}.\]\[
+        \]
+        \item Sapendo che esiste, fissiamo $n_0$ come valore che soddisfi la condizione di cui sopra.
+        \item La serie è convergente oppure no
+        \item Se è convergente
+        \begin{enumerate}[label=\arabic*.]
+            \item Chiamando $p$ il punto di convergenza per convergenza abbiamo che
+                \[ \forall \varepsilon>0, \exists n_\varepsilon\in\mathbb{N} \mid \forall n\geq n_\varepsilon, d\left(x_n-p\right) < \varepsilon, \]
+                \[ \forall \varepsilon>0, \exists n_\varepsilon\in\mathbb{N} \mid \forall n\geq n_\varepsilon, \left|x_n - p\right| < \varepsilon, \]
+                \[ \forall \varepsilon>0, \exists n_\varepsilon\in\mathbb{N} \mid \forall n\geq n_\varepsilon, -\varepsilon<x_n - p< \varepsilon, \]
+                \[ \forall \varepsilon>0, \exists n_\varepsilon\in\mathbb{N} \mid \forall n\geq n_\varepsilon, p-\varepsilon <x_n< p+\varepsilon. \]
+            \item Per ipotesi la serie è definitivamente crescente (risp. decrescente)
+                \[ \forall n \geq n_0, x_n \leq x_{n+1} \quad \text{(risp. $x_n \geq x_{n+1}$)}.\]
+            \item Mostriamo che $\forall n \geq n_0, x_n \leq p$ (risp. $p \leq x_n$)
+            \item Supponiamo per assurdo che $\exists k \geq n_0 \mid x_k > p$ (risp. $p > x_k$)
+            \begin{enumerate}[label=\arabic{enumii}.\arabic*.]
+                \item Rielaborando la supposizione avremo che \[
+                    x_k > p \quad\text{(risp. $p > x_k$)},\]\[
+                    x_k - p > 0 \quad\left(\text{risp. $p - x_k > 0$}\right),\]\[
+                    \frac{x_k - p}{2} > 0 \quad\left(\text{risp. $\frac{p - x_k}{2} > 0$}\right),\]\[
+                    \frac{x_k - p}{2} > 0 \quad\left(\text{risp. $\frac{p - x_k}{2} > 0$}\right).\]\[
+                \]
+                \item Per convergenza della serie, prendendo $\varepsilon_0 := \frac{x_k - p}{2}$ (risp. $\frac{p - x_k}{2}$), se $\varepsilon_0 >0$ allora, \[
+                    \exists j_0\in\mathbb{N} \mid \forall j\geq j_0, p-\varepsilon_0 <x_j< p+\varepsilon_0.\]
+                \item Dunque $\forall j \geq j_0$, \[
+                    x_j< p+\varepsilon_0 \quad\left(\text{risp. $x_j > p-\varepsilon_0$}\right), \]\[
+                    x_j< p+\frac{x_k - p}{2} \quad\left(\text{risp. $x_j > p-\frac{p - x_k}{2}$}\right), \]\[
+                    x_j< \frac{2p + x_k - p}{2} \quad\left(\text{risp. $x_j > \frac{2p - \left(p - x_k\right)}{2}$}\right), \]\[
+                    x_j< \frac{p + x_k}{2} \quad\left(\text{risp. $x_j > \frac{2p - p + x_k}{2}$}\right), \]\[
+                    x_j< \frac{p + x_k}{2} \quad\left(\text{risp. $x_j > \frac{p + x_k}{2}$}\right), \]\[
+                \]
+
+                \item Ricordandoci che $p < x_k$(risp. $p > x_k$) \[
+                    p < x_k \left(\text{risp. $p > x_k$}\right), \]\[
+                    p + x_k< 2x_k \left(\text{risp. $p + x_k> 2x_k$}\right), \]\[
+                    \frac{p + x_k}{2} < \frac{2x_k}{2} \quad\left(\text{risp. $\frac{p + x_k}{2} >  \frac{2x_k}{2}$}\right), \]\[
+                    \frac{p + x_k}{2} < x_k \quad\left(\text{risp. $\frac{p + x_k}{2} >  x_k$}\right), \]\[
+                    x_j < \frac{p + x_k}{2} < x_k \quad\left(\text{risp. $x_j > \frac{p + x_k}{2} >  x_k$}\right), \]\[
+                    x_j < x_k \quad\left(\text{risp. $x_j >  x_k$}\right). \]\[
+                \]
+
+                \item Prendiamo arbitrariamente $j > \max\left\{j_0, k\right\}$, allora \[
+                    \begin{cases}
+                        j > j_0\\
+                        j > k
+                    \end{cases}\]\[
+                    \begin{cases}
+                        x_j < x_k \\
+                        x_j > x_k 
+                    \end{cases}\quad\left(\text{risp.} \begin{cases}
+                        x_j > x_k \\
+                        x_j < x_k 
+                    \end{cases}\right)\]\[
+                    \text{Assurdo (risp. Assurdo)}
+                \]
+                \item Dunque $\nexists k \geq n_0 \mid x_k > p$ (risp. $p > x_k$).
+                \item Perciò $\forall k \geq n_0 , x_k \leq p$ (risp. $p \leq x_k$).
+                \item Ovvero $\forall n \geq n_0 , x_n \leq p$ (risp. $\geq$).
+            \end{enumerate}
+            \qed
+
+            \item $\forall \varepsilon>0$ abbiamo allora che \[
+                \begin{cases}
+                    \forall n \geq n_0 , x_n \leq p \quad\left(\text{risp. } \geq\right)\\
+                    \exists n_\varepsilon\in\mathbb{N} \mid \forall n\geq n_\varepsilon, p-\varepsilon <x_n< p+\varepsilon
+                \end{cases}.
+            \]
+
+            \item Prendiamo un qualsiasi $n > \max\left\{n_0, n_\varepsilon\right\}$, allora $\forall \varepsilon>0$ \[
+                \begin{cases}
+                    x_n \leq p \quad\left(\text{risp. } \geq\right)\\
+                    p-\varepsilon <x_n< p+\varepsilon
+                \end{cases},\]\[
+                p-\varepsilon <x_n \leq p< p+\varepsilon  \quad\left(\text{risp. } p-\varepsilon <p \leq x_n< p+\varepsilon\right),\]\[
+                p-\varepsilon <x_n \leq p\quad\left(\text{risp. } p \leq x_n< p+\varepsilon\right). \]\[
+            \]
+
+            \item Se ne deduce quindi che \[
+                \begin{cases}
+                    \forall n \geq n_0 , x_n \leq p \quad\left(\text{risp. } x_n\geq p\right)\\
+                    \forall \varepsilon>0, \exists n \geq n_0 \mid p-\varepsilon <x_n \leq p \quad\left(\text{risp. } p \leq x_n< p+\varepsilon\right)
+                \end{cases}.
+            \]
+
+            \item Da cui \[
+                \begin{cases}
+                    \forall n\in\left\{n\in\mathbb{N}\mid n\geq n_0\right\}, x_n \leq p \quad\left(\text{risp. } x_n\geq p\right)\\
+                    \forall \varepsilon>0, \exists n\in\left\{n\in\mathbb{N}\mid n\geq n_0\right\} \mid p-\varepsilon <x_n \leq p\quad\left(\text{risp. } p \leq x_n< p+\varepsilon\right)
+                \end{cases},\]\[
+                \begin{cases}
+                    \forall x_i\in\left\{x_n\mid n\geq n_0\right\}, x_i \leq p \quad\left(\text{risp. } x_n\geq p\right)\\
+                    \forall \varepsilon>0, \exists x_\varepsilon\in\left\{x_n\mid n\geq n_0\right\} \mid p-\varepsilon <x_\varepsilon \leq p\quad\left(\text{risp. } p \leq x_n< p+\varepsilon\right)
+                \end{cases}.
+            \]
+
+            \item Di conseguenza per \defref{def:sup-lim-rea} e \defref{def:inf-lim-rea} segue necessariamente che$p = \sup\left\{x_n\mid n\geq n_0\right\}$ (risp. $\inf$).
+        \end{enumerate}
+
+        \item Se non è convergente
+        \begin{enumerate}[label=\arabic*.]
+            \item Mostriamo separatamente che una successione definitivamente crescente (risp. decrescente) e non convergente ha come limite $+\infty$ (risp. $-\infty$) e che l'insieme
+            degli elementi per cui è crescente (risp. decrescente) non è superiormente (risp. inferiormente) limitato, ovvero il suo $\sup$ (risp. $\inf$) è $+\infty$ (risp. $-\infty$).
+
+            \item Iniziamo mostrando che la successione così definita risulta divergente a $+\infty$ (risp. $-\infty$).
+        \end{enumerate}
+    \end{enumerate}
+    \qed
+\end{demonstration}
+
+\begin{theorem}\label{teo:com-rea}
+    \textbf{Completezza di $\mathbb{R}$}
+
+    $\left(\mathbb{R}, \left|\cdot\right|\right)$ è completo, ovvero tutte le successioni
+    di Cauchy in $\left(\mathbb{R}, \left|\cdot\right|\right)$ convergono a un elemento di $\mathbb{R}$.
+\end{theorem}
+
+\begin{demonstration}
+    \textit{di} \teoref{teo:com-rea}
+
+    [dimostrazione]
+\end{demonstration}

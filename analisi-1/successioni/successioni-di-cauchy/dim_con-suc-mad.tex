@@ -15,75 +15,75 @@
         \item Prendiamo, durante la dimostrazione, che $n,m\in\mathbb{N}$.
         \item \[
             x_{n_k}\rightarrow p, \]\[
-            \forall\epsilon>0,\exists k_\epsilon\mid\forall k\geq k_\epsilon,d\left(x_{n_k},p\right)<\epsilon, \]\[
-            \epsilon>0\implies\exists k_\epsilon\mid\forall k\geq k_\epsilon,d\left(x_{n_k},p\right)<\epsilon, \]\[
-            \epsilon>0\implies\frac{\epsilon}{2}>0\implies\exists k_\epsilon\mid\forall k\geq k_\epsilon,d\left(x_{n_k},p\right)<\frac{\epsilon}{2}, \]\[
-            \epsilon>0\implies\exists k_\epsilon\mid\forall k\geq k_\epsilon,d\left(x_{n_k},p\right)<\frac{\epsilon}{2}, \]\[
-            \forall\epsilon>0,\exists k_\epsilon\mid\forall k\geq k_\epsilon,d\left(x_{n_k},p\right)<\frac{\epsilon}{2}. \]\[
+            \forall\varepsilon>0,\exists k_\varepsilon\mid\forall k\geq k_\varepsilon,d\left(x_{n_k},p\right)<\varepsilon, \]\[
+            \varepsilon>0\implies\exists k_\varepsilon\mid\forall k\geq k_\varepsilon,d\left(x_{n_k},p\right)<\varepsilon, \]\[
+            \varepsilon>0\implies\frac{\varepsilon}{2}>0\implies\exists k_\varepsilon\mid\forall k\geq k_\varepsilon,d\left(x_{n_k},p\right)<\frac{\varepsilon}{2}, \]\[
+            \varepsilon>0\implies\exists k_\varepsilon\mid\forall k\geq k_\varepsilon,d\left(x_{n_k},p\right)<\frac{\varepsilon}{2}, \]\[
+            \forall\varepsilon>0,\exists k_\varepsilon\mid\forall k\geq k_\varepsilon,d\left(x_{n_k},p\right)<\frac{\varepsilon}{2}. \]\[
         \]
         \item \[
             x_n \text{ è una successione di Cauchy},\]\[
-            \forall\epsilon>0,\exists n_\epsilon\mid\forall n,m\geq n_\epsilon,d\left(x_n,x_m\right)<\epsilon,\]\[
-            \epsilon>0\implies \exists n_\epsilon\mid\forall n,m\geq n_\epsilon,d\left(x_n,x_m\right)<\epsilon,\]\[
-            \epsilon>0\implies\frac{\epsilon}{2}>0 \implies \exists n_\epsilon\mid\forall n,m\geq n_\epsilon,d\left(x_n,x_m\right)<\frac{\epsilon}{2},\]\[
-            \forall\epsilon>0,\exists n_\epsilon\mid\forall n,m\geq n_\epsilon,d\left(x_n,x_m\right)<\frac{\epsilon}{2}.\]\[
+            \forall\varepsilon>0,\exists n_\varepsilon\mid\forall n,m\geq n_\varepsilon,d\left(x_n,x_m\right)<\varepsilon,\]\[
+            \varepsilon>0\implies \exists n_\varepsilon\mid\forall n,m\geq n_\varepsilon,d\left(x_n,x_m\right)<\varepsilon,\]\[
+            \varepsilon>0\implies\frac{\varepsilon}{2}>0 \implies \exists n_\varepsilon\mid\forall n,m\geq n_\varepsilon,d\left(x_n,x_m\right)<\frac{\varepsilon}{2},\]\[
+            \forall\varepsilon>0,\exists n_\varepsilon\mid\forall n,m\geq n_\varepsilon,d\left(x_n,x_m\right)<\frac{\varepsilon}{2}.\]\[
         \]
         \item Mettendo insieme
         \[
-            \forall\epsilon>,0\begin{cases}
-                \exists k_\epsilon\mid\forall k\geq k_\epsilon,d\left(x_{n_k},p\right)<\frac{\epsilon}{2}\\
-                \exists n_\epsilon\mid\forall n,m\geq n_\epsilon,d\left(x_n,x_m\right)<\frac{\epsilon}{2}\\
+            \forall\varepsilon>,0\begin{cases}
+                \exists k_\varepsilon\mid\forall k\geq k_\varepsilon,d\left(x_{n_k},p\right)<\frac{\varepsilon}{2}\\
+                \exists n_\varepsilon\mid\forall n,m\geq n_\varepsilon,d\left(x_n,x_m\right)<\frac{\varepsilon}{2}\\
             \end{cases},\]\[
-            \forall\epsilon>0,\begin{cases}
-                t\geq n_\epsilon \land t\geq k_\epsilon \\
-                \exists k_\epsilon\mid\forall k\geq t\geq k_\epsilon,d\left(x_{n_k},p\right)<\frac{\epsilon}{2}\\
-                \exists n_\epsilon\mid\forall n,m\geq t\geq n_\epsilon,d\left(x_n,x_m\right)<\frac{\epsilon}{2}\\
+            \forall\varepsilon>0,\begin{cases}
+                t\geq n_\varepsilon \land t\geq k_\varepsilon \\
+                \exists k_\varepsilon\mid\forall k\geq t\geq k_\varepsilon,d\left(x_{n_k},p\right)<\frac{\varepsilon}{2}\\
+                \exists n_\varepsilon\mid\forall n,m\geq t\geq n_\varepsilon,d\left(x_n,x_m\right)<\frac{\varepsilon}{2}\\
             \end{cases},\]\[
-            \forall\epsilon>0,\exists t\mid\begin{cases}
-                \forall k\geq t,d\left(x_{n_k},p\right)<\frac{\epsilon}{2}\\
-                \forall n,m\geq t,d\left(x_n,x_m\right)<\frac{\epsilon}{2}\\
+            \forall\varepsilon>0,\exists t\mid\begin{cases}
+                \forall k\geq t,d\left(x_{n_k},p\right)<\frac{\varepsilon}{2}\\
+                \forall n,m\geq t,d\left(x_n,x_m\right)<\frac{\varepsilon}{2}\\
             \end{cases},\]\[
         \]
         \item Per proprietà della sottosuccessione,
         \[
             \forall k\in\mathbb{N},\;\;n_k \geq k,\]\[
-            \forall\epsilon>0,\exists t\mid\begin{cases}
-                \forall n_k \geq k\geq t,d\left(x_{n_k},p\right)<\frac{\epsilon}{2}\\
-                \forall n,m\geq t,d\left(x_n,x_m\right)<\frac{\epsilon}{2}\\
+            \forall\varepsilon>0,\exists t\mid\begin{cases}
+                \forall n_k \geq k\geq t,d\left(x_{n_k},p\right)<\frac{\varepsilon}{2}\\
+                \forall n,m\geq t,d\left(x_n,x_m\right)<\frac{\varepsilon}{2}\\
             \end{cases},\]\[
-            \forall\epsilon>0,\exists t\mid\begin{cases}
-                \forall n_k\geq t,d\left(x_{n_k},p\right)<\frac{\epsilon}{2}\\
-                \forall n,m\geq t,d\left(x_n,x_m\right)<\frac{\epsilon}{2}\\
+            \forall\varepsilon>0,\exists t\mid\begin{cases}
+                \forall n_k\geq t,d\left(x_{n_k},p\right)<\frac{\varepsilon}{2}\\
+                \forall n,m\geq t,d\left(x_n,x_m\right)<\frac{\varepsilon}{2}\\
             \end{cases},\]\[
-            \forall\epsilon>0,\exists t\mid\begin{cases}
-                \forall m\geq t,d\left(x_m,p\right)<\frac{\epsilon}{2}\\
-                \forall n,m\geq t,d\left(x_n,x_m\right)<\frac{\epsilon}{2}\\
+            \forall\varepsilon>0,\exists t\mid\begin{cases}
+                \forall m\geq t,d\left(x_m,p\right)<\frac{\varepsilon}{2}\\
+                \forall n,m\geq t,d\left(x_n,x_m\right)<\frac{\varepsilon}{2}\\
             \end{cases},\]\[
-            \forall\epsilon>0,\exists t\mid\forall n,m\geq t,\begin{cases}
-                d\left(x_m,p\right)<\frac{\epsilon}{2}\\
-                d\left(x_n,x_m\right)<\frac{\epsilon}{2}\\
+            \forall\varepsilon>0,\exists t\mid\forall n,m\geq t,\begin{cases}
+                d\left(x_m,p\right)<\frac{\varepsilon}{2}\\
+                d\left(x_n,x_m\right)<\frac{\varepsilon}{2}\\
             \end{cases}.
         \]
         \item Per proprietà della distanza su uno spazio metrico,
         \[
             \forall n,m\in\mathbb{N},\;\;d\left(x_n,p\right)\leq d\left(x_n,x_m\right)+d\left(x_m, p\right),\]\[
-            \forall\epsilon>0,\exists t\mid\forall n,m\geq t,\begin{cases}
-                d\left(x_m,p\right)<\frac{\epsilon}{2}\\
-                d\left(x_n,x_m\right)<\frac{\epsilon}{2}\\
+            \forall\varepsilon>0,\exists t\mid\forall n,m\geq t,\begin{cases}
+                d\left(x_m,p\right)<\frac{\varepsilon}{2}\\
+                d\left(x_n,x_m\right)<\frac{\varepsilon}{2}\\
                 \forall n,m\in\mathbb{N},\;\;d\left(x_n,p\right)\leq d\left(x_n,x_m\right)+d\left(x_m, p\right)
             \end{cases}, \]\[
-            \forall\epsilon>0,\exists t\mid\forall n,m\geq t,\begin{cases}
-                d\left(x_m,p\right)<\frac{\epsilon}{2}\\
-                d\left(x_n,x_m\right)<\frac{\epsilon}{2}\\
+            \forall\varepsilon>0,\exists t\mid\forall n,m\geq t,\begin{cases}
+                d\left(x_m,p\right)<\frac{\varepsilon}{2}\\
+                d\left(x_n,x_m\right)<\frac{\varepsilon}{2}\\
                 d\left(x_n,p\right)\leq d\left(x_n,x_m\right)+d\left(x_m, p\right)
             \end{cases}, \]\[
-            \forall\epsilon>0,\exists t\mid\forall n,m\geq t,
+            \forall\varepsilon>0,\exists t\mid\forall n,m\geq t,
             d\left(x_n,p\right)\leq d\left(x_n,x_m\right)+d\left(x_m, p\right)<
-            \frac{\epsilon}{2}+\frac{\epsilon}{2}, \]\[
-            \forall\epsilon>0,\exists t\mid\forall n,m\geq t,
-            d\left(x_n,p\right)\leq d\left(x_n,x_m\right)+d\left(x_m, p\right)<\epsilon, \]\[
-            \forall\epsilon>0,\exists t\mid\forall n\geq t,
-            d\left(x_n,p\right)<\epsilon,\]\[
+            \frac{\varepsilon}{2}+\frac{\varepsilon}{2}, \]\[
+            \forall\varepsilon>0,\exists t\mid\forall n,m\geq t,
+            d\left(x_n,p\right)\leq d\left(x_n,x_m\right)+d\left(x_m, p\right)<\varepsilon, \]\[
+            \forall\varepsilon>0,\exists t\mid\forall n\geq t,
+            d\left(x_n,p\right)<\varepsilon,\]\[
             x_n\rightarrow p.
         \]
     \end{enumerate}

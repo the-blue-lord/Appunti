@@ -10,23 +10,16 @@
     Dunque, in simboli,
     \[
         \underset{n\rightarrow+\infty}{\lim} x_n = l \Leftrightarrow
-        \exists l \in\mathbb{R} \mid \forall\epsilon>0, \exists n_\epsilon\in\mathbb{N}\mid
-        \forall n \geq n_\epsilon, \left|x_n-l\right|<\epsilon
+        \exists l \in\mathbb{R} \mid \forall\varepsilon>0, \exists n_\varepsilon\in\mathbb{N}\mid
+        \forall n \geq n_\varepsilon, \left|x_n-l\right|<\varepsilon
     \]
     oppure, equivalentemente,
     \[
         \underset{n\rightarrow+\infty}{\lim} x_n = l \Leftrightarrow
-        \exists l \in\mathbb{R} \mid \forall\epsilon>0, \exists n_\epsilon\in\mathbb{N}\mid
-        \forall n \geq n_\epsilon, x_n\in\left(l-\epsilon, l+\epsilon\right).
+        \exists l \in\mathbb{R} \mid \forall\varepsilon>0, \exists n_\varepsilon\in\mathbb{N}\mid
+        \forall n \geq n_\varepsilon, x_n\in\left(l-\varepsilon, l+\varepsilon\right).
     \]
 \end{definition}
-
-\begin{observation}
-    Una serie convergente ammette esattamente un solo valore di convergenza, dunque
-    ogni serie con un limite ammette un solo valore di convergenza, che corrisponderà
-    con il limite di quella successione. Il limite finito di una successione è dunque
-    unico poiché è unico il valore di convergenza della serie.
-\end{observation}
 
 Analogamente definiamo i seguenti limiti particolari
 
@@ -37,8 +30,8 @@ Analogamente definiamo i seguenti limiti particolari
     che $x_n$ converge a $l$ da destra e scrivendo che
     \[
         \underset{n\rightarrow+\infty}{\lim} x_n = l^+ \Leftrightarrow
-        \exists l \in\mathbb{R} \mid \forall\epsilon>0, \exists n_\epsilon\in\mathbb{N}\mid
-        \forall n \geq n_\epsilon, x_n\in\left[l, l+\epsilon\right).
+        \exists l \in\mathbb{R} \mid \forall\varepsilon>0, \exists n_\varepsilon\in\mathbb{N}\mid
+        \forall n \geq n_\varepsilon, x_n\in\left[l, l+\varepsilon\right).
     \]
 \end{definition}
 
@@ -49,8 +42,8 @@ Analogamente definiamo i seguenti limiti particolari
     che $x_n$ converge a $l$ da sinistra e scrivendo che
     \[
         \underset{n\rightarrow+\infty}{\lim} x_n = l^- \Leftrightarrow
-        \exists l \in\mathbb{R} \mid \forall\epsilon>0, \exists n_\epsilon\in\mathbb{N}\mid
-        \forall n \geq n_\epsilon, x_n\in\left(l-\epsilon, l\right].
+        \exists l \in\mathbb{R} \mid \forall\varepsilon>0, \exists n_\varepsilon\in\mathbb{N}\mid
+        \forall n \geq n_\varepsilon, x_n\in\left(l-\varepsilon, l\right].
     \]
 \end{definition}
 
@@ -58,10 +51,10 @@ Analogamente definiamo i seguenti limiti particolari
     Il fatto che la successioni converga da destra o da sinsitra a un certo valore
     non cambia il valore effettivo del limite che resta il valore di convergenza.
     Aggiungere un segno ad apice è facoltativo e serve semplicemente a evidenziare che
-    la successione converge da destra o da sinsitra. Il valore numerico del limite
-    rimane sempre unico, difatti dire che una successione converge a un valore da una
-    particolare direzione implica necessariamente che la successione converga a
-    quel valore specifico, in simboli
+    la successione converge da destra o da sinsitra. Il valore effettivo del limite
+    rimane sempre il valore numerico reale, difatti dire che una successione converge
+    a un valore da una particolare direzione implica necessariamente che la successione
+    converga a quel valore specifico, in simboli
 
     \[
         \begin{cases}

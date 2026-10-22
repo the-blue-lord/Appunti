@@ -32,3 +32,5 @@
 \contentsline {subsection}{\numberline {4.3}Limiti delle successioni}{44}{subsection.4.3}%
 \contentsline {subsubsection}{\numberline {4.3.1}Limiti finiti}{45}{subsubsection.4.3.1}%
 \contentsline {subsubsection}{\numberline {4.3.2}Limiti infiniti}{46}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Considerazioni finali}{47}{subsubsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.4}Monotonia delle successioni}{48}{subsection.4.4}%

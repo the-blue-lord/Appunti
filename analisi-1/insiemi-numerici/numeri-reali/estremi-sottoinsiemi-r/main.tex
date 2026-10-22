@@ -51,12 +51,12 @@ Sia dunque $\mathbb{S} \subset \mathbb{R}$, allora possiamo introdurre le seguen
     \[
         \begin{cases}
             \forall x\in\mathbb{S}, \Lambda \geq x\\
-            \forall \epsilon > 0, \exists x\in\mathbb{S} \mid \Lambda-\epsilon<x\leq\Lambda
+            \forall \varepsilon > 0, \exists x\in\mathbb{S} \mid \Lambda-\varepsilon<x\leq\Lambda
         \end{cases}
     \]
 \end{definition}
 
-\begin{definition}
+\begin{definition}\label{def:inf-lim-rea}
     \textbf{Insieme inferiormente limitato}
 
     Un sottoinsieme $\mathbb{S}$ di $\mathbb{R}$ si dice inferiormente limitato con
@@ -64,7 +64,7 @@ Sia dunque $\mathbb{S} \subset \mathbb{R}$, allora possiamo introdurre le seguen
     \[
         \begin{cases}
             \forall x\in\mathbb{S}, \lambda \leq x\\
-            \forall \epsilon > 0, \exists x\in\mathbb{S} \mid \lambda\leq x<\lambda+\epsilon
+            \forall \varepsilon > 0, \exists x\in\mathbb{S} \mid \lambda\leq x<\lambda+\varepsilon
         \end{cases}
     \]
 \end{definition}
@@ -84,25 +84,25 @@ Sia dunque $\mathbb{S} \subset \mathbb{R}$, allora possiamo introdurre le seguen
     \[ \forall n\in\mathbb{N}, 1-\frac{1}{n} \leq 1. \]
 
     Introducendo anche un gnenerico
-    $\epsilon > 0$ e prendendo arbitrariamente $n_\epsilon > \frac{1}{\epsilon}$,
+    $\varepsilon > 0$ e prendendo arbitrariamente $n_\varepsilon > \frac{1}{\varepsilon}$,
     avremo inoltre che
-    \[ n_\epsilon > \frac{1}{\epsilon}, \]
-    \[ n_\epsilon \epsilon > 1, \]
-    \[ 1 < n_\epsilon \epsilon, \]
-    \[ \frac{1}{n_\epsilon} < \epsilon, \]
-    \[ 0 \leq \frac{1}{n_\epsilon} < \epsilon, \]
-    \[-\epsilon < -\frac{1}{n_\epsilon} \leq 0,\]
-    \[1-\epsilon < 1-\frac{1}{n_\epsilon} \leq 1.\]
+    \[ n_\varepsilon > \frac{1}{\varepsilon}, \]
+    \[ n_\varepsilon \varepsilon > 1, \]
+    \[ 1 < n_\varepsilon \varepsilon, \]
+    \[ \frac{1}{n_\varepsilon} < \varepsilon, \]
+    \[ 0 \leq \frac{1}{n_\varepsilon} < \varepsilon, \]
+    \[-\varepsilon < -\frac{1}{n_\varepsilon} \leq 0,\]
+    \[1-\varepsilon < 1-\frac{1}{n_\varepsilon} \leq 1.\]
 
     Dunque
-    \[\forall \epsilon>0 \exists n\in\mathbb{N} \mid 1-\epsilon < 1-\frac{1}{n_\epsilon} \leq 1.\]
+    \[\forall \varepsilon>0 \exists n\in\mathbb{N} \mid 1-\varepsilon < 1-\frac{1}{n_\varepsilon} \leq 1.\]
 
     Abbiamo quindi complessivamente che
 
     \[
         \begin{cases}
             \forall n\in\mathbb{N}, 1 - \frac{1}{n} \leq 1 \\
-            \forall \epsilon > 0, \exists n\in\mathbb{N} \mid 1-\epsilon < 1 - \frac{1}{n} \leq 1
+            \forall \varepsilon > 0, \exists n\in\mathbb{N} \mid 1-\varepsilon < 1 - \frac{1}{n} \leq 1
         \end{cases}.
     \]
 
@@ -112,7 +112,7 @@ Sia dunque $\mathbb{S} \subset \mathbb{R}$, allora possiamo introdurre le seguen
     \[
         \begin{cases}
             \forall x\in\mathbb{S}, x \leq \Lambda \\
-            \forall \epsilon > 0, \exists x\in\mathbb{S} \mid 1-\epsilon < x \leq \Lambda
+            \forall \varepsilon > 0, \exists x\in\mathbb{S} \mid 1-\varepsilon < x \leq \Lambda
         \end{cases}.
     \]
 

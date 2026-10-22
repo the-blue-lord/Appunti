@@ -312,6 +312,12 @@ INPUT successioni\limiti-di-successioni\limiti-finiti\dim_con-val-ass.tex
 INPUT .\successioni\limiti-di-successioni\limiti-infiniti\main.tex
 INPUT .\successioni\limiti-di-successioni\limiti-infiniti\main.tex
 INPUT successioni\limiti-di-successioni\limiti-infiniti\main.tex
+INPUT .\successioni\limiti-di-successioni\considerazioni\main.tex
+INPUT .\successioni\limiti-di-successioni\considerazioni\main.tex
+INPUT successioni\limiti-di-successioni\considerazioni\main.tex
+INPUT .\successioni\monotonia-di-successioni\main.tex
+INPUT .\successioni\monotonia-di-successioni\main.tex
+INPUT successioni\monotonia-di-successioni\main.tex
 INPUT analisi-1.aux
 INPUT .\analisi-1.out
 INPUT .\analisi-1.out

@@ -171,13 +171,75 @@ allora possiamo definire le seguenti caratterisitche.
             \item Mostriamo separatamente che una successione definitivamente crescente (risp. decrescente) e non convergente ha come limite $+\infty$ (risp. $-\infty$) e che l'insieme
             degli elementi per cui è crescente (risp. decrescente) non è superiormente (risp. inferiormente) limitato, ovvero il suo $\sup$ (risp. $\inf$) è $+\infty$ (risp. $-\infty$).
 
-            \item Iniziamo mostrando che la successione così definita risulta divergente a $+\infty$ (risp. $-\infty$).
+            \item Definiamo a tale scopo l'insieme $\mathbb{A} := \left\{x_n\mid n\geq n_0\right\}$.
+
+            \item Mostriamo che l'insieme $\mathbb{A}$ risulta non superiormente (risp. inferiormente) limitato.
+            \begin{enumerate}[label=\arabic{enumii}.\arabic*.]
+                \item Supponiamo per assurdo che $\mathbb{A}$ sia superiormente (risp. inferiormente) limitato
+                e chiamiamo $L$ il suo estremo superiore (risp. inferiore), avremo dunque per \defref{def:sup-lim-rea} che
+                \[
+                    \begin{cases}
+                        \forall x_n\in\mathbb{A}, x_n \leq L  \quad \left(\text{risp. }\geq\right)\\
+                        \forall \varepsilon > 0, \exists x_n\in\mathbb{A} \mid L-\varepsilon<x_n\leq L \; \left(\text{risp. }L\leq x_n< L+\varepsilon\right)
+                    \end{cases}.
+                \]
+                    
+                \item Sapendo che che la serie è definitivamente crescente (risp. decrescente) per $n \geq n_0$, \[
+                    \forall b\geq a\geq n_0, \; x_a\leq x_b \left(\text{risp. } x_b\leq x_a\right).
+                \]
+                \item Allora \[
+                    \begin{cases}
+                        \forall x_n\in\mathbb{A}, x_n \leq x_{n+1} \leq x_{n+2} \leq \ldots \leq L  \quad \left(\text{risp. }\geq\right)\\
+                        \forall \varepsilon > 0, \exists x_n\in\mathbb{A} \mid L-\varepsilon<x_n\leq L \; \left(\text{risp. }L\leq x_n< L+\varepsilon\right)
+                    \end{cases}, \]\[
+                    \forall \varepsilon > 0, \exists x_n\in\mathbb{A} \mid L-\varepsilon<x_n\leq x_{n+1}\leq\ldots\leq L \]\[
+                    \left(\text{risp. }L\leq \ldots \leq x_{n+1}\leq x_n< L+\varepsilon\right),\]\[
+                    \forall \varepsilon > 0, \exists n\in\mathbb{N} \mid L-\varepsilon<x_n\leq x_{n+1}\leq\ldots\leq L \]\[
+                    \left(\text{risp. }L\leq \ldots \leq x_{n+1}\leq x_n< L+\varepsilon\right),\]\[
+                    \forall \varepsilon > 0, \exists n\in\mathbb{N} \mid \forall m \geq n, \; L-\varepsilon < x_m \leq L \]\[
+                    \left(\text{risp. }L\leq x_m < L+\varepsilon\right),\]\[
+                    \forall \varepsilon > 0, \exists n\in\mathbb{N} \mid \forall m \geq n, \; L-\varepsilon < x_m < L+\varepsilon. \]\[
+                \]
+                %TODO
+                \item Di conseguenza per [TODO:definizione di convergenza] la successione converge a $L$.
+                \item La successione è sia non convergente che convergente.
+                \item Assurdo.
+            \end{enumerate}
+            \item Mostriamo ora che la successione così definita è divergente a $+\infty$ (risp. $-\infty$).
+            \begin{enumerate}[label=\arabic{enumii}.\arabic*.]
+                \item Supponiamo per assurdo che la successione non sia divergente  a $+\infty$ (risp. $-\infty$), ovvero \[
+                    \exists M > 0, \; \forall n_M\in\mathbb{N}, \; \exists n \geq n_M \mid x_n < M.
+                \]
+                \item Non essendo per ipotesi la successione convergente abbiamo inoltre che \[
+                    \forall p\in\mathbb{R},\;\exists\varepsilon>0\mid\forall n_\varepsilon\in\mathbb{N},\;\exists n\geq n_\varepsilon\mid x_n<p-\varepsilon\lor x_n>p+\varepsilon.
+                \]
+                \item Prendiamo un qualsiasi $M_0>0$ che soddisfi la condizione di non divergenza e, scelto arbitrariamente $p=M_0$ per la condizione
+                    di non convergenza, prendiamo un qualsiasi $\varepsilon_0>0$ che soddisfi quest'ultima condizione. Avremo dunque che \[
+                    \begin{cases}
+                        \forall n_M\in\mathbb{N}, \; \exists n \geq n_M \mid x_n < M_0\\
+                        \forall n_\varepsilon\in\mathbb{N},\;\exists n\geq n_\varepsilon\mid x_n<M_0-\varepsilon_0\lor x_n>M_0+\varepsilon_0
+                    \end{cases}.
+                \]
+                \item Prendiamo un qualsiasi valore $n_t\in\mathbb{N}$, allora \[
+                    \begin{cases}
+                        \exists n \geq n_t \mid x_n < M_0 \\
+                        \exists n \geq n_t\mid x_n<M_0-\varepsilon_0\lor x_n>M_0+\varepsilon_0
+                    \end{cases},\]\[
+                    \begin{cases}
+                        \exists n \geq n_t \mid x_n < M_0 \\
+                        \exists n \geq n_t\mid x_n<M_0-\varepsilon_0<M_0\lor x_n>M_0+\varepsilon_0
+                    \end{cases},\]\[
+                    \exists n \geq n_t\mid x_n<M_0-\varepsilon_0,\]\[
+                    \exists n \geq n_t\mid x_n\leq M_0-\varepsilon_0,\]\[
+                \]
+            \end{enumerate}
         \end{enumerate}
     \end{enumerate}
     \qed
 \end{demonstration}
 
-\begin{theorem}\label{teo:com-rea}
+\begin{theorem}
+    \label{teo:com-rea}
     \textbf{Completezza di $\mathbb{R}$}
 
     $\left(\mathbb{R}, \left|\cdot\right|\right)$ è completo, ovvero tutte le successioni
@@ -185,7 +247,8 @@ allora possiamo definire le seguenti caratterisitche.
 \end{theorem}
 
 \begin{demonstration}
-    \textit{di} \teoref{teo:com-rea}
+    \textit{di}
+    \teoref{teo:com-rea}
 
     [dimostrazione]
 \end{demonstration}
